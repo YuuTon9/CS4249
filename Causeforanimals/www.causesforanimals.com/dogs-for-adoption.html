@@ -19,6 +19,100 @@
 <meta property="og:image" content="https://www.causesforanimals.com/uploads/1/0/8/3/10832582/published/primrosecrop-jpg_1.jpg?1559118078" />
 <meta property="og:url" content="https://www.causesforanimals.com/dogs-for-adoption.html" />
 
+<!-- Modal window -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 400px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+</style>
+
+
+
 
 
 <!-- Facebook Conversion Code for fb bowls -->
@@ -732,7 +826,8 @@ _W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":
 		   <td id="header">
 			<table><tr><td class="search"><span class="wsite-search">
 			<form id="wsite-header-search-form" action="https://www.causesforanimals.com/apps/search" method="get">
-				<input type="text" name="q" class="wsite-search-input" autocomplete="off" placeholder="Filter"/><span class="wsite-search-button"><span class="wsite-search-button-inner"></span></span>
+				<input type="text" name="q" class="wsite-search-input" autocomplete="off" placeholder="Filter
+				"/><span class="wsite-search-button"><span class="wsite-search-button-inner"></span></span>
 			</form>
 			</span></td></tr></table>
 			</td>
@@ -758,12 +853,16 @@ _W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":
 
 <div class="paragraph" style="text-align:left;"><font color="#626262" size="4"><strong>Adoptions</strong></font><br /><span><font size="3">These are some of the wonderful animals we have available for adoption.</font><br /><font size="1">&#8203;</font></span><br />If you live in HDB (public housing) you can adopt a suitable dog under Project Adore (ADOption and Rehoming&nbsp;of dogs).&nbsp;</div>
 
-<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
-<a href='hdb-approved.html' target='_blank'>
-<img src="uploads/1/0/8/3/10832582/editor/layoutpageslanscape-pages_16a334.jpg?1498561349" alt="Picture" style="width:175;max-width:100%" />
-</a>
-<div style="display:block;font-size:90%"></div>
-</div></div>
+<!-- DIV FOR FIRST DOG -->
+<div>
+	<!-- original code for image-->
+	<div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+	<a href='hdb-approved.html' target='_blank'>
+		<img src="uploads/1/0/8/3/10832582/editor/layoutpageslanscape-pages_16a334.jpg?1498561349" alt="Picture" style="width:175;max-width:100%" />
+	</a>
+	<div style="display:block;font-size:90%"></div>
+	</div>
+</div>
 
 <div class="paragraph"><span style="color:rgb(81, 81, 81)"><strong><font size="5">Sponsorship</font></strong></span><br /><span style="color:rgb(81, 81, 81)"><font size="2">If you would like to sponsor any of these animals while they are waiting to be adopted, please click on dog's image'</font></span></div>
 
@@ -865,6 +964,43 @@ _W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":
 
 <div class="wsite-spacer" style="height:10px;"></div>
 
+<!-- Really the first dog -->
+
+<!--<img id="myImg" src="img_snow.jpg" alt="Snow" style="width:100%;max-width:300px"> -->
+<img {-ms-interpolation-mode:bicubic;} id="myImg" src="uploads/1/0/8/3/10832582/editor/khartik-01c118.jpg?1600932086" style="white-space:pre;" alt="KHATIK 
+ Affectionate, gentle, calm, confident, chill on lead" style="width:144;max-width:100%" />
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+
+
+<!-- end of modal copy -->
 <div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
 <a href='khartik.html' target='_blank'>
 <img src="uploads/1/0/8/3/10832582/editor/khartik-01c118.jpg?1600932086" alt="Picture" style="width:144;max-width:100%" />
