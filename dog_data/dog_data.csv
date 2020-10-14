@@ -1,0 +1,905 @@
+id,image,details,hdb_approved,gender,age,name,date_of_birth
+1,https://cdn2.thedogapi.com/images/rkiByec47_1280.jpg,"Wild, Hardworking, Dutiful",False,M,2015,African Hunting Dog,5
+2,https://cdn2.thedogapi.com/images/SkFt1gc47_1280.jpg,"Strong Willed, Stubborn, Friendly, Clownish, Affectionate, Loyal, Obedient, Intelligent, Courageous",True,F,2016,American Bully,4
+3,https://cdn2.thedogapi.com/images/r1Ylge5Vm_1280.jpg,"Spirited, Alert, Loyal, Companionable, Even Tempered, Courageous",True,M,2014,Australian Terrier,6
+4,https://cdn2.thedogapi.com/images/SkvZgx94m_1280.jpg,"Aloof, Affectionate, Attentive, Rugged, Fierce, Refined",True,M,2009,Azawakh,11
+5,https://cdn2.thedogapi.com/images/HJAFgxcNQ_1280.jpg,"Easygoing, Gentle, Adaptable, Trusting, Even Tempered, Lovable",True,F,2013,Black and Tan Coonhound,7
+6,https://cdn2.thedogapi.com/images/ry1kWe5VQ_1280.jpg,"Devoted, Fearless, Friendly, Cheerful, Energetic, Loyal, Playful, Confident, Intelligent, Bright, Brave, Calm",False,M,2011,Boxer,9
+7,https://cdn2.thedogapi.com/images/r1ifZl5E7_1280.jpg,"Docile, Reliable, Devoted, Alert, Loyal, Reserved, Loving, Protective, Powerful, Calm, Courageous",True,F,2015,Bullmastiff,5
+8,https://cdn2.thedogapi.com/images/HJRBbe94Q_1280.jpg,"Fearless, Affectionate, Sociable, Patient, Playful, Adaptable",True,F,2014,Cavalier King Charles Spaniel,6
+9,https://cdn2.thedogapi.com/images/SkIgzxqNQ_1280.jpg,"Affectionate, Reserved, Playful, Gentle, Happy, Loving",True,F,2017,English Toy Spaniel,3
+10,https://cdn2.thedogapi.com/images/S1VWGx9Nm_1280.jpg,"Alert, Reserved, Intelligent, Even Tempered, Watchful, Calm",False,M,2010,Eurasier,10
+11,https://cdn2.thedogapi.com/images/B1u4zgqE7_1280.jpg,"Spirited, Lively, Intelligent, Loving, Even Tempered, Familial",False,M,2008,German Pinscher,12
+12,https://cdn2.thedogapi.com/images/SJqBMg5Nm_1280.jpg,"Boisterous, Bold, Affectionate, Intelligent, Cooperative, Trainable",False,M,2014,German Shorthaired Pointer,6
+13,https://cdn2.thedogapi.com/images/rkXiGl9V7_1280.jpg,"Affectionate, Responsive, Playful, Companionable, Gentle, Intelligent",True,M,2014,Havanese,6
+14,https://cdn2.thedogapi.com/images/Hyd2zgcEX_1280.jpg,"Sweet-Tempered, Loyal, Dignified, Patient, Thoughtful, Generous",True,F,2018,Irish Wolfhound,2
+15,https://cdn2.thedogapi.com/images/r1H6feqEm_1280.jpg,"Alert, Loyal, Independent, Intelligent, Loving, Cat-like",False,M,2011,Japanese Chin,9
+16,https://cdn2.thedogapi.com/images/HksaMxqNX_1280.jpg,"Affectionate, Obedient, Playful, Companionable, Intelligent, Proud",False,M,2016,Japanese Spitz,4
+17,https://cdn2.thedogapi.com/images/SyRe4xcN7_1280.jpg,"Lively, Reserved, Intelligent, Active, Protective, Vocal",False,M,2010,Pumi,10
+18,https://cdn2.thedogapi.com/images/HyJvcl9N7_1280.jpg,"Docile, Clever, Charming, Stubborn, Sociable, Playful, Quiet, Attentive",True,M,2015,Pug,5
+19,https://cdn2.thedogapi.com/images/S17ZilqNm_1280.jpg,"Outgoing, Friendly, Alert, Gentle, Intelligent",True,M,2010,Siberian Husky,10
+20,https://cdn2.thedogapi.com/images/SkRpsgc47_1280.jpg,"Clever, Affectionate, Confident, Intelligent, Loving, Trainable",True,F,2010,Treeing Walker Coonhound,10
+21,https://cdn2.thedogapi.com/images/SJ6f2g9EQ_1280.jpg,"Fearless, Friendly, Bold, Keen, Alert, Quick",True,M,2008,Wire Fox Terrier,12
+22,https://cdn2.thedogapi.com/images/r1I4hl5Em_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2015,Wirehaired Vizsla,5
+23,https://cdn2.thedogapi.com/images/HkNS3gqEm_1280.jpg,"Cheerful, Alert, Companionable, Intelligent, Protective, Calm",True,M,2012,Xoloitzcuintli,8
+24,https://cdn2.thedogapi.com/images/Sk-dcXjN7.gif,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2009,Oreo,11
+25,https://cdn2.thedogapi.com/images/Skd32PpN7.gif,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2010,Jake,10
+26,https://cdn2.thedogapi.com/images/B1YDzppN7.gif,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2014,Gunner,6
+27,https://cdn2.thedogapi.com/images/rJifQpT4m.gif,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2012,Baby,8
+28,https://cdn2.thedogapi.com/images/SkatQTaEQ.gif,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2014,Callie,6
+29,https://cdn2.thedogapi.com/images/rk9k4aTNm.gif,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2009,Bo,11
+30,https://cdn2.thedogapi.com/images/S1FXVTpV7.gif,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2014,Missy,6
+31,https://cdn2.thedogapi.com/images/SJY6N6aVQ.gif,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2012,Willow,8
+32,https://cdn2.thedogapi.com/images/rJk6rpTEm.gif,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2010,Layla,10
+33,https://cdn2.thedogapi.com/images/rygIFuhH7_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2009,Brutus,11
+34,https://cdn2.thedogapi.com/images/SyPvYOhHm_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2017,Maverick,3
+35,https://cdn2.thedogapi.com/images/HJ-YF_hHQ_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2014,Piper,6
+36,https://cdn2.thedogapi.com/images/rJJoKd3B7_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2008,Hank,12
+37,https://cdn2.thedogapi.com/images/Yp52A2pFZ_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2018,Finn,2
+38,https://cdn2.thedogapi.com/images/GYC8Oeux6.jpg,"Loyal, Independent, Intelligent, Brave",True,M,2009,Akbash Dog,11
+39,https://cdn2.thedogapi.com/images/C3KfxN2DG.jpg,"Loyal, Independent, Intelligent, Brave",False,F,2010,Akbash Dog,10
+40,https://cdn2.thedogapi.com/images/BbMFS3bU-.jpg,"Friendly, Affectionate, Devoted, Loyal, Dignified, Playful",True,F,2008,Alaskan Malamute,12
+41,https://cdn2.thedogapi.com/images/hdERN5n5z.jpg,"Friendly, Assertive, Energetic, Loyal, Gentle, Confident, Dominant",False,F,2014,American Bulldog,6
+42,https://cdn2.thedogapi.com/images/KcUu-6YV0.jpg,"Strong Willed, Stubborn, Friendly, Clownish, Affectionate, Loyal, Obedient, Intelligent, Courageous",False,M,2016,American Bully,4
+43,https://cdn2.thedogapi.com/images/EB8A5HQHX.jpg,"Friendly, Alert, Reserved, Intelligent, Protective",False,F,2011,American Eskimo Dog,9
+44,https://cdn2.thedogapi.com/images/mhikcBw9U.jpg,"Stubborn, Curious, Playful, Adventurous, Active, Fun-loving",False,F,2018,Affenpinscher,2
+45,https://cdn2.thedogapi.com/images/WYKqUtgMB.png,"Stubborn, Curious, Playful, Adventurous, Active, Fun-loving",True,F,2014,Affenpinscher,6
+46,https://cdn2.thedogapi.com/images/hMyT4CDXR.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2008,Afghan Hound,12
+47,https://cdn2.thedogapi.com/images/WIf5o1E8h.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2009,Afghan Hound,11
+48,https://cdn2.thedogapi.com/images/12nMI642l.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2014,Afghan Hound,6
+49,https://cdn2.thedogapi.com/images/lq5gBjy4s.jpg,"Docile, Alert, Responsive, Dignified, Composed, Friendly, Receptive, Faithful, Courageous",True,M,2015,Akita,5
+50,https://cdn2.thedogapi.com/images/VOKm-sqrT.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2012,Simba,8
+51,https://cdn2.thedogapi.com/images/UsKoTe0vu.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2009,Roscoe,11
+52,https://cdn2.thedogapi.com/images/bRq0anD4j.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2015,Gunner,5
+53,https://cdn2.thedogapi.com/images/FsK9WepDe.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2008,Bo,12
+54,https://cdn2.thedogapi.com/images/KaU4DC_DG.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2014,Prince,6
+55,https://cdn2.thedogapi.com/images/wd68jwRjD.png,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2009,Boomer,11
+56,https://cdn2.thedogapi.com/images/Ki9uZDMNA.png,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2010,Duke,10
+57,https://cdn2.thedogapi.com/images/pYkNylnuw.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2015,Sam,5
+58,https://cdn2.thedogapi.com/images/pNg2yT6Wc.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2011,Riley,9
+59,https://cdn2.thedogapi.com/images/mdjFBMjtk.jpg,"Cautious, Energetic, Loyal, Obedient, Protective, Brave",False,F,2018,Australian Cattle Dog,2
+60,https://cdn2.thedogapi.com/images/xAo4Tfbyg.jpg,"Cautious, Energetic, Loyal, Obedient, Protective, Brave",True,F,2014,Australian Cattle Dog,6
+61,https://cdn2.thedogapi.com/images/76K-B98C9.jpg,"Self-confidence, Hardy, Lively, Alert, Intelligent, Active",True,F,2012,Bearded Collie,8
+62,https://cdn2.thedogapi.com/images/n3IbwcZlN.jpg,"Self-confidence, Hardy, Lively, Alert, Intelligent, Active",True,M,2016,Bearded Collie,4
+63,https://cdn2.thedogapi.com/images/x0N6Jg0nw.jpg,"Self-confidence, Hardy, Lively, Alert, Intelligent, Active",True,F,2016,Bearded Collie,4
+64,https://cdn2.thedogapi.com/images/pC7MjGeaT.jpg,"Tenacious, Keen, Energetic, Responsive, Alert, Intelligent",True,M,2016,Border Collie,4
+65,https://cdn2.thedogapi.com/images/sGQvQUpsp.jpg,"Tenacious, Keen, Energetic, Responsive, Alert, Intelligent",False,F,2016,Border Collie,4
+66,https://cdn2.thedogapi.com/images/rVXxoWhCR.jpg,"Tenacious, Keen, Energetic, Responsive, Alert, Intelligent",True,F,2013,Border Collie,7
+67,https://cdn2.thedogapi.com/images/93bGwN0KL.jpg,"Tenacious, Keen, Energetic, Responsive, Alert, Intelligent",False,M,2012,Border Collie,8
+68,https://cdn2.thedogapi.com/images/DZzgyxMIE.jpg,"Tenacious, Keen, Energetic, Responsive, Alert, Intelligent",True,M,2014,Border Collie,6
+69,https://cdn2.thedogapi.com/images/ViIxw1j4w.jpg,"Tenacious, Keen, Energetic, Responsive, Alert, Intelligent",False,F,2011,Border Collie,9
+70,https://cdn2.thedogapi.com/images/CLRVGYoXA.jpg,"Trainable, Protective, Sweet-Tempered, Keen, Active",False,F,2010,Bull Terrier,10
+71,https://cdn2.thedogapi.com/images/a5wh4Z1NJ.jpg,"Trainable, Protective, Sweet-Tempered, Keen, Active",False,M,2013,Bull Terrier,7
+72,https://cdn2.thedogapi.com/images/S82sy7Hfz.jpg,"Trainable, Protective, Sweet-Tempered, Keen, Active",False,F,2017,Bull Terrier,3
+73,https://cdn2.thedogapi.com/images/607_FDb_p.jpg,"Trainable, Protective, Sweet-Tempered, Keen, Active",False,M,2015,Bull Terrier,5
+74,https://cdn2.thedogapi.com/images/KlKFRG3Ko.jpg,"Affectionate, Intelligent, Quiet, Dominant, Happy, Protective",True,F,2018,Chesapeake Bay Retriever,2
+75,https://cdn2.thedogapi.com/images/BP9tUfS_h.jpg,"Trainable, Friendly, Affectionate, Playful, Quiet, Faithful",False,M,2015,Cocker Spaniel,5
+76,https://cdn2.thedogapi.com/images/R9ZzdMEnl.jpg,"Playful, Loyal, Independent, Intelligent, Happy, Vocal",False,F,2010,Finnish Spitz,10
+77,https://cdn2.thedogapi.com/images/J5xkGtEU3.jpg,"Playful, Loyal, Independent, Intelligent, Happy, Vocal",True,M,2014,Finnish Spitz,6
+78,https://cdn2.thedogapi.com/images/niZ0b1nHu.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",False,F,2013,Kooikerhondje,7
+79,https://cdn2.thedogapi.com/images/LrXQhXhmb.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",False,F,2009,Kooikerhondje,11
+80,https://cdn2.thedogapi.com/images/5ehdkGpsY.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",False,M,2014,Kooikerhondje,6
+81,https://cdn2.thedogapi.com/images/L0kFU8jaZ.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",False,F,2012,Kooikerhondje,8
+82,https://cdn2.thedogapi.com/images/wRJ9Dwspw.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",False,M,2010,Kooikerhondje,10
+83,https://cdn2.thedogapi.com/images/4CUZk1TCM.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",False,F,2017,Kooikerhondje,3
+84,https://cdn2.thedogapi.com/images/_8II0snsl.jpg,"Friendly, Lively, Gentle, Watchful, Calm",True,M,2014,Saint Bernard,6
+85,https://cdn2.thedogapi.com/images/E_HPfvAnX.jpg,"Friendly, Lively, Gentle, Watchful, Calm",True,M,2011,Saint Bernard,9
+86,https://cdn2.thedogapi.com/images/q8XC_2pym.jpg,"Aloof, Reserved, Intelligent, Quiet",False,M,2010,Saluki,10
+87,https://cdn2.thedogapi.com/images/sNtR0_fdu.jpg,"Aloof, Reserved, Intelligent, Quiet",True,M,2015,Saluki,5
+88,https://cdn2.thedogapi.com/images/VlVgulZgs.jpg,"Aloof, Reserved, Intelligent, Quiet",True,F,2012,Saluki,8
+89,https://cdn2.thedogapi.com/images/xGuSVhi28.jpg,"Aloof, Reserved, Intelligent, Quiet",False,F,2012,Saluki,8
+90,https://cdn2.thedogapi.com/images/fjFIuehNo.jpg,"Aloof, Reserved, Intelligent, Quiet",True,F,2018,Saluki,2
+91,https://cdn2.thedogapi.com/images/hweK6aOl9.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",False,F,2010,Shiba Inu,10
+92,https://cdn2.thedogapi.com/images/Z6h74tJ-D.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",False,M,2009,Shiba Inu,11
+93,https://cdn2.thedogapi.com/images/_LWIQOpXG.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",True,F,2012,Shiba Inu,8
+94,https://cdn2.thedogapi.com/images/duYK7C91Q.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",True,M,2011,Shiba Inu,9
+95,https://cdn2.thedogapi.com/images/MCQEc8Oc-.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",True,M,2010,Shiba Inu,10
+96,https://cdn2.thedogapi.com/images/YOZ3-uVvB.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",True,M,2013,Shiba Inu,7
+97,https://cdn2.thedogapi.com/images/v-08PkHgP.jpg,"Trainable, Good-natured, Devoted, Lively, Playful, Intelligent",False,M,2009,Standard Schnauzer,11
+98,https://cdn2.thedogapi.com/images/YHlx6uL2w.jpg,"Trainable, Good-natured, Devoted, Lively, Playful, Intelligent",False,F,2010,Standard Schnauzer,10
+99,https://cdn2.thedogapi.com/images/G9yfpaxEv.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2013,Oakley,7
+100,https://cdn2.thedogapi.com/images/s4h8tS2SU.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2018,Benji,2
+101,https://cdn2.thedogapi.com/images/rJqd1ecV7_1280.jpg,"Friendly, Affectionate, Devoted, Loyal, Dignified, Playful",False,F,2018,Alaskan Malamute,2
+102,https://cdn2.thedogapi.com/images/HkC31gcNm_1280.png,"Strong Willed, Stubborn, Friendly, Clownish, Affectionate, Loyal, Obedient, Intelligent, Courageous",False,M,2015,American Pit Bull Terrier,5
+103,https://cdn2.thedogapi.com/images/SkmRJl9VQ_1280.jpg,"Friendly, Energetic, Obedient, Intelligent, Protective, Trainable",True,F,2015,American Water Spaniel,5
+104,https://cdn2.thedogapi.com/images/Syd4xxqEm_1280.jpg,"Amiable, Even Tempered, Excitable, Determined, Gentle, Intelligent",True,F,2017,Beagle,3
+105,https://cdn2.thedogapi.com/images/r1f_ll5VX_1280.jpg,"Watchful, Alert, Stubborn, Friendly, Confident, Hard-working, Active, Protective",False,F,2011,Belgian Malinois,9
+106,https://cdn2.thedogapi.com/images/ryHJZlcNX_1280.jpg,"Friendly, Energetic, Companionable, Intelligent, Eager, Trainable",False,M,2013,Boykin Spaniel,7
+107,https://cdn2.thedogapi.com/images/rkVlblcEQ_1280.jpg,"Fearless, Loyal, Obedient, Intelligent, Faithful, Protective",False,F,2008,Briard,12
+108,https://cdn2.thedogapi.com/images/BkKZWlcVX_1280.jpg,"Trainable, Protective, Sweet-Tempered, Keen, Active, Territorial",True,M,2010,Bull Terrier (Miniature),10
+109,https://cdn2.thedogapi.com/images/r15m-lc4m_1280.jpg,"Trainable, Reserved, Stable, Quiet, Even Tempered, Calm",False,F,2009,Cane Corso,11
+110,https://cdn2.thedogapi.com/images/rkeqWgq4Q_1280.jpg,"Affectionate, Loyal, Dignified, Gentle, Calm, Great-hearted",True,F,2010,Clumber Spaniel,10
+111,https://cdn2.thedogapi.com/images/HyL3bl94Q_1280.jpg,"Fearless, Energetic, Alert, Loyal, Obedient, Confident, Intelligent",True,F,2017,Doberman Pinscher,3
+112,https://cdn2.thedogapi.com/images/SJ6eMxqEQ_1280.jpg,"Stubborn, Alert, Companionable, Intelligent, Cunning, Trainable",True,F,2016,English Toy Terrier,4
+113,https://cdn2.thedogapi.com/images/BkHHQgcN7_1280.jpg,"Energetic, Loyal, Intelligent, Trainable",True,M,2017,Miniature American Shepherd,3
+114,https://cdn2.thedogapi.com/images/ByIiml9Nm_1280.jpg,"Opinionated, Good-natured, Stubborn, Affectionate, Aggressive, Intelligent",True,F,2018,Pekingese,2
+115,https://cdn2.thedogapi.com/images/Byz6mgqEQ_1280.jpg,"Affectionate, Sociable, Playful, Intelligent, Active, Trainable",False,M,2017,Pharaoh Hound,3
+116,https://cdn2.thedogapi.com/images/r1xXEgcNX_1280.jpg,"Steady, Good-natured, Fearless, Devoted, Alert, Obedient, Confident, Self-assured, Calm, Courageous",False,F,2012,Rottweiler,8
+117,https://cdn2.thedogapi.com/images/rJO6cQoVQ.gif,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2015,Cash,5
+118,https://cdn2.thedogapi.com/images/HkNpfppEm.gif,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2014,Dolce,6
+119,https://cdn2.thedogapi.com/images/H1yHQaaNX.gif,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2015,Yoda,5
+120,https://cdn2.thedogapi.com/images/rkq57TpVm.gif,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2015,Boomer,5
+121,https://cdn2.thedogapi.com/images/rJaRX6TVm.gif,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2017,Frankie,3
+122,https://cdn2.thedogapi.com/images/HytzV6aNm.gif,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2016,Gizmo,4
+123,https://cdn2.thedogapi.com/images/HJCPt_hrQ_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2018,Abby,2
+124,https://cdn2.thedogapi.com/images/Hy_9F_hBX_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2012,George,8
+125,https://cdn2.thedogapi.com/images/dW5UucTIW.jpg,"Friendly, Affectionate, Devoted, Loyal, Dignified, Playful",True,M,2012,Alaskan Malamute,8
+126,https://cdn2.thedogapi.com/images/kRw7OfClb.jpg,"Strong Willed, Stubborn, Friendly, Clownish, Affectionate, Loyal, Obedient, Intelligent, Courageous",True,F,2009,American Bully,11
+127,https://cdn2.thedogapi.com/images/quiHq2FiB.jpg,"Kind, Sweet-Tempered, Loyal, Independent, Intelligent, Loving",False,M,2010,American Foxhound,10
+128,https://cdn2.thedogapi.com/images/2xUswk2y8.jpg,"Kind, Sweet-Tempered, Loyal, Independent, Intelligent, Loving",False,F,2017,American Foxhound,3
+129,https://cdn2.thedogapi.com/images/ajJCO_lDC.jpg,"Kind, Sweet-Tempered, Loyal, Independent, Intelligent, Loving",True,M,2010,American Foxhound,10
+130,https://cdn2.thedogapi.com/images/hd1iiHXjK.jpg,"Stubborn, Curious, Playful, Adventurous, Active, Fun-loving",True,M,2009,Affenpinscher,11
+131,https://cdn2.thedogapi.com/images/zqTumVT7e.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2012,Afghan Hound,8
+132,https://cdn2.thedogapi.com/images/MUGiNcu_Z.jpg,"Docile, Alert, Responsive, Dignified, Composed, Friendly, Receptive, Faithful, Courageous",False,F,2011,Akita,9
+133,https://cdn2.thedogapi.com/images/18lQnZfKQ.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2013,Oliver,7
+134,https://cdn2.thedogapi.com/images/S6qBIDjR6.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2011,Chase,9
+135,https://cdn2.thedogapi.com/images/Qyu31V_J-.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2008,Sadie,12
+136,https://cdn2.thedogapi.com/images/mJ2r3Ku3B.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2017,Apollo,3
+137,https://cdn2.thedogapi.com/images/xpzXmkz9C.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2011,Gucci,9
+138,https://cdn2.thedogapi.com/images/31GqHT30n.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2013,Casey,7
+139,https://cdn2.thedogapi.com/images/Yb4lkSFx9.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2018,Kobe,2
+140,https://cdn2.thedogapi.com/images/e8h56V5CY.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2014,Honey,6
+141,https://cdn2.thedogapi.com/images/FxLgZUpCp.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2010,Jackson,10
+142,https://cdn2.thedogapi.com/images/Cj07Ykw4Z.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2009,Roxie,11
+143,https://cdn2.thedogapi.com/images/FA8AS72qO.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2013,Rudy,7
+144,https://cdn2.thedogapi.com/images/Z9Lf_Zihc.jpg,"Loyal, Independent, Intelligent, Brave",False,F,2008,Akbash Dog,12
+145,https://cdn2.thedogapi.com/images/Lx1N_UKFS.jpg,"Cautious, Energetic, Loyal, Obedient, Protective, Brave",True,F,2010,Australian Cattle Dog,10
+146,https://cdn2.thedogapi.com/images/ARD5biBts.jpg,"Self-confidence, Hardy, Lively, Alert, Intelligent, Active",True,M,2011,Bearded Collie,9
+147,https://cdn2.thedogapi.com/images/eoHqcDbsV.jpg,"Self-confidence, Hardy, Lively, Alert, Intelligent, Active",True,F,2017,Bearded Collie,3
+148,https://cdn2.thedogapi.com/images/HlL9qjQAa.jpg,"Self-confidence, Hardy, Lively, Alert, Intelligent, Active",False,M,2012,Bearded Collie,8
+149,https://cdn2.thedogapi.com/images/9LkzqFTjO.jpg,"Tenacious, Keen, Energetic, Responsive, Alert, Intelligent",False,F,2017,Border Collie,3
+150,https://cdn2.thedogapi.com/images/uFQ94lGDH.jpg,"Tenacious, Keen, Energetic, Responsive, Alert, Intelligent",True,F,2016,Border Collie,4
+151,https://cdn2.thedogapi.com/images/52bBXd2dO.jpg,"Trainable, Protective, Sweet-Tempered, Keen, Active",True,F,2012,Bull Terrier,8
+152,https://cdn2.thedogapi.com/images/MgMspgiei.jpg,"Trainable, Protective, Sweet-Tempered, Keen, Active",True,F,2018,Bull Terrier,2
+153,https://cdn2.thedogapi.com/images/-ipH6e7hG.jpg,"Trainable, Protective, Sweet-Tempered, Keen, Active",False,M,2017,Bull Terrier,3
+154,https://cdn2.thedogapi.com/images/-lue5tDMo.jpg,"Trainable, Protective, Sweet-Tempered, Keen, Active",False,M,2014,Bull Terrier,6
+155,https://cdn2.thedogapi.com/images/zFXKCNso1.jpg,"Trainable, Protective, Sweet-Tempered, Keen, Active",False,F,2009,Bull Terrier,11
+156,https://cdn2.thedogapi.com/images/E0iEH4Nof.jpg,"Trainable, Protective, Sweet-Tempered, Keen, Active",True,F,2016,Bull Terrier,4
+157,https://cdn2.thedogapi.com/images/ILaCjZC33.jpg,"Affectionate, Intelligent, Quiet, Dominant, Happy, Protective",False,M,2017,Chesapeake Bay Retriever,3
+158,https://cdn2.thedogapi.com/images/9BXwUeCc2.jpg,"Affectionate, Intelligent, Quiet, Dominant, Happy, Protective",False,F,2008,Chesapeake Bay Retriever,12
+159,https://cdn2.thedogapi.com/images/zGnoHL8B8.jpg,"Trainable, Friendly, Affectionate, Playful, Quiet, Faithful",True,M,2012,Cocker Spaniel,8
+160,https://cdn2.thedogapi.com/images/hYsMv3NQi.jpg,"Playful, Loyal, Independent, Intelligent, Happy, Vocal",False,F,2014,Finnish Spitz,6
+161,https://cdn2.thedogapi.com/images/CdiMsSZgT.jpg,"Playful, Loyal, Independent, Intelligent, Happy, Vocal",False,M,2013,Finnish Spitz,7
+162,https://cdn2.thedogapi.com/images/t558lhehG.jpg,"Playful, Loyal, Independent, Intelligent, Happy, Vocal",True,F,2015,Finnish Spitz,5
+163,https://cdn2.thedogapi.com/images/CVbVUx8pJ.jpg,"Playful, Loyal, Independent, Intelligent, Happy, Vocal",True,F,2016,Finnish Spitz,4
+164,https://cdn2.thedogapi.com/images/ZjYBMDnO9.jpg,"Playful, Loyal, Independent, Intelligent, Happy, Vocal",False,M,2015,Finnish Spitz,5
+165,https://cdn2.thedogapi.com/images/nLsDKdQvR.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",False,M,2009,Kooikerhondje,11
+166,https://cdn2.thedogapi.com/images/tbAyBgK6L.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",True,F,2010,Kooikerhondje,10
+167,https://cdn2.thedogapi.com/images/g2tW0bptM.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",False,M,2015,Kooikerhondje,5
+168,https://cdn2.thedogapi.com/images/yh3ZWqyEM.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",False,M,2010,Kooikerhondje,10
+169,https://cdn2.thedogapi.com/images/A14tIGT8d.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",False,F,2017,Kooikerhondje,3
+170,https://cdn2.thedogapi.com/images/AQN0VFXV0.jpg,"Friendly, Lively, Gentle, Watchful, Calm",False,F,2016,Saint Bernard,4
+171,https://cdn2.thedogapi.com/images/135XZc4x1.jpg,"Friendly, Lively, Gentle, Watchful, Calm",False,M,2016,Saint Bernard,4
+172,https://cdn2.thedogapi.com/images/GR68e1Aob.jpg,"Aloof, Reserved, Intelligent, Quiet",False,F,2010,Saluki,10
+173,https://cdn2.thedogapi.com/images/Zn3IjPX3f.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",True,F,2018,Shiba Inu,2
+174,https://cdn2.thedogapi.com/images/a4dzJ1h49.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",False,F,2014,Shiba Inu,6
+175,https://cdn2.thedogapi.com/images/y6pby3qx8.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",False,M,2010,Shiba Inu,10
+176,https://cdn2.thedogapi.com/images/mufxR-Px7.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",True,F,2009,Shiba Inu,11
+177,https://cdn2.thedogapi.com/images/VRUwbGjVP.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",True,F,2008,Shiba Inu,12
+178,https://cdn2.thedogapi.com/images/xv365V4P_.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",False,M,2017,Shiba Inu,3
+179,https://cdn2.thedogapi.com/images/bJqrD40we.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",True,M,2013,Shiba Inu,7
+180,https://cdn2.thedogapi.com/images/xJJyuYXJS.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",True,F,2014,Shiba Inu,6
+181,https://cdn2.thedogapi.com/images/SMa0dyTLx.jpg,"Trainable, Good-natured, Devoted, Lively, Playful, Intelligent",False,F,2017,Standard Schnauzer,3
+182,https://cdn2.thedogapi.com/images/YrCbmNAvH.jpg,"Trainable, Good-natured, Devoted, Lively, Playful, Intelligent",True,F,2011,Standard Schnauzer,9
+183,https://cdn2.thedogapi.com/images/_WWmAUUgU.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2011,Milo,9
+184,https://cdn2.thedogapi.com/images/jNvZdgkyl.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2008,Lacey,12
+185,https://cdn2.thedogapi.com/images/SyfsC19NQ_1280.jpg,"Loyal, Independent, Intelligent, Brave",True,F,2014,Akbash Dog,6
+186,https://cdn2.thedogapi.com/images/HJq5ke5Nm_1280.jpg,"Friendly, Alert, Reserved, Intelligent, Protective",True,F,2010,American Eskimo Dog (Miniature),10
+187,https://cdn2.thedogapi.com/images/Hyq1ge9VQ_1280.jpg,"Friendly, Energetic, Alert, Loyal, Intelligent, Eager",False,M,2014,Australian Kelpie,6
+188,https://cdn2.thedogapi.com/images/Sypubg54Q_1280.jpg,"Friendly, Alert, Dignified, Intelligent, Calm",False,F,2013,Chinook,7
+189,https://cdn2.thedogapi.com/images/SkJ3blcN7_1280.jpg,"Outgoing, Friendly, Energetic, Playful, Sensitive, Intelligent, Active",True,F,2018,Dalmatian,2
+190,https://cdn2.thedogapi.com/images/By4A-eqVX_1280.jpg,"Strong Willed, Mischievous, Affectionate, Energetic, Playful, Companionable, Gentle, Hard-working, Intelligent, Eager, People-Oriented",True,M,2008,English Setter,12
+191,https://cdn2.thedogapi.com/images/By-hGecVX_1280.jpg,"Respectful, Lively, Intelligent, Dominant, Protective, Trainable",False,M,2008,Irish Terrier,12
+192,https://cdn2.thedogapi.com/images/S1GAGg9Vm_1280.jpg,"Agile, Obedient, Playful, Quick, Sturdy, Bright",False,F,2014,Keeshond,6
+193,https://cdn2.thedogapi.com/images/HJd0XecNX_1280.jpg,"Extroverted, Friendly, Sociable, Playful, Intelligent, Active",False,M,2010,Pomeranian,10
+194,https://cdn2.thedogapi.com/images/Hkxk4ecVX_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2014,Poodle (Miniature),6
+195,https://cdn2.thedogapi.com/images/rJa29l9E7_1280.jpg,"Affectionate, Lively, Responsive, Alert, Loyal, Reserved, Playful, Gentle, Intelligent, Active, Trainable, Strong",False,M,2012,Shetland Sheepdog,8
+196,https://cdn2.thedogapi.com/images/H1zSie9V7_1280.jpg,"Reliable, Fearless, Bold, Affectionate, Loyal, Intelligent, Courageous",True,F,2008,Staffordshire Bull Terrier,12
+197,https://cdn2.thedogapi.com/images/B17ase9V7_1280.jpg,"Friendly, Spirited, Alert, Loyal, Playful, Intelligent",False,M,2010,Toy Fox Terrier,10
+198,https://cdn2.thedogapi.com/images/BJ0dMpaEX.gif,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2017,Layla,3
+199,https://cdn2.thedogapi.com/images/H16czapNX.gif,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2015,Allie,5
+200,https://cdn2.thedogapi.com/images/r1VV7pTV7.gif,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2015,Macy,5
+201,https://cdn2.thedogapi.com/images/H1iHQpaVX.gif,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2016,Jackson,4
+202,https://cdn2.thedogapi.com/images/B1vimaTE7.gif,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2013,Sherman,7
+203,https://cdn2.thedogapi.com/images/HJccBTpE7.gif,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2014,Josie,6
+204,https://cdn2.thedogapi.com/images/BJ2Wq664X.gif,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2010,Shadow,10
+205,https://cdn2.thedogapi.com/images/ByxuuunBX_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2015,Dolce,5
+206,https://cdn2.thedogapi.com/images/B1D5u_hBm_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2016,Sammy,4
+207,https://cdn2.thedogapi.com/images/B13NtuhSm_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2016,Loki,4
+208,https://cdn2.thedogapi.com/images/h23HQAljB_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2011,Sadie,9
+209,https://cdn2.thedogapi.com/images/xQRazPrRB.jpg,"Friendly, Assertive, Energetic, Loyal, Gentle, Confident, Dominant",True,F,2009,American Bulldog,11
+210,https://cdn2.thedogapi.com/images/sqQJDtbpY.jpg,"Strong Willed, Stubborn, Friendly, Clownish, Affectionate, Loyal, Obedient, Intelligent, Courageous",False,M,2014,American Bully,6
+211,https://cdn2.thedogapi.com/images/ikfu-FNqJ.jpg,"Kind, Sweet-Tempered, Loyal, Independent, Intelligent, Loving",False,M,2011,American Foxhound,9
+212,https://cdn2.thedogapi.com/images/VTbymwKqG.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2011,Afghan Hound,9
+213,https://cdn2.thedogapi.com/images/NaMI1H-PZ.jpg,"Docile, Alert, Responsive, Dignified, Composed, Friendly, Receptive, Faithful, Courageous",False,F,2016,Akita,4
+214,https://cdn2.thedogapi.com/images/kuvpGHCzm.jpg,"Loving, Protective, Trainable, Dutiful, Responsible",False,M,2012,Alapaha Blue Blood Bulldog,8
+215,https://cdn2.thedogapi.com/images/LMjrDDwSJ.jpg,"Friendly, Energetic, Loyal, Gentle, Confident",True,M,2017,Alaskan Husky,3
+216,https://cdn2.thedogapi.com/images/WinSPF9rK.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2013,Prince,7
+217,https://cdn2.thedogapi.com/images/AGwyOtfwl.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2013,Chico,7
+218,https://cdn2.thedogapi.com/images/hjv6apFgn.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2011,George,9
+219,https://cdn2.thedogapi.com/images/dS8e39G_B.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2015,Buddy,5
+220,https://cdn2.thedogapi.com/images/kQlnmSOxL.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2017,Ranger,3
+221,https://cdn2.thedogapi.com/images/anIClTXyD.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2010,Monkey,10
+222,https://cdn2.thedogapi.com/images/aQ2yTXC_C.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2018,Gizmo,2
+223,https://cdn2.thedogapi.com/images/nOCDoSdVs.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2018,Josie,2
+224,https://cdn2.thedogapi.com/images/Q2KxfeDLb.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2010,Chanel,10
+225,https://cdn2.thedogapi.com/images/kzcMOroSg.jpg,"Cautious, Energetic, Loyal, Obedient, Protective, Brave",True,F,2016,Australian Cattle Dog,4
+226,https://cdn2.thedogapi.com/images/x-LJYrq37.jpg,"Cautious, Energetic, Loyal, Obedient, Protective, Brave",False,F,2017,Australian Cattle Dog,3
+227,https://cdn2.thedogapi.com/images/h_7oXAarE.jpg,"Self-confidence, Hardy, Lively, Alert, Intelligent, Active",True,M,2014,Bearded Collie,6
+228,https://cdn2.thedogapi.com/images/yxsOLj-GU.jpg,"Self-confidence, Hardy, Lively, Alert, Intelligent, Active",True,F,2018,Bearded Collie,2
+229,https://cdn2.thedogapi.com/images/PJvRHYfs1.jpg,"Self-confidence, Hardy, Lively, Alert, Intelligent, Active",False,M,2016,Bearded Collie,4
+230,https://cdn2.thedogapi.com/images/UZtLVvNhE.jpg,"Self-confidence, Hardy, Lively, Alert, Intelligent, Active",True,F,2012,Bearded Collie,8
+231,https://cdn2.thedogapi.com/images/B8zP8i5W5.jpg,"Self-confidence, Hardy, Lively, Alert, Intelligent, Active",True,F,2011,Bearded Collie,9
+232,https://cdn2.thedogapi.com/images/XzvYXKK4K.jpg,"Tenacious, Keen, Energetic, Responsive, Alert, Intelligent",True,M,2012,Border Collie,8
+233,https://cdn2.thedogapi.com/images/ZfQGth6-x.jpg,"Tenacious, Keen, Energetic, Responsive, Alert, Intelligent",False,M,2016,Border Collie,4
+234,https://cdn2.thedogapi.com/images/8X9vWcGdt.jpg,"Tenacious, Keen, Energetic, Responsive, Alert, Intelligent",False,M,2016,Border Collie,4
+235,https://cdn2.thedogapi.com/images/3s4QqsTxZ.jpg,"Tenacious, Keen, Energetic, Responsive, Alert, Intelligent",True,M,2008,Border Collie,12
+236,https://cdn2.thedogapi.com/images/4NWunSWE1.jpg,"Trainable, Protective, Sweet-Tempered, Keen, Active",False,M,2008,Bull Terrier,12
+237,https://cdn2.thedogapi.com/images/VSraIEQGd.jpg,"Trainable, Protective, Sweet-Tempered, Keen, Active",False,M,2018,Bull Terrier,2
+238,https://cdn2.thedogapi.com/images/Pxdz3FZQt.jpg,"Trainable, Friendly, Affectionate, Playful, Quiet, Faithful",False,F,2014,Cocker Spaniel,6
+239,https://cdn2.thedogapi.com/images/yddakJGig.jpg,"Trainable, Friendly, Affectionate, Playful, Quiet, Faithful",True,F,2012,Cocker Spaniel,8
+240,https://cdn2.thedogapi.com/images/jPiMLwaJh.jpg,"Playful, Loyal, Independent, Intelligent, Happy, Vocal",False,M,2014,Finnish Spitz,6
+241,https://cdn2.thedogapi.com/images/pSoC1qW8n.jpg,"Playful, Loyal, Independent, Intelligent, Happy, Vocal",False,M,2018,Finnish Spitz,2
+242,https://cdn2.thedogapi.com/images/BW9WnXl3E.jpg,"Playful, Loyal, Independent, Intelligent, Happy, Vocal",True,M,2013,Finnish Spitz,7
+243,https://cdn2.thedogapi.com/images/gJA_mt09Q.jpg,"Playful, Loyal, Independent, Intelligent, Happy, Vocal",True,F,2011,Finnish Spitz,9
+244,https://cdn2.thedogapi.com/images/np1LyfUrh.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",False,F,2009,Kooikerhondje,11
+245,https://cdn2.thedogapi.com/images/KRxg5MIJJ.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",True,M,2015,Kooikerhondje,5
+246,https://cdn2.thedogapi.com/images/ZcMM_Og7i.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",True,M,2012,Kooikerhondje,8
+247,https://cdn2.thedogapi.com/images/Sh2s-ZKMS.jpg,"Friendly, Lively, Gentle, Watchful, Calm",False,M,2010,Saint Bernard,10
+248,https://cdn2.thedogapi.com/images/DArkgQw59.jpg,"Friendly, Lively, Gentle, Watchful, Calm",False,M,2013,Saint Bernard,7
+249,https://cdn2.thedogapi.com/images/K9nzmg0TL.jpg,"Friendly, Lively, Gentle, Watchful, Calm",True,F,2014,Saint Bernard,6
+250,https://cdn2.thedogapi.com/images/lDBxtskPl.jpg,"Aloof, Reserved, Intelligent, Quiet",True,F,2017,Saluki,3
+251,https://cdn2.thedogapi.com/images/Mncs8eeby.jpg,"Aloof, Reserved, Intelligent, Quiet",False,M,2017,Saluki,3
+252,https://cdn2.thedogapi.com/images/BwojUdDKe.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",False,M,2011,Shiba Inu,9
+253,https://cdn2.thedogapi.com/images/Z0MReRD8G.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",False,M,2013,Shiba Inu,7
+254,https://cdn2.thedogapi.com/images/GZbsnFkqD.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",True,M,2009,Shiba Inu,11
+255,https://cdn2.thedogapi.com/images/XuF0yCht6.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",True,M,2012,Shiba Inu,8
+256,https://cdn2.thedogapi.com/images/ygzwOZd_L.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",False,M,2008,Shiba Inu,12
+257,https://cdn2.thedogapi.com/images/b-_AIs741.jpg,"Affectionate, Energetic, Amiable, Reserved, Gentle, Sensitive",False,M,2008,Tibetan Terrier,12
+258,https://cdn2.thedogapi.com/images/tmj_UmLCS.jpg,"Affectionate, Energetic, Amiable, Reserved, Gentle, Sensitive",False,F,2012,Tibetan Terrier,8
+259,https://cdn2.thedogapi.com/images/cmVJgX9tx.jpg,"Trainable, Good-natured, Devoted, Lively, Playful, Intelligent",False,F,2017,Standard Schnauzer,3
+260,https://cdn2.thedogapi.com/images/uT8rYVX0i.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2010,Rocco,10
+261,https://cdn2.thedogapi.com/images/FXkloOzpH.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2015,Chloe,5
+262,https://cdn2.thedogapi.com/images/BJa4kxc4X_1280.jpg,"Stubborn, Curious, Playful, Adventurous, Active, Fun-loving",False,F,2018,Affenpinscher,2
+263,https://cdn2.thedogapi.com/images/B1-llgq4m_1280.jpg,"Good-natured, Affectionate, Intelligent, Active, Protective",False,F,2010,Australian Shepherd,10
+264,https://cdn2.thedogapi.com/images/B1pDZx9Nm_1280.jpg,"Affectionate, Sweet-Tempered, Lively, Alert, Playful, Happy",False,F,2018,Chinese Crested,2
+265,https://cdn2.thedogapi.com/images/BkE6Wg5E7_1280.jpg,"Reliable, Affectionate, Alert, Loyal, Obedient, Trainable",False,M,2014,Dutch Shepherd,6
+266,https://cdn2.thedogapi.com/images/B1Edfl9NX_1280.jpg,"Friendly, Devoted, Reserved, Gentle, Confident, Loving",True,F,2015,Great Dane,5
+267,https://cdn2.thedogapi.com/images/B12uzg9V7_1280.png,"Strong Willed, Fearless, Affectionate, Patient, Gentle, Confident",True,M,2018,Great Pyrenees,2
+268,https://cdn2.thedogapi.com/images/ryzzmgqE7_1280.jpg,"Keen, Loyal, Companionable, Loving, Active, Trainable",False,F,2008,Lagotto Romagnolo,12
+269,https://cdn2.thedogapi.com/images/B1d5me547_1280.jpg,"Friendly, Alert, Confident, Loving, Courageous, Strong",True,M,2017,Olde English Bulldogge,3
+270,https://cdn2.thedogapi.com/images/SkJj7e547_1280.jpg,"Hardy, Friendly, Energetic, Alert, Intelligent, Happy",True,F,2013,Papillon,7
+271,https://cdn2.thedogapi.com/images/S1T8Ee9Nm_1280.jpg,"Stubborn, Friendly, Sociable, Lively, Alert, Playful",True,F,2018,Samoyed,2
+272,https://cdn2.thedogapi.com/images/Bklnce5NX_1280.jpg,"Feisty, Alert, Independent, Playful, Quick, Self-assured",False,M,2009,Scottish Terrier,11
+273,https://cdn2.thedogapi.com/images/SyU12l9V7_1280.jpg,"Steady, Aloof, Stubborn, Energetic, Alert, Intelligent, Powerful, Fast",True,F,2016,Weimaraner,4
+274,https://cdn2.thedogapi.com/images/BJ1gnx5Vm_1280.jpg,"Stubborn, Friendly, Affectionate, Loyal, Playful, Active",False,M,2015,Welsh Springer Spaniel,5
+275,https://cdn2.thedogapi.com/images/HyzyjXjV7.gif,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2017,Nala,3
+276,https://cdn2.thedogapi.com/images/ryZb6D6NQ.gif,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2012,Sophie,8
+277,https://cdn2.thedogapi.com/images/r156pDT4m.gif,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2011,George,9
+278,https://cdn2.thedogapi.com/images/Bk3Rf6TNX.gif,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2016,Luke,4
+279,https://cdn2.thedogapi.com/images/r12d7apV7.gif,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2013,Oscar,7
+280,https://cdn2.thedogapi.com/images/SyJSEapN7.gif,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2015,Joey,5
+281,https://cdn2.thedogapi.com/images/r16sH664Q.gif,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2010,Hank,10
+282,https://cdn2.thedogapi.com/images/HJCAYTpEX.gif,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2015,Grace,5
+283,https://cdn2.thedogapi.com/images/rk0tuu2HX_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2008,Jack,12
+284,https://cdn2.thedogapi.com/images/SJcCuu2SX_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2013,Holly,7
+285,https://cdn2.thedogapi.com/images/HkqBYu3SX_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2011,Trixie,9
+286,https://cdn2.thedogapi.com/images/njDSq3gRF.jpg,"Loyal, Independent, Intelligent, Brave",True,F,2015,Akbash Dog,5
+287,https://cdn2.thedogapi.com/images/WVawT4Gap.jpg,"Loyal, Independent, Intelligent, Brave",True,F,2018,Akbash Dog,2
+288,https://cdn2.thedogapi.com/images/P44Wk6wSj.jpg,"Friendly, Affectionate, Devoted, Loyal, Dignified, Playful",False,M,2016,Alaskan Malamute,4
+289,https://cdn2.thedogapi.com/images/0rx5_e-Ur.jpg,"Friendly, Affectionate, Devoted, Loyal, Dignified, Playful",True,F,2015,Alaskan Malamute,5
+290,https://cdn2.thedogapi.com/images/pk1AAdloG.jpg,"Friendly, Assertive, Energetic, Loyal, Gentle, Confident, Dominant",False,M,2018,American Bulldog,2
+291,https://cdn2.thedogapi.com/images/AcXu5OATT.jpg,"Friendly, Assertive, Energetic, Loyal, Gentle, Confident, Dominant",True,F,2016,American Bulldog,4
+292,https://cdn2.thedogapi.com/images/34v9aKCct.jpg,"Strong Willed, Stubborn, Friendly, Clownish, Affectionate, Loyal, Obedient, Intelligent, Courageous",True,M,2009,American Bully,11
+293,https://cdn2.thedogapi.com/images/aG5NsYZvQ.jpg,"Friendly, Alert, Reserved, Intelligent, Protective",True,F,2016,American Eskimo Dog,4
+294,https://cdn2.thedogapi.com/images/p4xvDeEpW.jpg,"Kind, Sweet-Tempered, Loyal, Independent, Intelligent, Loving",True,M,2012,American Foxhound,8
+295,https://cdn2.thedogapi.com/images/fQSunHvl8.jpg,"Docile, Alert, Responsive, Dignified, Composed, Friendly, Receptive, Faithful, Courageous",False,F,2013,Akita,7
+296,https://cdn2.thedogapi.com/images/5Qdip6GTm.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2009,Yoda,11
+297,https://cdn2.thedogapi.com/images/RvXbWaH43.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2017,Luna,3
+298,https://cdn2.thedogapi.com/images/de9LfZ9KP.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2009,Molly,11
+299,https://cdn2.thedogapi.com/images/j7T4YcNzE.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2010,Penny,10
+300,https://cdn2.thedogapi.com/images/3NC7vIjMR.jpg,"Cautious, Energetic, Loyal, Obedient, Protective, Brave",False,F,2015,Australian Cattle Dog,5
+301,https://cdn2.thedogapi.com/images/g8KDO0Yvd.jpg,"Cautious, Energetic, Loyal, Obedient, Protective, Brave",True,F,2008,Australian Cattle Dog,12
+302,https://cdn2.thedogapi.com/images/_GKG9ahhj.jpg,"Self-confidence, Hardy, Lively, Alert, Intelligent, Active",False,F,2008,Bearded Collie,12
+303,https://cdn2.thedogapi.com/images/M96ZzvXqp.jpg,"Self-confidence, Hardy, Lively, Alert, Intelligent, Active",False,M,2011,Bearded Collie,9
+304,https://cdn2.thedogapi.com/images/cZT3u01tZ.jpg,"Self-confidence, Hardy, Lively, Alert, Intelligent, Active",True,M,2011,Bearded Collie,9
+305,https://cdn2.thedogapi.com/images/38KoA9gGB.jpg,"Tenacious, Keen, Energetic, Responsive, Alert, Intelligent",True,F,2015,Border Collie,5
+306,https://cdn2.thedogapi.com/images/e9y7-VkOl.jpg,"Tenacious, Keen, Energetic, Responsive, Alert, Intelligent",False,F,2010,Border Collie,10
+307,https://cdn2.thedogapi.com/images/8flER_jUa.jpg,"Tenacious, Keen, Energetic, Responsive, Alert, Intelligent",False,M,2011,Border Collie,9
+308,https://cdn2.thedogapi.com/images/Ld0_u3Ubg.jpg,"Tenacious, Keen, Energetic, Responsive, Alert, Intelligent",True,M,2018,Border Collie,2
+309,https://cdn2.thedogapi.com/images/q3wSiFZ7m.jpg,"Trainable, Protective, Sweet-Tempered, Keen, Active",True,F,2010,Bull Terrier,10
+310,https://cdn2.thedogapi.com/images/zHwi3vVju.jpg,"Trainable, Protective, Sweet-Tempered, Keen, Active",True,M,2011,Bull Terrier,9
+311,https://cdn2.thedogapi.com/images/AKir88WB_.jpg,"Trainable, Protective, Sweet-Tempered, Keen, Active",False,M,2009,Bull Terrier,11
+312,https://cdn2.thedogapi.com/images/4jvZUBiYC.jpg,"Affectionate, Intelligent, Quiet, Dominant, Happy, Protective",False,F,2018,Chesapeake Bay Retriever,2
+313,https://cdn2.thedogapi.com/images/UuDd-Gb0j.jpg,"Affectionate, Intelligent, Quiet, Dominant, Happy, Protective",False,F,2018,Chesapeake Bay Retriever,2
+314,https://cdn2.thedogapi.com/images/-QbEXksWV.jpg,"Affectionate, Intelligent, Quiet, Dominant, Happy, Protective",False,M,2009,Chesapeake Bay Retriever,11
+315,https://cdn2.thedogapi.com/images/5TW4CCc9c.jpg,"Trainable, Friendly, Affectionate, Playful, Quiet, Faithful",True,M,2015,Cocker Spaniel,5
+316,https://cdn2.thedogapi.com/images/JfXoSp85R.jpg,"Trainable, Friendly, Affectionate, Playful, Quiet, Faithful",True,M,2016,Cocker Spaniel,4
+317,https://cdn2.thedogapi.com/images/aQkrp7YWk.jpg,"Playful, Loyal, Independent, Intelligent, Happy, Vocal",True,F,2009,Finnish Spitz,11
+318,https://cdn2.thedogapi.com/images/MyqmolpOL.jpg,"Playful, Loyal, Independent, Intelligent, Happy, Vocal",True,M,2010,Finnish Spitz,10
+319,https://cdn2.thedogapi.com/images/E585lUflj.jpg,"Playful, Loyal, Independent, Intelligent, Happy, Vocal",True,F,2008,Finnish Spitz,12
+320,https://cdn2.thedogapi.com/images/7pTie4t9y.jpg,"Playful, Loyal, Independent, Intelligent, Happy, Vocal",True,M,2017,Finnish Spitz,3
+321,https://cdn2.thedogapi.com/images/6euYVVE_u.jpg,"Playful, Loyal, Independent, Intelligent, Happy, Vocal",False,F,2014,Finnish Spitz,6
+322,https://cdn2.thedogapi.com/images/J4H-oD_7x.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",False,M,2011,Kooikerhondje,9
+323,https://cdn2.thedogapi.com/images/bfTfztTZt.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",True,F,2018,Kooikerhondje,2
+324,https://cdn2.thedogapi.com/images/HUp3BZLeW.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",False,M,2009,Kooikerhondje,11
+325,https://cdn2.thedogapi.com/images/zImrLbJN_.png,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",True,M,2012,Kooikerhondje,8
+326,https://cdn2.thedogapi.com/images/_Qf9nfRzL.png,"Friendly, Lively, Gentle, Watchful, Calm",True,M,2013,Saint Bernard,7
+327,https://cdn2.thedogapi.com/images/uAzXRozxs.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",False,M,2018,Shiba Inu,2
+328,https://cdn2.thedogapi.com/images/OSujkkRUn.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",False,F,2012,Shiba Inu,8
+329,https://cdn2.thedogapi.com/images/QDqJrzj0S.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",False,F,2009,Shiba Inu,11
+330,https://cdn2.thedogapi.com/images/ZRQ0TYzz6.jpg,"Affectionate, Energetic, Amiable, Reserved, Gentle, Sensitive",True,F,2017,Tibetan Terrier,3
+331,https://cdn2.thedogapi.com/images/YavuF9onG.jpg,"Affectionate, Energetic, Amiable, Reserved, Gentle, Sensitive",True,M,2012,Tibetan Terrier,8
+332,https://cdn2.thedogapi.com/images/ESfx2lGoC.jpg,"Affectionate, Energetic, Amiable, Reserved, Gentle, Sensitive",True,M,2015,Tibetan Terrier,5
+333,https://cdn2.thedogapi.com/images/dtz9b2Lrz.jpg,"Trainable, Good-natured, Devoted, Lively, Playful, Intelligent",False,M,2011,Standard Schnauzer,9
+334,https://cdn2.thedogapi.com/images/Dtxn7vdC0.jpg,"Trainable, Good-natured, Devoted, Lively, Playful, Intelligent",True,M,2010,Standard Schnauzer,10
+335,https://cdn2.thedogapi.com/images/ZKCLwgy_e.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2017,Bruiser,3
+336,https://cdn2.thedogapi.com/images/iYXg8YY59.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2008,Nina,12
+337,https://cdn2.thedogapi.com/images/4Fw1A7oD8.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2014,Ava,6
+338,https://cdn2.thedogapi.com/images/BJE_kx5VQ_1280.jpg,"Friendly, Energetic, Loyal, Gentle, Confident",True,F,2013,Alaskan Husky,7
+339,https://cdn2.thedogapi.com/images/S1fFlx5Em_1280.jpg,"Affectionate, Loyal, Intelligent, Faithful",True,F,2010,Bernese Mountain Dog,10
+340,https://cdn2.thedogapi.com/images/rkZRggqVX_1280.jpg,"Friendly, Lively, Intelligent",False,M,2008,Boston Terrier,12
+341,https://cdn2.thedogapi.com/images/S13yZg5VQ_1280.jpg,"Stubborn, Affectionate, Loyal, Playful, Companionable, Trainable",True,M,2011,Bracco Italiano,9
+342,https://cdn2.thedogapi.com/images/Sk7Qbg9E7_1280.jpg,"Hardy, Fearless, Assertive, Gay, Intelligent, Active",False,M,2013,Cairn Terrier,7
+343,https://cdn2.thedogapi.com/images/HkRcZe547_1280.jpg,"Outgoing, Sociable, Trusting, Joyful, Even Tempered, Merry",False,F,2011,Cocker Spaniel (American),9
+344,https://cdn2.thedogapi.com/images/SyviZlqNm_1280.jpg,"Affectionate, Lively, Playful, Intelligent, Trainable, Vocal",True,M,2009,Coton de Tulear,11
+345,https://cdn2.thedogapi.com/images/S1nhWx94Q_1280.jpg,"Friendly, Affectionate, Cheerful, Loyal, Tolerant, Protective",False,M,2008,Dogo Argentino,12
+346,https://cdn2.thedogapi.com/images/SkJfGecE7_1280.jpg,"Docile, Cautious, Sociable, Sensitive, Adaptable, Familial",False,M,2008,Field Spaniel,12
+347,https://cdn2.thedogapi.com/images/BykZ7ecVX_1280.jpg,"Clownish, Loyal, Patient, Independent, Intelligent, Protective",True,F,2017,Kuvasz,3
+348,https://cdn2.thedogapi.com/images/SJIUQl9NX_1280.jpg,"Fearless, Friendly, Spirited, Alert, Obedient, Intelligent",False,M,2010,Miniature Schnauzer,10
+349,https://cdn2.thedogapi.com/images/SJJxjecEX_1280.jpg,"Outgoing, Loyal, Companionable, Gentle, Loving, Trainable",False,F,2013,Shiloh Shepherd,7
+350,https://cdn2.thedogapi.com/images/BJWc57iNQ.gif,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2015,Princess,5
+351,https://cdn2.thedogapi.com/images/BJZlTPpVX.gif,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2014,Ollie,6
+352,https://cdn2.thedogapi.com/images/S10gmTTVQ.gif,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2017,Mickey,3
+353,https://cdn2.thedogapi.com/images/By-GQTaNQ.gif,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2017,Molly,3
+354,https://cdn2.thedogapi.com/images/HkD1LppV7.gif,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2015,Guinness,5
+355,https://cdn2.thedogapi.com/images/SyeodOnBQ_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2008,Sadie,12
+356,https://cdn2.thedogapi.com/images/HkH1K_nBX_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2011,Belle,9
+357,https://cdn2.thedogapi.com/images/w1Cal_vrT.jpg,"Loyal, Independent, Intelligent, Brave",True,M,2014,Akbash Dog,6
+358,https://cdn2.thedogapi.com/images/pB43UCgl4.jpg,"Friendly, Affectionate, Devoted, Loyal, Dignified, Playful",False,F,2013,Alaskan Malamute,7
+359,https://cdn2.thedogapi.com/images/Vsyiy9oyS.jpg,"Strong Willed, Stubborn, Friendly, Clownish, Affectionate, Loyal, Obedient, Intelligent, Courageous",True,M,2012,American Bully,8
+360,https://cdn2.thedogapi.com/images/kg9CXjYml.jpg,"Friendly, Alert, Reserved, Intelligent, Protective",True,F,2010,American Eskimo Dog (Miniature),10
+361,https://cdn2.thedogapi.com/images/RG55aK2bn.jpg,"Friendly, Alert, Reserved, Intelligent, Protective",False,M,2011,American Eskimo Dog (Miniature),9
+362,https://cdn2.thedogapi.com/images/Dkqdl0c6N.jpg,"Stubborn, Curious, Playful, Adventurous, Active, Fun-loving",True,M,2016,Affenpinscher,4
+363,https://cdn2.thedogapi.com/images/ttTgbx8Fu.jpg,"Stubborn, Curious, Playful, Adventurous, Active, Fun-loving",True,M,2008,Affenpinscher,12
+364,https://cdn2.thedogapi.com/images/uEPB98jBS.jpg,"Friendly, Energetic, Loyal, Gentle, Confident",True,M,2016,Alaskan Husky,4
+365,https://cdn2.thedogapi.com/images/-HgpNnGXl.jpg,"Friendly, Energetic, Loyal, Gentle, Confident",True,M,2012,Alaskan Husky,8
+366,https://cdn2.thedogapi.com/images/ERkUOeH7y.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2015,Rocco,5
+367,https://cdn2.thedogapi.com/images/edNIMgpSw.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2010,Loki,10
+368,https://cdn2.thedogapi.com/images/YmaAJ-aLR.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2013,Jameson,7
+369,https://cdn2.thedogapi.com/images/G1ZfvP381.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2012,Gucci,8
+370,https://cdn2.thedogapi.com/images/TNJUCKvPP.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2018,Nina,2
+371,https://cdn2.thedogapi.com/images/dhXSUo4aC.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2015,Bella,5
+372,https://cdn2.thedogapi.com/images/D3R7H5v0o.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2012,Winnie,8
+373,https://cdn2.thedogapi.com/images/Tu1CbaVud.jpg,"Self-confidence, Hardy, Lively, Alert, Intelligent, Active",False,M,2016,Bearded Collie,4
+374,https://cdn2.thedogapi.com/images/kuw1NLcID.jpg,"Self-confidence, Hardy, Lively, Alert, Intelligent, Active",False,F,2017,Bearded Collie,3
+375,https://cdn2.thedogapi.com/images/ERP03yUnq.jpg,"Self-confidence, Hardy, Lively, Alert, Intelligent, Active",True,F,2016,Bearded Collie,4
+376,https://cdn2.thedogapi.com/images/YPDnk0_5g.jpg,"Self-confidence, Hardy, Lively, Alert, Intelligent, Active",True,M,2017,Bearded Collie,3
+377,https://cdn2.thedogapi.com/images/C-1H0CF1I.jpg,"Self-confidence, Hardy, Lively, Alert, Intelligent, Active",False,M,2017,Bearded Collie,3
+378,https://cdn2.thedogapi.com/images/eHenFc9qF.jpg,"Self-confidence, Hardy, Lively, Alert, Intelligent, Active",True,F,2014,Bearded Collie,6
+379,https://cdn2.thedogapi.com/images/BjFmVohkU.jpg,"Self-confidence, Hardy, Lively, Alert, Intelligent, Active",True,F,2011,Bearded Collie,9
+380,https://cdn2.thedogapi.com/images/Ov_Rzma1O.jpg,"Tenacious, Keen, Energetic, Responsive, Alert, Intelligent",False,M,2018,Border Collie,2
+381,https://cdn2.thedogapi.com/images/iFf6heV3L.jpg,"Tenacious, Keen, Energetic, Responsive, Alert, Intelligent",True,M,2015,Border Collie,5
+382,https://cdn2.thedogapi.com/images/8WPhRloCS.jpg,"Trainable, Protective, Sweet-Tempered, Keen, Active",False,M,2014,Bull Terrier,6
+383,https://cdn2.thedogapi.com/images/6Dj7tp_vB.jpg,"Trainable, Protective, Sweet-Tempered, Keen, Active",True,M,2013,Bull Terrier,7
+384,https://cdn2.thedogapi.com/images/4ZHgQqnSr.jpg,"Trainable, Friendly, Affectionate, Playful, Quiet, Faithful",False,M,2012,Cocker Spaniel,8
+385,https://cdn2.thedogapi.com/images/GFVvIZ0B3.jpg,"Trainable, Friendly, Affectionate, Playful, Quiet, Faithful",False,M,2011,Cocker Spaniel,9
+386,https://cdn2.thedogapi.com/images/BQX_0_22x.jpg,"Trainable, Friendly, Affectionate, Playful, Quiet, Faithful",False,M,2015,Cocker Spaniel,5
+387,https://cdn2.thedogapi.com/images/3PjHlQbkV.jpg,"Playful, Loyal, Independent, Intelligent, Happy, Vocal",True,M,2010,Finnish Spitz,10
+388,https://cdn2.thedogapi.com/images/hS_-gIE3G.jpg,"Playful, Loyal, Independent, Intelligent, Happy, Vocal",True,M,2018,Finnish Spitz,2
+389,https://cdn2.thedogapi.com/images/OYFKZ848K.jpg,"Playful, Loyal, Independent, Intelligent, Happy, Vocal",False,F,2011,Finnish Spitz,9
+390,https://cdn2.thedogapi.com/images/dSaV-OCxy.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",True,M,2016,Kooikerhondje,4
+391,https://cdn2.thedogapi.com/images/S9a_qUna4.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",False,M,2010,Kooikerhondje,10
+392,https://cdn2.thedogapi.com/images/pxtkPmg3b.jpg,"Friendly, Lively, Gentle, Watchful, Calm",True,M,2013,Saint Bernard,7
+393,https://cdn2.thedogapi.com/images/0V7KO5BZ0.jpg,"Friendly, Lively, Gentle, Watchful, Calm",False,M,2018,Saint Bernard,2
+394,https://cdn2.thedogapi.com/images/tFQkJi_-6.jpg,"Aloof, Reserved, Intelligent, Quiet",False,M,2018,Saluki,2
+395,https://cdn2.thedogapi.com/images/B35dV8-1_.jpg,"Aloof, Reserved, Intelligent, Quiet",False,M,2013,Saluki,7
+396,https://cdn2.thedogapi.com/images/ZjkHW13DK.jpg,"Aloof, Reserved, Intelligent, Quiet",False,F,2008,Saluki,12
+397,https://cdn2.thedogapi.com/images/MOIDBgbt_.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",True,M,2015,Shiba Inu,5
+398,https://cdn2.thedogapi.com/images/VyBXzOjjR.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",False,F,2012,Shiba Inu,8
+399,https://cdn2.thedogapi.com/images/GlfNCIUjz.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",False,F,2015,Shiba Inu,5
+400,https://cdn2.thedogapi.com/images/wRP-CQQJy.jpg,"Affectionate, Energetic, Amiable, Reserved, Gentle, Sensitive",True,F,2008,Tibetan Terrier,12
+401,https://cdn2.thedogapi.com/images/tmzeu6ID_.jpg,"Trainable, Good-natured, Devoted, Lively, Playful, Intelligent",False,F,2008,Standard Schnauzer,12
+402,https://cdn2.thedogapi.com/images/GZeDDro7-.jpg,"Trainable, Good-natured, Devoted, Lively, Playful, Intelligent",False,M,2010,Standard Schnauzer,10
+403,https://cdn2.thedogapi.com/images/ox3EFDyso.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2009,Belle,11
+404,https://cdn2.thedogapi.com/images/Ud5h8uxCO.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2016,Harry,4
+405,https://cdn2.thedogapi.com/images/S1_8kx5Nm_1280.jpg,"Docile, Alert, Responsive, Dignified, Composed, Friendly, Receptive, Faithful, Courageous",False,F,2015,Akita,5
+406,https://cdn2.thedogapi.com/images/BkMQll94X_1280.jpg,"Affectionate, Lively, Agile, Curious, Happy, Active",True,M,2012,Basset Bleu de Gascogne,8
+407,https://cdn2.thedogapi.com/images/HJGzbx9Nm_1280.jpg,"Gregarious, Docile, Willful, Friendly",False,M,2018,Bulldog,2
+408,https://cdn2.thedogapi.com/images/r1rrWe5Em_1280.jpg,"Alert, Quick, Dominant, Powerful, Calm, Strong",True,M,2015,Caucasian Shepherd (Ovcharka),5
+409,https://cdn2.thedogapi.com/images/B1ruWl94Q_1280.jpg,"Suspicious, Affectionate, Devoted, Reserved, Independent, Loving",True,M,2015,Chinese Shar-Pei,5
+410,https://cdn2.thedogapi.com/images/S1KMGg5Vm_1280.jpg,"Friendly, Keen, Faithful, Calm, Courageous",False,F,2018,Finnish Lapphund,2
+411,https://cdn2.thedogapi.com/images/SJ5vzx5NX_1280.jpg,"Fearless, Alert, Loyal, Confident, Gay, Eager",True,F,2013,Gordon Setter,7
+412,https://cdn2.thedogapi.com/images/ryoYGec4Q_1280.jpg,"Self-important, Inquisitive, Alert, Companionable, Sensitive, Watchful",True,F,2015,Griffon Bruxellois,5
+413,https://cdn2.thedogapi.com/images/S1osGeqVm_1280.jpg,"Affectionate, Energetic, Lively, Independent, Playful, Companionable",False,F,2012,Irish Setter,8
+414,https://cdn2.thedogapi.com/images/Bko0fl547_1280.jpg,"Steady, Fearless, Affectionate, Independent, Gentle, Calm",False,M,2010,Komondor,10
+415,https://cdn2.thedogapi.com/images/rJFJVxc4m_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2018,Poodle (Toy),2
+416,https://cdn2.thedogapi.com/images/HkXWNl9E7_1280.jpg,"Affectionate, Lively, Inquisitive, Alert, Intelligent, Loving",False,F,2009,Rat Terrier,11
+417,https://cdn2.thedogapi.com/images/HJHmix5NQ_1280.jpg,"Affectionate, Spirited, Energetic, Playful, Intelligent, Faithful",True,M,2016,Soft Coated Wheaten Terrier,4
+418,https://cdn2.thedogapi.com/images/rk5Eoe5Nm_1280.jpg,"Docile, Friendly, Affectionate, Loyal, Patient, Gentle",True,F,2009,Spinone Italiano,11
+419,https://cdn2.thedogapi.com/images/B12BnxcVQ_1280.jpg,"Bold, Independent, Confident, Intelligent, Courageous",False,F,2010,Yorkshire Terrier,10
+420,https://cdn2.thedogapi.com/images/ryLA3P64Q.gif,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2008,Maya,12
+421,https://cdn2.thedogapi.com/images/HkqQQaT4m.gif,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2015,Duke,5
+422,https://cdn2.thedogapi.com/images/r14eVa6EX.gif,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2008,Shelby,12
+423,https://cdn2.thedogapi.com/images/B13bEapEX.gif,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2017,Brady,3
+424,https://cdn2.thedogapi.com/images/Byj_FOnSQ_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2012,Brady,8
+425,https://cdn2.thedogapi.com/images/W2nbhuint_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2015,Wrigley,5
+426,https://cdn2.thedogapi.com/images/42QrDrylc.jpg,"Friendly, Affectionate, Devoted, Loyal, Dignified, Playful",True,F,2011,Alaskan Malamute,9
+427,https://cdn2.thedogapi.com/images/_gn8GLrE6.jpg,"Friendly, Alert, Reserved, Intelligent, Protective",True,M,2018,American Eskimo Dog (Miniature),2
+428,https://cdn2.thedogapi.com/images/qBYpfkZr1.jpg,"Kind, Sweet-Tempered, Loyal, Independent, Intelligent, Loving",True,M,2011,American Foxhound,9
+429,https://cdn2.thedogapi.com/images/rTwAJOvf4.jpg,"Loving, Protective, Trainable, Dutiful, Responsible",True,F,2013,Alapaha Blue Blood Bulldog,7
+430,https://cdn2.thedogapi.com/images/w8R5H5Po9.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2015,Gigi,5
+431,https://cdn2.thedogapi.com/images/BPswUgFkK.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2017,Chico,3
+432,https://cdn2.thedogapi.com/images/oG7h1MuxP.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2014,Brandy,6
+433,https://cdn2.thedogapi.com/images/su7E6oU5G.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2017,Roxy,3
+434,https://cdn2.thedogapi.com/images/0VnnRdsId.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2012,Max,8
+435,https://cdn2.thedogapi.com/images/1kDClP_UR.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2012,Chewy,8
+436,https://cdn2.thedogapi.com/images/J48gxM23-.jpg,"Self-confidence, Hardy, Lively, Alert, Intelligent, Active",False,M,2009,Bearded Collie,11
+437,https://cdn2.thedogapi.com/images/ena5znPUB.jpg,"Self-confidence, Hardy, Lively, Alert, Intelligent, Active",True,F,2018,Bearded Collie,2
+438,https://cdn2.thedogapi.com/images/e4Y3H4WI3.jpg,"Tenacious, Keen, Energetic, Responsive, Alert, Intelligent",True,M,2008,Border Collie,12
+439,https://cdn2.thedogapi.com/images/MnFVJ4XuT.jpg,"Tenacious, Keen, Energetic, Responsive, Alert, Intelligent",False,M,2011,Border Collie,9
+440,https://cdn2.thedogapi.com/images/CIM1p1uFh.jpg,"Tenacious, Keen, Energetic, Responsive, Alert, Intelligent",False,F,2008,Border Collie,12
+441,https://cdn2.thedogapi.com/images/6qroETuH-.jpg,"Trainable, Protective, Sweet-Tempered, Keen, Active",False,M,2016,Bull Terrier,4
+442,https://cdn2.thedogapi.com/images/eNM4W5f1S.jpg,"Affectionate, Intelligent, Quiet, Dominant, Happy, Protective",True,F,2018,Chesapeake Bay Retriever,2
+443,https://cdn2.thedogapi.com/images/aJ6N5Kf-l.jpg,"Trainable, Friendly, Affectionate, Playful, Quiet, Faithful",False,M,2014,Cocker Spaniel,6
+444,https://cdn2.thedogapi.com/images/PGu6NhvGG.jpg,"Trainable, Friendly, Affectionate, Playful, Quiet, Faithful",True,M,2012,Cocker Spaniel,8
+445,https://cdn2.thedogapi.com/images/mAdKLn7Rv.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",True,F,2015,Kooikerhondje,5
+446,https://cdn2.thedogapi.com/images/t7FefmYNk.jpg,"Friendly, Lively, Gentle, Watchful, Calm",True,F,2010,Saint Bernard,10
+447,https://cdn2.thedogapi.com/images/Fw1MZmoRL.png,"Friendly, Lively, Gentle, Watchful, Calm",False,F,2015,Saint Bernard,5
+448,https://cdn2.thedogapi.com/images/sHPfcmVsV.jpg,"Aloof, Reserved, Intelligent, Quiet",False,F,2018,Saluki,2
+449,https://cdn2.thedogapi.com/images/GtX_Z2Stg.jpg,"Aloof, Reserved, Intelligent, Quiet",True,F,2013,Saluki,7
+450,https://cdn2.thedogapi.com/images/vPQGloamD.jpg,"Aloof, Reserved, Intelligent, Quiet",False,M,2018,Saluki,2
+451,https://cdn2.thedogapi.com/images/Lilx1EKTI.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",False,M,2013,Shiba Inu,7
+452,https://cdn2.thedogapi.com/images/5TKMTrS09.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",False,M,2009,Shiba Inu,11
+453,https://cdn2.thedogapi.com/images/1MWLW6AFy.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",False,M,2015,Shiba Inu,5
+454,https://cdn2.thedogapi.com/images/PC-xwUpYj.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2016,Samson,4
+455,https://cdn2.thedogapi.com/images/Byd0xl5VX_1280.jpg,"Protective, Loyal, Gentle, Intelligent, Familial, Rational",True,F,2008,Bouvier des Flandres,12
+456,https://cdn2.thedogapi.com/images/HkAVQl9VX_1280.jpg,"Good-natured, Affectionate, Dignified, Protective, Calm, Courageous",False,M,2018,Mastiff,2
+457,https://cdn2.thedogapi.com/images/BkgKXlqE7_1280.jpg,"Hardy, Affectionate, Energetic, Sensitive, Intelligent",False,M,2016,Norwich Terrier,4
+458,https://cdn2.thedogapi.com/images/ryPgVl5N7_1280.jpg,"Energetic, Agile, Loyal, Obedient, Intelligent, Faithful",True,M,2016,Puli,4
+459,https://cdn2.thedogapi.com/images/HJf4jl9VX_1280.jpg,"Trainable, Diligent, Affectionate, Loyal, Athletic, Intelligent",True,M,2013,Spanish Water Dog,7
+460,https://cdn2.thedogapi.com/images/SkM9sec47_1280.jpg,"Strong Willed, Tenacious, Aloof, Stubborn, Intelligent, Protective",False,F,2016,Tibetan Mastiff,4
+461,https://cdn2.thedogapi.com/images/Bkov76pEm.gif,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2015,Fiona,5
+462,https://cdn2.thedogapi.com/images/r1dgtOnBm_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2014,Beau,6
+463,https://cdn2.thedogapi.com/images/r1mfYO2S7_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2013,Shelby,7
+464,https://cdn2.thedogapi.com/images/H1LsFdnrm_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2009,Mickey,11
+465,https://cdn2.thedogapi.com/images/QIZB_XEt5.jpg,"Loyal, Independent, Intelligent, Brave",False,M,2008,Akbash Dog,12
+466,https://cdn2.thedogapi.com/images/A3mLu3WQ2.jpg,"Friendly, Affectionate, Devoted, Loyal, Dignified, Playful",False,M,2017,Alaskan Malamute,3
+467,https://cdn2.thedogapi.com/images/-WmEa4zCU.jpg,"Friendly, Assertive, Energetic, Loyal, Gentle, Confident, Dominant",True,F,2015,American Bulldog,5
+468,https://cdn2.thedogapi.com/images/PTBCQmT0h.jpg,"Strong Willed, Stubborn, Friendly, Clownish, Affectionate, Loyal, Obedient, Intelligent, Courageous",False,F,2014,American Bully,6
+469,https://cdn2.thedogapi.com/images/A3iocPBuU.jpg,"Friendly, Alert, Reserved, Intelligent, Protective",True,M,2012,American Eskimo Dog,8
+470,https://cdn2.thedogapi.com/images/k4vWnFdL2.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2013,Afghan Hound,7
+471,https://cdn2.thedogapi.com/images/4WiUpv_4W.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2010,Afghan Hound,10
+472,https://cdn2.thedogapi.com/images/7SvcbMRCC.jpg,"Wild, Hardworking, Dutiful",True,F,2012,African Hunting Dog,8
+473,https://cdn2.thedogapi.com/images/GGxeNU9xg.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2016,Baxter,4
+474,https://cdn2.thedogapi.com/images/Nryvx7PIf.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2010,Miley,10
+475,https://cdn2.thedogapi.com/images/5cTBLUIxD.png,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2011,Missie,9
+476,https://cdn2.thedogapi.com/images/NiCOjrJTY.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2010,Jax,10
+477,https://cdn2.thedogapi.com/images/0OZkPtVZe.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2011,Rudy,9
+478,https://cdn2.thedogapi.com/images/tdM6VZ6jN.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2011,Honey,9
+479,https://cdn2.thedogapi.com/images/yzeoglHyi.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2011,Roscoe,9
+480,https://cdn2.thedogapi.com/images/4UcpAcdLm.jpg,"Affectionate, Intelligent, Quiet, Dominant, Happy, Protective",True,M,2013,Chesapeake Bay Retriever,7
+481,https://cdn2.thedogapi.com/images/_swBxzzqn.jpg,"Trainable, Friendly, Affectionate, Playful, Quiet, Faithful",False,M,2014,Cocker Spaniel,6
+482,https://cdn2.thedogapi.com/images/NPwhpJnSe.jpg,"Trainable, Friendly, Affectionate, Playful, Quiet, Faithful",True,F,2011,Cocker Spaniel,9
+483,https://cdn2.thedogapi.com/images/dL8IihY5U.jpg,"Trainable, Friendly, Affectionate, Playful, Quiet, Faithful",True,F,2010,Cocker Spaniel,10
+484,https://cdn2.thedogapi.com/images/6_lwtm_Zr.jpg,"Playful, Loyal, Independent, Intelligent, Happy, Vocal",False,M,2010,Finnish Spitz,10
+485,https://cdn2.thedogapi.com/images/DgnedQ-Zq.jpg,"Playful, Loyal, Independent, Intelligent, Happy, Vocal",False,M,2018,Finnish Spitz,2
+486,https://cdn2.thedogapi.com/images/0BCb5tCrx.jpg,"Playful, Loyal, Independent, Intelligent, Happy, Vocal",True,M,2014,Finnish Spitz,6
+487,https://cdn2.thedogapi.com/images/Sofwmusxk.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",True,F,2012,Kooikerhondje,8
+488,https://cdn2.thedogapi.com/images/YbXK-k96Y.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",False,F,2010,Kooikerhondje,10
+489,https://cdn2.thedogapi.com/images/ELeE5ayvN.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",False,M,2016,Kooikerhondje,4
+490,https://cdn2.thedogapi.com/images/abEQrziLx.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",True,M,2010,Kooikerhondje,10
+491,https://cdn2.thedogapi.com/images/uHgHH6y4h.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",True,F,2013,Kooikerhondje,7
+492,https://cdn2.thedogapi.com/images/L4ED868m_.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",False,F,2009,Kooikerhondje,11
+493,https://cdn2.thedogapi.com/images/z4xMdelMo.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",False,F,2014,Kooikerhondje,6
+494,https://cdn2.thedogapi.com/images/mVTsbAG4B.png,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",True,M,2009,Kooikerhondje,11
+495,https://cdn2.thedogapi.com/images/V8hgHJeCp.jpg,"Friendly, Lively, Gentle, Watchful, Calm",True,F,2017,Saint Bernard,3
+496,https://cdn2.thedogapi.com/images/WnlEwrwi-.jpg,"Friendly, Lively, Gentle, Watchful, Calm",False,F,2009,Saint Bernard,11
+497,https://cdn2.thedogapi.com/images/36h5QYitP.jpg,"Friendly, Lively, Gentle, Watchful, Calm",False,F,2015,Saint Bernard,5
+498,https://cdn2.thedogapi.com/images/KozrdsGZv.jpg,"Friendly, Lively, Gentle, Watchful, Calm",False,M,2014,Saint Bernard,6
+499,https://cdn2.thedogapi.com/images/12GTwG4Bj.jpg,"Aloof, Reserved, Intelligent, Quiet",True,M,2013,Saluki,7
+500,https://cdn2.thedogapi.com/images/VdUHW9aaz.jpg,"Aloof, Reserved, Intelligent, Quiet",False,M,2013,Saluki,7
+501,https://cdn2.thedogapi.com/images/7uD2oxNHg.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",True,F,2017,Shiba Inu,3
+502,https://cdn2.thedogapi.com/images/YAMPxIL4c.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",True,F,2010,Shiba Inu,10
+503,https://cdn2.thedogapi.com/images/tYnqlqNkz.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",False,F,2017,Shiba Inu,3
+504,https://cdn2.thedogapi.com/images/qwqPTppkA.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",True,M,2011,Shiba Inu,9
+505,https://cdn2.thedogapi.com/images/O9aaUjez3.jpg,"Affectionate, Energetic, Amiable, Reserved, Gentle, Sensitive",True,F,2013,Tibetan Terrier,7
+506,https://cdn2.thedogapi.com/images/6f5n_42mB.jpg,"Affectionate, Energetic, Amiable, Reserved, Gentle, Sensitive",False,M,2016,Tibetan Terrier,4
+507,https://cdn2.thedogapi.com/images/aykgweM5t.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2011,Teddy,9
+508,https://cdn2.thedogapi.com/images/TXXuNa4by.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2012,Ziggy,8
+509,https://cdn2.thedogapi.com/images/SJZIJgqEX_1280.jpg,"Outgoing, Friendly, Alert, Confident, Intelligent, Courageous",False,F,2010,Airedale Terrier,10
+510,https://cdn2.thedogapi.com/images/rJxieg9VQ_1280.jpg,"Friendly, Intelligent, Active",True,F,2008,Bluetick Coonhound,12
+511,https://cdn2.thedogapi.com/images/HyWNfxc47_1280.jpg,"Playful, Affectionate, Keen, Sociable, Lively, Alert, Easygoing, Patient, Athletic, Bright",False,F,2016,French Bulldog,4
+512,https://cdn2.thedogapi.com/images/B1ADQg94X_1280.jpg,"Self-confidence, Fearless, Spirited, Companionable, Happy, Lovable",True,F,2015,Norfolk Terrier,5
+513,https://cdn2.thedogapi.com/images/rJ6iQeqEm_1280.jpg,"Tenacious, Outgoing, Friendly, Bold, Playful, Protective",True,M,2009,Pembroke Welsh Corgi,11
+514,https://cdn2.thedogapi.com/images/BkrJjgcV7_1280.jpg,"Clever, Spunky, Outgoing, Friendly, Affectionate, Lively, Alert, Loyal, Independent, Playful, Gentle, Intelligent, Happy, Active, Courageous",True,F,2018,Shih Tzu,2
+515,https://cdn2.thedogapi.com/images/r14M3e9E7_1280.jpg,"Self-confidence, Aloof, Fearless, Alert, Companionable, Eager",False,M,2008,White Shepherd,12
+516,https://cdn2.thedogapi.com/images/ryo54a6V7.gif,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2013,Cisco,7
+517,https://cdn2.thedogapi.com/images/SyNQKd3HQ_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2015,Lady,5
+518,https://cdn2.thedogapi.com/images/srEbgkWEe.jpg,"Strong Willed, Stubborn, Friendly, Clownish, Affectionate, Loyal, Obedient, Intelligent, Courageous",True,F,2011,American Bully,9
+519,https://cdn2.thedogapi.com/images/0LJiOVlxp.jpg,"Stubborn, Curious, Playful, Adventurous, Active, Fun-loving",True,M,2018,Affenpinscher,2
+520,https://cdn2.thedogapi.com/images/H_9Mcf3yk.jpg,"Loving, Protective, Trainable, Dutiful, Responsible",False,M,2015,Alapaha Blue Blood Bulldog,5
+521,https://cdn2.thedogapi.com/images/nTmwV3lbd.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2012,Lucky,8
+522,https://cdn2.thedogapi.com/images/BoBa74iFn.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2017,Lady,3
+523,https://cdn2.thedogapi.com/images/9H86qUe1z.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2009,Tank,11
+524,https://cdn2.thedogapi.com/images/1Uxk5ayVS.png,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2014,Princess,6
+525,https://cdn2.thedogapi.com/images/j5gZeZv_2.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2013,Cody,7
+526,https://cdn2.thedogapi.com/images/ZxP-viFTK.jpg,"Cautious, Energetic, Loyal, Obedient, Protective, Brave",False,F,2017,Australian Cattle Dog,3
+527,https://cdn2.thedogapi.com/images/Q0CNhAunM.jpg,"Self-confidence, Hardy, Lively, Alert, Intelligent, Active",True,M,2012,Bearded Collie,8
+528,https://cdn2.thedogapi.com/images/-dncpykkP.jpg,"Self-confidence, Hardy, Lively, Alert, Intelligent, Active",True,M,2012,Bearded Collie,8
+529,https://cdn2.thedogapi.com/images/x6uo30K-M.jpg,"Tenacious, Keen, Energetic, Responsive, Alert, Intelligent",False,F,2009,Border Collie,11
+530,https://cdn2.thedogapi.com/images/4UKTN_dQ5.jpg,"Tenacious, Keen, Energetic, Responsive, Alert, Intelligent",False,M,2015,Border Collie,5
+531,https://cdn2.thedogapi.com/images/q6mwhzuB3.jpg,"Trainable, Protective, Sweet-Tempered, Keen, Active",False,F,2010,Bull Terrier,10
+532,https://cdn2.thedogapi.com/images/JjT27ESYT.jpg,"Affectionate, Intelligent, Quiet, Dominant, Happy, Protective",True,M,2010,Chesapeake Bay Retriever,10
+533,https://cdn2.thedogapi.com/images/-GnlzQbmR.jpg,"Affectionate, Intelligent, Quiet, Dominant, Happy, Protective",True,F,2010,Chesapeake Bay Retriever,10
+534,https://cdn2.thedogapi.com/images/_kiOLmJeJ.jpg,"Affectionate, Intelligent, Quiet, Dominant, Happy, Protective",False,M,2015,Chesapeake Bay Retriever,5
+535,https://cdn2.thedogapi.com/images/MtoQ-RDiB.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",False,M,2011,Kooikerhondje,9
+536,https://cdn2.thedogapi.com/images/2GdKwnTON.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",False,F,2014,Kooikerhondje,6
+537,https://cdn2.thedogapi.com/images/omhpknDX6.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",True,M,2010,Kooikerhondje,10
+538,https://cdn2.thedogapi.com/images/Q6H9UcRZB.jpg,"Friendly, Lively, Gentle, Watchful, Calm",False,F,2018,Saint Bernard,2
+539,https://cdn2.thedogapi.com/images/KjD15MOuM.jpg,"Friendly, Lively, Gentle, Watchful, Calm",False,M,2010,Saint Bernard,10
+540,https://cdn2.thedogapi.com/images/uE8zkHahk.jpg,"Friendly, Lively, Gentle, Watchful, Calm",False,F,2017,Saint Bernard,3
+541,https://cdn2.thedogapi.com/images/ArfAUoqnI.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",False,F,2014,Shiba Inu,6
+542,https://cdn2.thedogapi.com/images/NoSR1FFPx.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",False,F,2008,Shiba Inu,12
+543,https://cdn2.thedogapi.com/images/XLVd7vTZw.jpg,"Trainable, Good-natured, Devoted, Lively, Playful, Intelligent",True,F,2016,Standard Schnauzer,4
+544,https://cdn2.thedogapi.com/images/T0rXO2Pgf.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2012,Ella,8
+545,https://cdn2.thedogapi.com/images/BJT0Jx5Nm_1280.jpg,"Steady, Bold, Independent, Confident, Intelligent, Proud",False,F,2016,Anatolian Shepherd Dog,4
+546,https://cdn2.thedogapi.com/images/ry8KWgqEQ_1280.jpg,"Aloof, Loyal, Independent, Quiet",False,M,2017,Chow Chow,3
+547,https://cdn2.thedogapi.com/images/rJH9KQoEX.gif,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2009,Missie,11
+548,https://cdn2.thedogapi.com/images/ByUgoQiE7.gif,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2014,Sydney,6
+549,https://cdn2.thedogapi.com/images/r9CSG0CWk.jpg,"Friendly, Assertive, Energetic, Loyal, Gentle, Confident, Dominant",True,M,2011,American Bulldog,9
+550,https://cdn2.thedogapi.com/images/cEt0LCueL.jpg,"Strong Willed, Stubborn, Friendly, Clownish, Affectionate, Loyal, Obedient, Intelligent, Courageous",True,F,2017,American Bully,3
+551,https://cdn2.thedogapi.com/images/0yxSqpNj4.jpg,"Friendly, Alert, Reserved, Intelligent, Protective",False,M,2013,American Eskimo Dog (Miniature),7
+552,https://cdn2.thedogapi.com/images/Z8LiOtceX.jpg,"Wild, Hardworking, Dutiful",False,M,2015,African Hunting Dog,5
+553,https://cdn2.thedogapi.com/images/1-7cgoZSh.jpg,"Outgoing, Friendly, Alert, Confident, Intelligent, Courageous",False,F,2017,Airedale Terrier,3
+554,https://cdn2.thedogapi.com/images/rqUG1kbaT.jpg,"Docile, Alert, Responsive, Dignified, Composed, Friendly, Receptive, Faithful, Courageous",True,F,2013,Akita,7
+555,https://cdn2.thedogapi.com/images/CY4hi0izf.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2015,Frankie,5
+556,https://cdn2.thedogapi.com/images/EumfBvOXp.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2011,Bo,9
+557,https://cdn2.thedogapi.com/images/XWzQsmrmX.jpg,"Cautious, Energetic, Loyal, Obedient, Protective, Brave",True,M,2012,Australian Cattle Dog,8
+558,https://cdn2.thedogapi.com/images/sEmkqkwfN.jpg,"Self-confidence, Hardy, Lively, Alert, Intelligent, Active",False,F,2014,Bearded Collie,6
+559,https://cdn2.thedogapi.com/images/_eGtrKB20.jpg,"Self-confidence, Hardy, Lively, Alert, Intelligent, Active",True,M,2008,Bearded Collie,12
+560,https://cdn2.thedogapi.com/images/A09F4c1qP.jpg,"Self-confidence, Hardy, Lively, Alert, Intelligent, Active",True,F,2010,Bearded Collie,10
+561,https://cdn2.thedogapi.com/images/z3N-noGqn.jpg,"Tenacious, Keen, Energetic, Responsive, Alert, Intelligent",True,M,2015,Border Collie,5
+562,https://cdn2.thedogapi.com/images/G2foZqvJO.jpg,"Tenacious, Keen, Energetic, Responsive, Alert, Intelligent",True,M,2011,Border Collie,9
+563,https://cdn2.thedogapi.com/images/lpqw_Acag.jpg,"Tenacious, Keen, Energetic, Responsive, Alert, Intelligent",True,F,2013,Border Collie,7
+564,https://cdn2.thedogapi.com/images/YmHQa7tTt.jpg,"Tenacious, Keen, Energetic, Responsive, Alert, Intelligent",True,F,2010,Border Collie,10
+565,https://cdn2.thedogapi.com/images/NyW9yv8vj.jpg,"Tenacious, Keen, Energetic, Responsive, Alert, Intelligent",False,F,2017,Border Collie,3
+566,https://cdn2.thedogapi.com/images/IdxyFpJdv.jpg,"Trainable, Protective, Sweet-Tempered, Keen, Active",False,M,2016,Bull Terrier,4
+567,https://cdn2.thedogapi.com/images/BwTUNvg4q.jpg,"Trainable, Protective, Sweet-Tempered, Keen, Active",True,M,2017,Bull Terrier,3
+568,https://cdn2.thedogapi.com/images/5uFASRPPI.jpg,"Affectionate, Intelligent, Quiet, Dominant, Happy, Protective",False,M,2008,Chesapeake Bay Retriever,12
+569,https://cdn2.thedogapi.com/images/ZzK_MspO2.jpg,"Affectionate, Intelligent, Quiet, Dominant, Happy, Protective",False,M,2013,Chesapeake Bay Retriever,7
+570,https://cdn2.thedogapi.com/images/_upbHYcnO.jpg,"Trainable, Friendly, Affectionate, Playful, Quiet, Faithful",True,F,2009,Cocker Spaniel,11
+571,https://cdn2.thedogapi.com/images/gwZ3amqat.jpg,"Playful, Loyal, Independent, Intelligent, Happy, Vocal",False,F,2011,Finnish Spitz,9
+572,https://cdn2.thedogapi.com/images/WsN7xOoRZ.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",False,F,2009,Kooikerhondje,11
+573,https://cdn2.thedogapi.com/images/_RfoPVJ_Z.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",False,M,2008,Kooikerhondje,12
+574,https://cdn2.thedogapi.com/images/V8ZEfQ69m.jpg,"Friendly, Lively, Gentle, Watchful, Calm",False,F,2010,Saint Bernard,10
+575,https://cdn2.thedogapi.com/images/DbcfkQrav.jpg,"Friendly, Lively, Gentle, Watchful, Calm",False,F,2009,Saint Bernard,11
+576,https://cdn2.thedogapi.com/images/UqvwNLqA2.jpg,"Friendly, Lively, Gentle, Watchful, Calm",False,F,2016,Saint Bernard,4
+577,https://cdn2.thedogapi.com/images/6kOWrryau.jpg,"Aloof, Reserved, Intelligent, Quiet",False,M,2010,Saluki,10
+578,https://cdn2.thedogapi.com/images/fHVBn5VTk.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",True,M,2018,Shiba Inu,2
+579,https://cdn2.thedogapi.com/images/yWdlGkbiQ.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",True,F,2017,Shiba Inu,3
+580,https://cdn2.thedogapi.com/images/nwpd32sdl.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",True,M,2010,Shiba Inu,10
+581,https://cdn2.thedogapi.com/images/keAvlc5KL.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",True,M,2015,Shiba Inu,5
+582,https://cdn2.thedogapi.com/images/8zOFznijs.jpg,"Affectionate, Energetic, Amiable, Reserved, Gentle, Sensitive",False,M,2013,Tibetan Terrier,7
+583,https://cdn2.thedogapi.com/images/5szUvAf52.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2008,Polo,12
+584,https://cdn2.thedogapi.com/images/H1dGlxqNQ_1280.jpg,"Affectionate, Energetic, Alert, Curious, Playful, Intelligent",True,F,2017,Basenji,3
+585,https://cdn2.thedogapi.com/images/ryNYMx94X_1280.jpg,"Affectionate, Athletic, Gentle, Intelligent, Quiet, Even Tempered",False,F,2008,Greyhound,12
+586,https://cdn2.thedogapi.com/images/SyBvVgc47_1280.jpg,"Fearless, Agile, Curious, Independent, Confident, Faithful",False,M,2010,Schipperke,10
+587,https://cdn2.thedogapi.com/images/ByBOFuhBX_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2010,Scooter,10
+588,https://cdn2.thedogapi.com/images/fIXRDcKzn.jpg,"Loyal, Independent, Intelligent, Brave",False,F,2011,Akbash Dog,9
+589,https://cdn2.thedogapi.com/images/lGy5M4Ps2.jpg,"Stubborn, Curious, Playful, Adventurous, Active, Fun-loving",True,F,2014,Affenpinscher,6
+590,https://cdn2.thedogapi.com/images/lNnWNU4qU.jpg,"Outgoing, Friendly, Alert, Confident, Intelligent, Courageous",True,F,2015,Airedale Terrier,5
+591,https://cdn2.thedogapi.com/images/H6UCIZJsc.jpg,"Docile, Alert, Responsive, Dignified, Composed, Friendly, Receptive, Faithful, Courageous",False,F,2010,Akita,10
+592,https://cdn2.thedogapi.com/images/36TXlWMDf.jpg,"Docile, Alert, Responsive, Dignified, Composed, Friendly, Receptive, Faithful, Courageous",True,M,2008,Akita,12
+593,https://cdn2.thedogapi.com/images/33mJ-V3RX.jpg,"Loving, Protective, Trainable, Dutiful, Responsible",False,M,2015,Alapaha Blue Blood Bulldog,5
+594,https://cdn2.thedogapi.com/images/NxTFaEvsq.jpg,"Friendly, Energetic, Loyal, Gentle, Confident",False,M,2016,Alaskan Husky,4
+595,https://cdn2.thedogapi.com/images/_KGSi_Bxj.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2012,Molly,8
+596,https://cdn2.thedogapi.com/images/3Gu2SnZ1a.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2009,Joey,11
+597,https://cdn2.thedogapi.com/images/OiSVH1Kq-.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2012,Bruce,8
+598,https://cdn2.thedogapi.com/images/Mn2A5Urz0.jpg,"Self-confidence, Hardy, Lively, Alert, Intelligent, Active",True,F,2012,Bearded Collie,8
+599,https://cdn2.thedogapi.com/images/Kar3rW9L2.jpg,"Tenacious, Keen, Energetic, Responsive, Alert, Intelligent",False,M,2010,Border Collie,10
+600,https://cdn2.thedogapi.com/images/BPp0qBhbV.jpg,"Tenacious, Keen, Energetic, Responsive, Alert, Intelligent",False,F,2010,Border Collie,10
+601,https://cdn2.thedogapi.com/images/LtMYL_t3J.jpg,"Tenacious, Keen, Energetic, Responsive, Alert, Intelligent",True,F,2014,Border Collie,6
+602,https://cdn2.thedogapi.com/images/oCwM2h4LD.jpg,"Tenacious, Keen, Energetic, Responsive, Alert, Intelligent",False,M,2010,Border Collie,10
+603,https://cdn2.thedogapi.com/images/CVbP_4N2Z.jpg,"Tenacious, Keen, Energetic, Responsive, Alert, Intelligent",True,M,2009,Border Collie,11
+604,https://cdn2.thedogapi.com/images/KxtaTW3gD.jpg,"Trainable, Protective, Sweet-Tempered, Keen, Active",False,M,2013,Bull Terrier,7
+605,https://cdn2.thedogapi.com/images/XyPrtzWMn.jpg,"Affectionate, Intelligent, Quiet, Dominant, Happy, Protective",False,F,2018,Chesapeake Bay Retriever,2
+606,https://cdn2.thedogapi.com/images/WSHowxXDo.jpg,"Trainable, Friendly, Affectionate, Playful, Quiet, Faithful",False,F,2012,Cocker Spaniel,8
+607,https://cdn2.thedogapi.com/images/-c6didgTY.jpg,"Playful, Loyal, Independent, Intelligent, Happy, Vocal",True,M,2009,Finnish Spitz,11
+608,https://cdn2.thedogapi.com/images/oqjGkQJSZ.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",False,F,2010,Kooikerhondje,10
+609,https://cdn2.thedogapi.com/images/kamfrLKTl.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",True,F,2012,Kooikerhondje,8
+610,https://cdn2.thedogapi.com/images/YQX57Kz3X.jpg,"Friendly, Lively, Gentle, Watchful, Calm",False,M,2012,Saint Bernard,8
+611,https://cdn2.thedogapi.com/images/6jNaXEFxv.jpg,"Aloof, Reserved, Intelligent, Quiet",True,F,2018,Saluki,2
+612,https://cdn2.thedogapi.com/images/mJmXgDfcW.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",True,M,2008,Shiba Inu,12
+613,https://cdn2.thedogapi.com/images/VU6TmJM8z.jpg,"Trainable, Good-natured, Devoted, Lively, Playful, Intelligent",True,M,2009,Standard Schnauzer,11
+614,https://cdn2.thedogapi.com/images/S14n1x9NQ_1280.jpg,"Kind, Sweet-Tempered, Loyal, Independent, Intelligent, Loving",False,F,2008,American Foxhound,12
+615,https://cdn2.thedogapi.com/images/rJIakgc4m_1280.jpg,"Tenacious, Friendly, Devoted, Loyal, Attentive, Courageous",True,F,2017,American Staffordshire Terrier,3
+616,https://cdn2.thedogapi.com/images/BJcNbec4X_1280.jpg,"Energetic, Inquisitive, Independent, Gentle, Intelligent, Loving",True,M,2009,Catahoula Leopard Dog,11
+617,https://cdn2.thedogapi.com/images/Hk0Jfe5VQ_1280.jpg,"Affectionate, Cheerful, Alert, Intelligent, Attentive, Active",False,F,2018,English Springer Spaniel,2
+618,https://cdn2.thedogapi.com/images/Hy3H7g94X_1280.jpg,"Clever, Outgoing, Friendly, Energetic, Responsive, Playful",False,F,2017,Miniature Pinscher,3
+619,https://cdn2.thedogapi.com/images/SyYtQe5V7_1280.jpg,"Outgoing, Alert, Patient, Intelligent, Loving",False,M,2008,Nova Scotia Duck Tolling Retriever,12
+620,https://cdn2.thedogapi.com/images/HJ-Dix94Q_1280.jpg,"Fearless, Friendly, Energetic, Alert, Intelligent, Watchful",True,F,2012,Swedish Vallhund,8
+621,https://cdn2.thedogapi.com/images/BJUum6T4X.gif,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2015,Abby,5
+622,https://cdn2.thedogapi.com/images/Bk-WET6Em.gif,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2014,Jeter,6
+623,https://cdn2.thedogapi.com/images/B1bCOd3SX_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2014,Bear,6
+624,https://cdn2.thedogapi.com/images/HyaztunHm_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2008,Charlie,12
+625,https://cdn2.thedogapi.com/images/B1OLt_3rQ_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2016,Cricket,4
+626,https://cdn2.thedogapi.com/images/sfMkLH0cj_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2009,Chase,11
+627,https://cdn2.thedogapi.com/images/IYnbVDoBJ.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2014,Abbie,6
+628,https://cdn2.thedogapi.com/images/GhtSdrW29.jpg,"Friendly, Affectionate, Devoted, Loyal, Dignified, Playful",False,F,2008,Alaskan Malamute,12
+629,https://cdn2.thedogapi.com/images/wPIaaiYOy.jpg,"Friendly, Alert, Reserved, Intelligent, Protective",False,F,2017,American Eskimo Dog (Miniature),3
+630,https://cdn2.thedogapi.com/images/FQpFX5-UR.jpg,"Wild, Hardworking, Dutiful",False,F,2018,African Hunting Dog,2
+631,https://cdn2.thedogapi.com/images/5hQo-doWf.jpg,"Loving, Protective, Trainable, Dutiful, Responsible",False,M,2010,Alapaha Blue Blood Bulldog,10
+632,https://cdn2.thedogapi.com/images/KIMct5XJc.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2014,Chanel,6
+633,https://cdn2.thedogapi.com/images/LmGFTdAev.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2010,Whiskey,10
+634,https://cdn2.thedogapi.com/images/QdP_j-7yz.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2013,Minnie,7
+635,https://cdn2.thedogapi.com/images/5d2TTnAMq.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2016,Sam,4
+636,https://cdn2.thedogapi.com/images/1LYza_4kb.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2018,Mac,2
+637,https://cdn2.thedogapi.com/images/aBlkZ0fo0.jpg,"Cautious, Energetic, Loyal, Obedient, Protective, Brave",False,F,2018,Australian Cattle Dog,2
+638,https://cdn2.thedogapi.com/images/_q5yhP_X_.jpg,"Self-confidence, Hardy, Lively, Alert, Intelligent, Active",True,M,2014,Bearded Collie,6
+639,https://cdn2.thedogapi.com/images/d_dNvBD0R.jpg,"Self-confidence, Hardy, Lively, Alert, Intelligent, Active",False,M,2017,Bearded Collie,3
+640,https://cdn2.thedogapi.com/images/KhXmgBorE.jpg,"Self-confidence, Hardy, Lively, Alert, Intelligent, Active",True,F,2010,Bearded Collie,10
+641,https://cdn2.thedogapi.com/images/iYNlO0y4T.jpg,"Self-confidence, Hardy, Lively, Alert, Intelligent, Active",False,M,2008,Bearded Collie,12
+642,https://cdn2.thedogapi.com/images/SnbUh5ntS.jpg,"Tenacious, Keen, Energetic, Responsive, Alert, Intelligent",False,M,2008,Border Collie,12
+643,https://cdn2.thedogapi.com/images/hOQCNqMDb.jpg,"Tenacious, Keen, Energetic, Responsive, Alert, Intelligent",False,F,2017,Border Collie,3
+644,https://cdn2.thedogapi.com/images/BtMPhXN9d.jpg,"Trainable, Protective, Sweet-Tempered, Keen, Active",False,F,2018,Bull Terrier,2
+645,https://cdn2.thedogapi.com/images/Tb9dDTBtT.jpg,"Trainable, Protective, Sweet-Tempered, Keen, Active",False,M,2012,Bull Terrier,8
+646,https://cdn2.thedogapi.com/images/blN4umH0V.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",True,F,2013,Kooikerhondje,7
+647,https://cdn2.thedogapi.com/images/DJ_glutgg.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",False,F,2015,Kooikerhondje,5
+648,https://cdn2.thedogapi.com/images/YNDcKGXbi.jpg,"Friendly, Lively, Gentle, Watchful, Calm",False,F,2008,Saint Bernard,12
+649,https://cdn2.thedogapi.com/images/SLDsIjTd-.jpg,"Friendly, Lively, Gentle, Watchful, Calm",True,M,2014,Saint Bernard,6
+650,https://cdn2.thedogapi.com/images/k4WVD0wfC.jpg,"Aloof, Reserved, Intelligent, Quiet",True,M,2012,Saluki,8
+651,https://cdn2.thedogapi.com/images/k0WvkHMmP.jpg,"Aloof, Reserved, Intelligent, Quiet",False,F,2013,Saluki,7
+652,https://cdn2.thedogapi.com/images/zv89hR-O8.jpg,"Protective, Loyal, Independent, Intelligent, Loving, Familial",True,M,2010,Thai Ridgeback,10
+653,https://cdn2.thedogapi.com/images/HJQ8ge5V7_1280.jpg,"Fearless, Friendly, Intelligent, Protective, Calm",False,F,2018,Beauceron,2
+654,https://cdn2.thedogapi.com/images/ByK8gx947_1280.jpg,"Affectionate, Spirited, Intelligent, Good-tempered",True,M,2015,Bedlington Terrier,5
+655,https://cdn2.thedogapi.com/images/Skdcgx9VX_1280.jpg,"Stubborn, Affectionate, Gentle, Even Tempered",False,F,2011,Bloodhound,9
+656,https://cdn2.thedogapi.com/images/H1QyMe5EQ_1280.jpg,"Kind, Energetic, Independent, Adaptable, Intelligent, Bossy",False,M,2015,English Shepherd,5
+657,https://cdn2.thedogapi.com/images/SJAnzg9NX_1280.jpg,"Mischievous, Affectionate, Agile, Athletic, Companionable, Intelligent",False,M,2015,Italian Greyhound,5
+658,https://cdn2.thedogapi.com/images/S1RGml5Em_1280.jpg,"Clever, Friendly, Alert, Intelligent",True,F,2018,Lancashire Heeler,2
+659,https://cdn2.thedogapi.com/images/Hyjcol947_1280.jpg,"Willful, Aloof, Assertive, Independent, Playful, Intelligent, Happy",False,M,2014,Tibetan Spaniel,6
+660,https://cdn2.thedogapi.com/images/Hyv-ne94m_1280.jpg,"Friendly, Affectionate, Lively, Gentle, Intelligent, Quiet",True,M,2016,Whippet,4
+661,https://cdn2.thedogapi.com/images/HkaT7ppEQ.gif,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2015,Piper,5
+662,https://cdn2.thedogapi.com/images/bhF8zbrRq.jpg,"Strong Willed, Stubborn, Friendly, Clownish, Affectionate, Loyal, Obedient, Intelligent, Courageous",True,F,2015,American Bully,5
+663,https://cdn2.thedogapi.com/images/y2G5sMFrS.jpg,"Wild, Hardworking, Dutiful",True,M,2009,African Hunting Dog,11
+664,https://cdn2.thedogapi.com/images/PG8UPLSVU.jpg,"Outgoing, Friendly, Alert, Confident, Intelligent, Courageous",False,M,2017,Airedale Terrier,3
+665,https://cdn2.thedogapi.com/images/CAy4xLsx6.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2009,Rocky,11
+666,https://cdn2.thedogapi.com/images/d1BTZDNE8.png,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2013,Hannah,7
+667,https://cdn2.thedogapi.com/images/WXwoScolv.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2011,Boomer,9
+668,https://cdn2.thedogapi.com/images/_zy2OcyhQ.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2010,Olive,10
+669,https://cdn2.thedogapi.com/images/qXTOAloY9.jpg,"Trainable, Protective, Sweet-Tempered, Keen, Active",True,F,2011,Bull Terrier,9
+670,https://cdn2.thedogapi.com/images/K1Jv9xVsf.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",False,M,2017,Kooikerhondje,3
+671,https://cdn2.thedogapi.com/images/ihTQ9wvul.jpg,"Friendly, Lively, Gentle, Watchful, Calm",True,M,2016,Saint Bernard,4
+672,https://cdn2.thedogapi.com/images/HkuYlxqEQ_1280.jpg,"Feisty, Affectionate, Cheerful, Playful, Gentle, Sensitive",False,M,2013,Bichon Frise,7
+673,https://cdn2.thedogapi.com/images/B1uW7l5VX_1280.jpg,"Kind, Outgoing, Agile, Gentle, Intelligent, Trusting, Even Tempered",False,M,2013,Labrador Retriever,7
+674,https://cdn2.thedogapi.com/images/SkNjqx9NQ_1280.jpg,"Docile, Friendly, Dignified, Gentle",True,M,2013,Scottish Deerhound,7
+675,https://cdn2.thedogapi.com/images/ByzGsl5Nm_1280.jpg,"Friendly, Responsive, Inquisitive, Alert, Quick, Joyful",False,M,2017,Silky Terrier,3
+676,https://cdn2.thedogapi.com/images/HJgLVTaVX.gif,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2011,Peanut,9
+677,https://cdn2.thedogapi.com/images/ByCyKunBQ_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2008,Belle,12
+678,https://cdn2.thedogapi.com/images/SyNNYd3S7_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2016,Bubba,4
+679,https://cdn2.thedogapi.com/images/26pHT3Qk7.jpg,"Loyal, Independent, Intelligent, Brave",True,F,2018,Akbash Dog,2
+680,https://cdn2.thedogapi.com/images/ItA2wNWiA.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2015,Leo,5
+681,https://cdn2.thedogapi.com/images/k3fSL2RG4.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2018,Brandy,2
+682,https://cdn2.thedogapi.com/images/M9euOJSBd.jpg,"Self-confidence, Hardy, Lively, Alert, Intelligent, Active",True,M,2008,Bearded Collie,12
+683,https://cdn2.thedogapi.com/images/9NJbNWAW9.jpg,"Self-confidence, Hardy, Lively, Alert, Intelligent, Active",True,M,2012,Bearded Collie,8
+684,https://cdn2.thedogapi.com/images/U7OLiFMLX.jpg,"Tenacious, Keen, Energetic, Responsive, Alert, Intelligent",False,F,2016,Border Collie,4
+685,https://cdn2.thedogapi.com/images/HlGgWPlmU.jpg,"Tenacious, Keen, Energetic, Responsive, Alert, Intelligent",False,M,2015,Border Collie,5
+686,https://cdn2.thedogapi.com/images/hcx2zV5Bj.jpg,"Tenacious, Keen, Energetic, Responsive, Alert, Intelligent",True,M,2012,Border Collie,8
+687,https://cdn2.thedogapi.com/images/pAMLu0IxZ.jpg,"Tenacious, Keen, Energetic, Responsive, Alert, Intelligent",False,F,2010,Border Collie,10
+688,https://cdn2.thedogapi.com/images/buxVXCo9V.jpg,"Playful, Loyal, Independent, Intelligent, Happy, Vocal",True,F,2008,Finnish Spitz,12
+689,https://cdn2.thedogapi.com/images/SuF176CZ8.jpg,"Playful, Loyal, Independent, Intelligent, Happy, Vocal",False,F,2014,Finnish Spitz,6
+690,https://cdn2.thedogapi.com/images/tUDJdHuO7.jpg,"Playful, Loyal, Independent, Intelligent, Happy, Vocal",True,F,2015,Finnish Spitz,5
+691,https://cdn2.thedogapi.com/images/cdvvEvgY1.png,"Playful, Loyal, Independent, Intelligent, Happy, Vocal",True,F,2012,Finnish Spitz,8
+692,https://cdn2.thedogapi.com/images/hSiQkXG2s.jpg,"Friendly, Lively, Gentle, Watchful, Calm",True,F,2014,Saint Bernard,6
+693,https://cdn2.thedogapi.com/images/yrpxixXWY.jpg,"Friendly, Lively, Gentle, Watchful, Calm",False,F,2018,Saint Bernard,2
+694,https://cdn2.thedogapi.com/images/qh7cGcv83.jpg,"Friendly, Lively, Gentle, Watchful, Calm",True,F,2017,Saint Bernard,3
+695,https://cdn2.thedogapi.com/images/iU-rWvOYA.jpg,"Protective, Loyal, Independent, Intelligent, Loving, Familial",True,M,2010,Thai Ridgeback,10
+696,https://cdn2.thedogapi.com/images/ZrJ_J-FIY.jpg,"Affectionate, Energetic, Amiable, Reserved, Gentle, Sensitive",True,M,2016,Tibetan Terrier,4
+697,https://cdn2.thedogapi.com/images/TZwbGR2T6.jpg,"Affectionate, Energetic, Amiable, Reserved, Gentle, Sensitive",True,F,2016,Tibetan Terrier,4
+698,https://cdn2.thedogapi.com/images/SbgZjfjVs.jpg,"Trainable, Good-natured, Devoted, Lively, Playful, Intelligent",True,M,2012,Standard Schnauzer,8
+699,https://cdn2.thedogapi.com/images/-qOqBA-Un.jpg,"Trainable, Good-natured, Devoted, Lively, Playful, Intelligent",False,F,2015,Standard Schnauzer,5
+700,https://cdn2.thedogapi.com/images/rkVB1x9E7_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2016,Afghan Hound,4
+701,https://cdn2.thedogapi.com/images/SyXN-e9NX_1280.jpg,"Affectionate, Devoted, Alert, Companionable, Intelligent, Active",False,M,2013,Cardigan Welsh Corgi,7
+702,https://cdn2.thedogapi.com/images/SJJtcXs4m.gif,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2010,Lady,10
+703,https://cdn2.thedogapi.com/images/Bk4phvp47.gif,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2012,Nina,8
+704,https://cdn2.thedogapi.com/images/BJkpaDaNX.gif,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2016,Buster,4
+705,https://cdn2.thedogapi.com/images/Bkf4Ea6NX.gif,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2013,Blue,7
+706,https://cdn2.thedogapi.com/images/H1HKuu2HQ_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2010,Luna,10
+707,https://cdn2.thedogapi.com/images/rkwT_d3HQ_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2016,Prince,4
+708,https://cdn2.thedogapi.com/images/zEQtlI8h1.jpg,"Friendly, Affectionate, Devoted, Loyal, Dignified, Playful",True,F,2010,Alaskan Malamute,10
+709,https://cdn2.thedogapi.com/images/UDciB__0I.jpg,"Strong Willed, Stubborn, Friendly, Clownish, Affectionate, Loyal, Obedient, Intelligent, Courageous",False,M,2015,American Bully,5
+710,https://cdn2.thedogapi.com/images/n5GhfG7uv.jpg,"Wild, Hardworking, Dutiful",False,F,2010,African Hunting Dog,10
+711,https://cdn2.thedogapi.com/images/Eo3-rrTTMU.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2008,Sandy,12
+712,https://cdn2.thedogapi.com/images/XXNYMzrDO.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2010,Apollo,10
+713,https://cdn2.thedogapi.com/images/_YgQ8eUX4.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2012,Monkey,8
+714,https://cdn2.thedogapi.com/images/tnyhQd2vI.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2013,Buddy,7
+715,https://cdn2.thedogapi.com/images/IBkYVm4v1.jpg,"Cautious, Energetic, Loyal, Obedient, Protective, Brave",False,M,2013,Australian Cattle Dog,7
+716,https://cdn2.thedogapi.com/images/ehW1aS16H.jpg,"Tenacious, Keen, Energetic, Responsive, Alert, Intelligent",True,F,2013,Border Collie,7
+717,https://cdn2.thedogapi.com/images/-Lbz7P9jl.jpg,"Tenacious, Keen, Energetic, Responsive, Alert, Intelligent",True,F,2009,Border Collie,11
+718,https://cdn2.thedogapi.com/images/dBrrpEGm4.jpg,"Affectionate, Intelligent, Quiet, Dominant, Happy, Protective",True,F,2009,Chesapeake Bay Retriever,11
+719,https://cdn2.thedogapi.com/images/omWvTh-2m.jpg,"Affectionate, Intelligent, Quiet, Dominant, Happy, Protective",False,F,2018,Chesapeake Bay Retriever,2
+720,https://cdn2.thedogapi.com/images/MDo8TFF2I.jpg,"Trainable, Friendly, Affectionate, Playful, Quiet, Faithful",True,M,2012,Cocker Spaniel,8
+721,https://cdn2.thedogapi.com/images/G5f0AcBsF.jpg,"Playful, Loyal, Independent, Intelligent, Happy, Vocal",False,F,2015,Finnish Spitz,5
+722,https://cdn2.thedogapi.com/images/fbl5hbwrc.jpg,"Playful, Loyal, Independent, Intelligent, Happy, Vocal",True,F,2011,Finnish Spitz,9
+723,https://cdn2.thedogapi.com/images/Aoj2M3iqH.jpg,"Playful, Loyal, Independent, Intelligent, Happy, Vocal",False,F,2010,Finnish Spitz,10
+724,https://cdn2.thedogapi.com/images/kPBKgN-Y6.jpg,"Friendly, Lively, Gentle, Watchful, Calm",False,M,2016,Saint Bernard,4
+725,https://cdn2.thedogapi.com/images/YnI54_KH9.jpg,"Friendly, Lively, Gentle, Watchful, Calm",True,F,2018,Saint Bernard,2
+726,https://cdn2.thedogapi.com/images/8imWQMmXE.jpg,"Friendly, Lively, Gentle, Watchful, Calm",True,F,2013,Saint Bernard,7
+727,https://cdn2.thedogapi.com/images/rbPXSCiYx.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",True,M,2015,Shiba Inu,5
+728,https://cdn2.thedogapi.com/images/4hsn54Wod.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",True,M,2011,Shiba Inu,9
+729,https://cdn2.thedogapi.com/images/8A6xdRWNR.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",False,M,2014,Shiba Inu,6
+730,https://cdn2.thedogapi.com/images/0zRjpLfPg.jpg,"Protective, Loyal, Independent, Intelligent, Loving, Familial",True,F,2015,Thai Ridgeback,5
+731,https://cdn2.thedogapi.com/images/HkZ57lq4m_1280.jpg,"Sociable, Bubbly, Playful, Adaptable, Intelligent, Loving",True,M,2010,Old English Sheepdog,10
+732,https://cdn2.thedogapi.com/images/By9zNgqE7_1280.jpg,"Strong Willed, Mischievous, Loyal, Dignified, Sensitive, Intelligent",True,F,2009,Rhodesian Ridgeback,11
+733,https://cdn2.thedogapi.com/images/r13yimo4Q.gif,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2017,Bandit,3
+734,https://cdn2.thedogapi.com/images/FXigpiT_A.jpg,"Friendly, Alert, Reserved, Intelligent, Protective",True,M,2011,American Eskimo Dog,9
+735,https://cdn2.thedogapi.com/images/uISezUGDV.jpg,"Kind, Sweet-Tempered, Loyal, Independent, Intelligent, Loving",True,F,2008,American Foxhound,12
+736,https://cdn2.thedogapi.com/images/dcFcTU2vY.jpg,"Outgoing, Friendly, Alert, Confident, Intelligent, Courageous",False,M,2015,Airedale Terrier,5
+737,https://cdn2.thedogapi.com/images/8URVacxGi.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2013,Loki,7
+738,https://cdn2.thedogapi.com/images/oTWQDw9C9.jpg,"Cautious, Energetic, Loyal, Obedient, Protective, Brave",False,F,2013,Australian Cattle Dog,7
+739,https://cdn2.thedogapi.com/images/D2dI3XYj_.jpg,"Tenacious, Keen, Energetic, Responsive, Alert, Intelligent",True,F,2010,Border Collie,10
+740,https://cdn2.thedogapi.com/images/Vh2yFrSLm.jpg,"Tenacious, Keen, Energetic, Responsive, Alert, Intelligent",False,F,2017,Border Collie,3
+741,https://cdn2.thedogapi.com/images/lcsQYiWMN.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",False,M,2013,Kooikerhondje,7
+742,https://cdn2.thedogapi.com/images/xk7F_W6PK.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",True,M,2009,Kooikerhondje,11
+743,https://cdn2.thedogapi.com/images/0etOz_CUv.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",False,F,2016,Kooikerhondje,4
+744,https://cdn2.thedogapi.com/images/c2ROfi5fr.jpg,"Friendly, Lively, Gentle, Watchful, Calm",True,M,2013,Saint Bernard,7
+745,https://cdn2.thedogapi.com/images/zXi6Z5ugC.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",False,M,2010,Shiba Inu,10
+746,https://cdn2.thedogapi.com/images/ZkpNcWUTY.jpg,"Affectionate, Energetic, Amiable, Reserved, Gentle, Sensitive",False,F,2009,Tibetan Terrier,11
+747,https://cdn2.thedogapi.com/images/RvLX2NmBZ.jpg,"Trainable, Good-natured, Devoted, Lively, Playful, Intelligent",False,F,2015,Standard Schnauzer,5
+748,https://cdn2.thedogapi.com/images/ebJWX-Zu6.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2010,Lady,10
+749,https://cdn2.thedogapi.com/images/ByrmQlqVm_1280.jpg,"Obedient, Fearless, Loyal, Companionable, Adaptable, Loving",False,F,2012,Leonberger,8
+750,https://cdn2.thedogapi.com/images/B1SV7gqN7_1280.jpg,"Playful, Docile, Fearless, Affectionate, Sweet-Tempered, Lively, Responsive, Easygoing, Gentle, Intelligent, Active",True,F,2009,Maltese,11
+751,https://cdn2.thedogapi.com/images/Skjdd_3S7_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2009,Guinness,11
+752,https://cdn2.thedogapi.com/images/Hk53_dnSQ_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2010,Charlie,10
+753,https://cdn2.thedogapi.com/images/BIZiWPLqX.jpg,"Friendly, Affectionate, Devoted, Loyal, Dignified, Playful",True,F,2017,Alaskan Malamute,3
+754,https://cdn2.thedogapi.com/images/8jjWfmjNt.jpg,"Friendly, Alert, Reserved, Intelligent, Protective",False,M,2015,American Eskimo Dog (Miniature),5
+755,https://cdn2.thedogapi.com/images/BFRYBufpm.jpg,"Docile, Alert, Responsive, Dignified, Composed, Friendly, Receptive, Faithful, Courageous",True,M,2008,Akita,12
+756,https://cdn2.thedogapi.com/images/nIESHNRgB.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2011,Jasper,9
+757,https://cdn2.thedogapi.com/images/1tLAP4Eo4.jpg,"Playful, Loyal, Independent, Intelligent, Happy, Vocal",False,M,2013,Finnish Spitz,7
+758,https://cdn2.thedogapi.com/images/Cr3YuxzEV.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",False,M,2013,Shiba Inu,7
+759,https://cdn2.thedogapi.com/images/8Fs-5iUCH.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",False,F,2008,Shiba Inu,12
+760,https://cdn2.thedogapi.com/images/E2LqZL-dv.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",True,M,2016,Shiba Inu,4
+761,https://cdn2.thedogapi.com/images/HyOjge5Vm_1280.jpg,"Obedient, Confident, Intelligent, Dominant, Territorial",False,F,2015,Boerboel,5
+762,https://cdn2.thedogapi.com/images/HJWZZxc4X_1280.jpg,"Agile, Adaptable, Quick, Intelligent, Attentive, Happy",False,F,2018,Brittany,2
+763,https://cdn2.thedogapi.com/images/Sk4DXl54m_1280.jpg,"Sweet-Tempered, Gentle, Trainable",False,F,2009,Newfoundland,11
+764,https://cdn2.thedogapi.com/images/r1o0jx9Em_1280.jpg,"Affectionate, Energetic, Loyal, Gentle, Quiet",True,F,2018,Vizsla,2
+765,https://cdn2.thedogapi.com/images/S1GWY_hr7_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2018,Jackson,2
+766,https://cdn2.thedogapi.com/images/HJ7SYdnSX_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2011,Otis,9
+767,https://cdn2.thedogapi.com/images/W93JBCUzz.jpg,"Loyal, Independent, Intelligent, Brave",False,M,2017,Akbash Dog,3
+768,https://cdn2.thedogapi.com/images/aENh7kMis.jpg,"Strong Willed, Stubborn, Friendly, Clownish, Affectionate, Loyal, Obedient, Intelligent, Courageous",True,F,2018,American Bully,2
+769,https://cdn2.thedogapi.com/images/RX0knn4z4.jpg,"Stubborn, Curious, Playful, Adventurous, Active, Fun-loving",True,F,2008,Affenpinscher,12
+770,https://cdn2.thedogapi.com/images/0QYCVJQpZ.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2010,Luna,10
+771,https://cdn2.thedogapi.com/images/9AXHhr6LG.jpg,"Cautious, Energetic, Loyal, Obedient, Protective, Brave",False,M,2011,Australian Cattle Dog,9
+772,https://cdn2.thedogapi.com/images/3dA-D-AIm.jpg,"Self-confidence, Hardy, Lively, Alert, Intelligent, Active",False,M,2013,Bearded Collie,7
+773,https://cdn2.thedogapi.com/images/wop-zTLZW.jpg,"Trainable, Protective, Sweet-Tempered, Keen, Active",True,M,2018,Bull Terrier,2
+774,https://cdn2.thedogapi.com/images/SwxIgmxlN.jpg,"Playful, Loyal, Independent, Intelligent, Happy, Vocal",False,F,2013,Finnish Spitz,7
+775,https://cdn2.thedogapi.com/images/kOMy84GQE.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",False,F,2013,Kooikerhondje,7
+776,https://cdn2.thedogapi.com/images/xcrQRb4IQ.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",False,F,2010,Shiba Inu,10
+777,https://cdn2.thedogapi.com/images/0mUBUQ68p.jpg,"Protective, Loyal, Independent, Intelligent, Loving, Familial",True,F,2010,Thai Ridgeback,10
+778,https://cdn2.thedogapi.com/images/HyWGexcVQ_1280.jpg,"Obedient, Companionable, Intelligent, Joyful",False,F,2010,Barbet,10
+779,https://cdn2.thedogapi.com/images/B1KdxlcNX_1280.jpg,"Energetic, Alert, Loyal, Intelligent, Attentive, Protective",False,M,2011,Belgian Tervuren,9
+780,https://cdn2.thedogapi.com/images/HJ5nXpT4Q.gif,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2009,Luke,11
+781,https://cdn2.thedogapi.com/images/SJuYFO3HQ_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2010,Lucy,10
+782,https://cdn2.thedogapi.com/images/xmHTSrAon_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2013,Coco,7
+783,https://cdn2.thedogapi.com/images/iIgf9U3bv.jpg,"Friendly, Assertive, Energetic, Loyal, Gentle, Confident, Dominant",True,F,2008,American Bulldog,12
+784,https://cdn2.thedogapi.com/images/Atmf2iDb0.jpg,"Friendly, Assertive, Energetic, Loyal, Gentle, Confident, Dominant",True,M,2017,American Bulldog,3
+785,https://cdn2.thedogapi.com/images/csIH7L6eT.jpg,"Friendly, Alert, Reserved, Intelligent, Protective",True,F,2008,American Eskimo Dog,12
+786,https://cdn2.thedogapi.com/images/rVOHQ6r1R.jpg,"Friendly, Alert, Reserved, Intelligent, Protective",True,F,2011,American Eskimo Dog,9
+787,https://cdn2.thedogapi.com/images/lE8IcAD0W.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2016,Sadie,4
+788,https://cdn2.thedogapi.com/images/xbI13teuJ.jpg,"Trainable, Protective, Sweet-Tempered, Keen, Active",False,F,2013,Bull Terrier,7
+789,https://cdn2.thedogapi.com/images/MFaZh43yH.jpg,"Trainable, Protective, Sweet-Tempered, Keen, Active",False,M,2008,Bull Terrier,12
+790,https://cdn2.thedogapi.com/images/R1b5gB11p.jpg,"Trainable, Friendly, Affectionate, Playful, Quiet, Faithful",False,M,2018,Cocker Spaniel,2
+791,https://cdn2.thedogapi.com/images/ooXgHah90.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",False,F,2010,Kooikerhondje,10
+792,https://cdn2.thedogapi.com/images/gY60Q7XXX.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",False,F,2014,Kooikerhondje,6
+793,https://cdn2.thedogapi.com/images/TGB2APNbS.jpg,"Friendly, Lively, Gentle, Watchful, Calm",True,M,2010,Saint Bernard,10
+794,https://cdn2.thedogapi.com/images/bEQBV6y9Q.jpg,"Aloof, Reserved, Intelligent, Quiet",False,F,2009,Saluki,11
+795,https://cdn2.thedogapi.com/images/YYIflhgK0.jpg,"Affectionate, Energetic, Amiable, Reserved, Gentle, Sensitive",False,F,2017,Tibetan Terrier,3
+796,https://cdn2.thedogapi.com/images/B1fG6PT4Q.gif,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2018,Oliver,2
+797,https://cdn2.thedogapi.com/images/HJy3uOnrm_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2009,Buddy,11
+798,https://cdn2.thedogapi.com/images/40bvxOUyl.jpg,"Docile, Alert, Responsive, Dignified, Composed, Friendly, Receptive, Faithful, Courageous",False,F,2018,Akita,2
+799,https://cdn2.thedogapi.com/images/I3E0R2tuV.jpg,"Self-confidence, Hardy, Lively, Alert, Intelligent, Active",False,F,2018,Bearded Collie,2
+800,https://cdn2.thedogapi.com/images/1d4rlnsPt.jpg,"Friendly, Lively, Gentle, Watchful, Calm",True,M,2014,Saint Bernard,6
+801,https://cdn2.thedogapi.com/images/6CFLgAYVH.jpg,"Friendly, Lively, Gentle, Watchful, Calm",True,F,2010,Saint Bernard,10
+802,https://cdn2.thedogapi.com/images/PQxzcr48n.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",False,M,2009,Shiba Inu,11
+803,https://cdn2.thedogapi.com/images/BVOO_4xkh.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",False,F,2018,Shiba Inu,2
+804,https://cdn2.thedogapi.com/images/Syszjx9Em_1280.jpg,"Fearless, Affectionate, Alert, Playful, Intelligent, Active",True,F,2014,Smooth Fox Terrier,6
+805,https://cdn2.thedogapi.com/images/Bkdx2g5Em_1280.jpg,"Hardy, Friendly, Alert, Independent, Gay, Active, Courageous",True,M,2009,West Highland White Terrier,11
+806,https://cdn2.thedogapi.com/images/HJ1297iE7.gif,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2015,Astro,5
+807,https://cdn2.thedogapi.com/images/r1ZfomsN7.gif,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2010,Shiner,10
+808,https://cdn2.thedogapi.com/images/rkjbITpV7.gif,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2016,Romeo,4
+809,https://cdn2.thedogapi.com/images/1r8EXEh4d_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2014,Nikki,6
+810,https://cdn2.thedogapi.com/images/_bdHCzK_u.jpg,"Friendly, Assertive, Energetic, Loyal, Gentle, Confident, Dominant",False,M,2011,American Bulldog,9
+811,https://cdn2.thedogapi.com/images/IzX1_nBUe.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2010,Belle,10
+812,https://cdn2.thedogapi.com/images/TMHL6fN5I.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2014,Dexter,6
+813,https://cdn2.thedogapi.com/images/7QHpSGHqI.jpg,"Tenacious, Keen, Energetic, Responsive, Alert, Intelligent",True,F,2017,Border Collie,3
+814,https://cdn2.thedogapi.com/images/Y93YeHDPL.jpg,"Trainable, Protective, Sweet-Tempered, Keen, Active",False,M,2014,Bull Terrier,6
+815,https://cdn2.thedogapi.com/images/qOXvHhXOJ.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",False,F,2013,Kooikerhondje,7
+816,https://cdn2.thedogapi.com/images/4aJ37urBz.jpg,"Aloof, Reserved, Intelligent, Quiet",True,F,2013,Saluki,7
+817,https://cdn2.thedogapi.com/images/RStuTUw66.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",False,M,2008,Shiba Inu,12
+818,https://cdn2.thedogapi.com/images/TqHc0-BCd.jpg,"Trainable, Good-natured, Devoted, Lively, Playful, Intelligent",True,M,2013,Standard Schnauzer,7
+819,https://cdn2.thedogapi.com/images/H1oLMe94m_1280.jpg,"Spirited, Agile, Loyal, Gentle, Active, Courageous",True,M,2008,Glen of Imaal Terrier,12
+820,https://cdn2.thedogapi.com/images/BkxcYOnHm_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2010,Athena,10
+821,https://cdn2.thedogapi.com/images/2Y-PXyVC9_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2013,Minnie,7
+822,https://cdn2.thedogapi.com/images/FTQ1C29sk.jpg,"Loyal, Independent, Intelligent, Brave",False,F,2017,Akbash Dog,3
+823,https://cdn2.thedogapi.com/images/8ogZCsDcp.jpg,"Friendly, Affectionate, Devoted, Loyal, Dignified, Playful",False,M,2008,Alaskan Malamute,12
+824,https://cdn2.thedogapi.com/images/chQC0QwHn.jpg,"Friendly, Assertive, Energetic, Loyal, Gentle, Confident, Dominant",False,F,2017,American Bulldog,3
+825,https://cdn2.thedogapi.com/images/cOrWrVLic.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2011,Ellie,9
+826,https://cdn2.thedogapi.com/images/S1V3Qeq4X_1280.jpg,"Strong Willed, Suspicious, Gentle, Dominant, Calm",True,F,2018,Perro de Presa Canario,2
+827,https://cdn2.thedogapi.com/images/SycZKu2Sm_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2013,Nina,7
+828,https://cdn2.thedogapi.com/images/jDnFo8MXy.jpg,"Friendly, Assertive, Energetic, Loyal, Gentle, Confident, Dominant",True,F,2009,American Bulldog,11
+829,https://cdn2.thedogapi.com/images/tChrH8dDJ.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2017,Afghan Hound,3
+830,https://cdn2.thedogapi.com/images/mVr3PouoV.jpg,"Self-confidence, Hardy, Lively, Alert, Intelligent, Active",True,F,2016,Bearded Collie,4
+831,https://cdn2.thedogapi.com/images/Bzc8begeV.jpg,"Tenacious, Keen, Energetic, Responsive, Alert, Intelligent",False,M,2009,Border Collie,11
+832,https://cdn2.thedogapi.com/images/2v2nAUTLB.jpg,"Trainable, Friendly, Affectionate, Playful, Quiet, Faithful",False,M,2011,Cocker Spaniel,9
+833,https://cdn2.thedogapi.com/images/72Ttvx0Iz.jpg,"Affectionate, Energetic, Amiable, Reserved, Gentle, Sensitive",False,F,2008,Tibetan Terrier,12
+834,https://cdn2.thedogapi.com/images/cLWrIOUqE.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2008,Afghan Hound,12
+835,https://cdn2.thedogapi.com/images/UV2IPnwbV.jpg,"Trainable, Protective, Sweet-Tempered, Keen, Active",False,F,2016,Bull Terrier,4
+836,https://cdn2.thedogapi.com/images/H6h17XOYn.jpg,"Trainable, Friendly, Affectionate, Playful, Quiet, Faithful",True,M,2010,Cocker Spaniel,10
+837,https://cdn2.thedogapi.com/images/uW3mbibK4.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",False,F,2016,Shiba Inu,4
+838,https://cdn2.thedogapi.com/images/HkNkxlqEX_1280.jpg,"Reliable, Fearless, Energetic, Lively, Self-assured",True,F,2009,Appenzeller Sennenhund,11
+839,https://cdn2.thedogapi.com/images/HkP7Vxc4Q_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2015,Russian Toy,5
+840,https://cdn2.thedogapi.com/images/Skx45T6EQ.gif,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2011,Sammy,9
+841,https://cdn2.thedogapi.com/images/ryqWuE_1T.jpg,"Friendly, Energetic, Loyal, Gentle, Confident",True,F,2018,Alaskan Husky,2
+842,https://cdn2.thedogapi.com/images/B1i67l5VQ_1280.jpg,"Bold, Alert, Loyal, Intelligent",True,M,2016,Plott,4
+843,https://cdn2.thedogapi.com/images/HJMzEl5N7_1280.jpg,"Affectionate, Energetic, Independent, Companionable, Familial, Unflappable",True,F,2015,Redbone Coonhound,5
+844,https://cdn2.thedogapi.com/images/phlG3kw1K_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2009,Porter,11
+845,https://cdn2.thedogapi.com/images/xNHN6Vu1e.jpg,"Trainable, Protective, Sweet-Tempered, Keen, Active",True,F,2011,Bull Terrier,9
+846,https://cdn2.thedogapi.com/images/edERTTfL0.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",True,M,2009,Kooikerhondje,11
+847,https://cdn2.thedogapi.com/images/VOmeXxwUp.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",False,F,2008,Kooikerhondje,12
+848,https://cdn2.thedogapi.com/images/SGHnWcS9S.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2009,Dakota,11
+849,https://cdn2.thedogapi.com/images/Bymjyec4m_1280.jpg,"Friendly, Alert, Reserved, Intelligent, Protective",True,M,2013,American Eskimo Dog,7
+850,https://cdn2.thedogapi.com/images/HJOpge9Em_1280.jpg,"Fearless, Affectionate, Alert, Obedient, Intelligent, Even Tempered",True,F,2014,Border Terrier,6
+851,https://cdn2.thedogapi.com/images/H1NIzlcV7_1280.jpg,"Strong Willed, Kind, Loyal, Intelligent, Dominant, Powerful",False,F,2012,Giant Schnauzer,8
+852,https://cdn2.thedogapi.com/images/Asut5CUgQ.jpg,"Loyal, Independent, Intelligent, Brave",True,M,2009,Akbash Dog,11
+853,https://cdn2.thedogapi.com/images/5i89L75D9.jpg,"Loyal, Independent, Intelligent, Brave",False,F,2014,Akbash Dog,6
+854,https://cdn2.thedogapi.com/images/Nk8cSr_aj.jpg,"Friendly, Energetic, Loyal, Gentle, Confident",False,M,2010,Alaskan Husky,10
+855,https://cdn2.thedogapi.com/images/gW4R5SWbV.jpg,"Trainable, Friendly, Affectionate, Playful, Quiet, Faithful",False,F,2010,Cocker Spaniel,10
+856,https://cdn2.thedogapi.com/images/hNa0pli30.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",True,F,2011,Shiba Inu,9
+857,https://cdn2.thedogapi.com/images/wJjvV6A5T.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",True,F,2014,Shiba Inu,6
+858,https://cdn2.thedogapi.com/images/1SMdT_hVW.jpg,"Affectionate, Energetic, Amiable, Reserved, Gentle, Sensitive",False,F,2011,Tibetan Terrier,9
+859,https://cdn2.thedogapi.com/images/Bkam2l9Vm_1280.jpg,"Loyal, Gentle, Vigilant, Trainable, Proud",True,F,2010,Wirehaired Pointing Griffon,10
+860,https://cdn2.thedogapi.com/images/aREFAmi5H.jpg,"Friendly, Affectionate, Devoted, Loyal, Dignified, Playful",True,F,2009,Alaskan Malamute,11
+861,https://cdn2.thedogapi.com/images/8vgnFmYG8.jpg,"Affectionate, Intelligent, Quiet, Dominant, Happy, Protective",True,M,2009,Chesapeake Bay Retriever,11
+862,https://cdn2.thedogapi.com/images/6QYAhbAWq.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",True,F,2014,Kooikerhondje,6
+863,https://cdn2.thedogapi.com/images/hi_qSe2ml.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",False,F,2014,Shiba Inu,6
+864,https://cdn2.thedogapi.com/images/IyR0sT3yy.jpg,"Docile, Alert, Responsive, Dignified, Composed, Friendly, Receptive, Faithful, Courageous",True,M,2016,Akita,4
+865,https://cdn2.thedogapi.com/images/iNX25KsSX.jpg,"Docile, Alert, Responsive, Dignified, Composed, Friendly, Receptive, Faithful, Courageous",True,F,2018,Akita,2
+866,https://cdn2.thedogapi.com/images/9FHGALKJC.png,"Playful, Loyal, Independent, Intelligent, Happy, Vocal",False,M,2015,Finnish Spitz,5
+867,https://cdn2.thedogapi.com/images/wM40j-90o.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2016,Sadie,4
+868,https://cdn2.thedogapi.com/images/Kri0eY18B.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2009,Sasha,11
+869,https://cdn2.thedogapi.com/images/ROvy59azW.jpg,"Trainable, Protective, Sweet-Tempered, Keen, Active",True,M,2009,Bull Terrier,11
+870,https://cdn2.thedogapi.com/images/WWmA1kutH.jpg,"Friendly, Lively, Gentle, Watchful, Calm",True,M,2009,Saint Bernard,11
+871,https://cdn2.thedogapi.com/images/SkZY1e9NQ_1280.jpg,"Friendly, Assertive, Energetic, Loyal, Gentle, Confident, Dominant",True,M,2011,American Bulldog,9
+872,https://cdn2.thedogapi.com/images/SJp7Qe5EX_1280.jpg,"Steady, Fearless, Friendly, Devoted, Assertive, Spirited, Energetic, Lively, Alert, Obedient, Playful, Intelligent",True,M,2009,Lhasa Apso,11
+873,https://cdn2.thedogapi.com/images/20ILpw3eY.jpg,"Friendly, Alert, Reserved, Intelligent, Protective",True,F,2008,American Eskimo Dog,12
+874,https://cdn2.thedogapi.com/images/QWRBrrIvB.jpg,"Outgoing, Friendly, Alert, Confident, Intelligent, Courageous",False,F,2011,Airedale Terrier,9
+875,https://cdn2.thedogapi.com/images/t4pZFktBB.jpg,"Friendly, Assertive, Energetic, Loyal, Gentle, Confident, Dominant",False,F,2008,American Bulldog,12
+876,https://cdn2.thedogapi.com/images/LvKF3cSkb.jpg,"Kind, Sweet-Tempered, Loyal, Independent, Intelligent, Loving",False,M,2015,American Foxhound,5
+877,https://cdn2.thedogapi.com/images/748GZO7ss.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2013,Chanel,7
+878,https://cdn2.thedogapi.com/images/14MaKTcUX.jpg,"Affectionate, Energetic, Amiable, Reserved, Gentle, Sensitive",False,M,2012,Tibetan Terrier,8
+879,https://cdn2.thedogapi.com/images/Sk67KO2rX_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2008,Missie,12
+880,https://cdn2.thedogapi.com/images/h0vltXvfC.jpg,"Outgoing, Friendly, Alert, Confident, Intelligent, Courageous",True,M,2015,Airedale Terrier,5
+881,https://cdn2.thedogapi.com/images/ByFQI6TVX.gif,"Aloof, Clownish, Dignified, Independent, Happy",False,M,2012,Bailey,8
+882,https://cdn2.thedogapi.com/images/Sy57xx9EX_1280.jpg,"Tenacious, Friendly, Affectionate, Devoted, Sweet-Tempered, Gentle",False,M,2010,Basset Hound,10
+883,https://cdn2.thedogapi.com/images/HJ7Pzg5EQ_1280.jpg,"Intelligent, Kind, Reliable, Friendly, Trustworthy, Confident",False,F,2010,Golden Retriever,10
+884,https://cdn2.thedogapi.com/images/H0vcCJKJj.jpg,"Aloof, Clownish, Dignified, Independent, Happy",False,F,2009,Bubba,11
+885,https://cdn2.thedogapi.com/images/NXPv27lGs.jpg,"Friendly, Assertive, Energetic, Loyal, Gentle, Confident, Dominant",True,F,2018,American Bulldog,2
+886,https://cdn2.thedogapi.com/images/y-ZX22Yf1.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2015,Shelby,5
+887,https://cdn2.thedogapi.com/images/YmGPWuI_w.jpg,"Trainable, Friendly, Affectionate, Playful, Quiet, Faithful",False,M,2018,Cocker Spaniel,2
+888,https://cdn2.thedogapi.com/images/1lFmrzECl.jpg,"Trainable, Friendly, Affectionate, Playful, Quiet, Faithful",True,M,2014,Cocker Spaniel,6
+889,https://cdn2.thedogapi.com/images/jtrRacj_g.jpg,"Friendly, Lively, Gentle, Watchful, Calm",False,F,2014,Saint Bernard,6
+890,https://cdn2.thedogapi.com/images/hKXTfH70r.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",False,M,2016,Shiba Inu,4
+891,https://cdn2.thedogapi.com/images/Ghdv7NP-J.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2012,Chloe,8
+892,https://cdn2.thedogapi.com/images/VWhafa0Av.jpg,"Trainable, Protective, Sweet-Tempered, Keen, Active",True,F,2018,Bull Terrier,2
+893,https://cdn2.thedogapi.com/images/IHGKYBqyU.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",False,M,2017,Kooikerhondje,3
+894,https://cdn2.thedogapi.com/images/ssY_amKgW.jpg,"Self-confidence, Hardy, Lively, Alert, Intelligent, Active",False,M,2016,Bearded Collie,4
+895,https://cdn2.thedogapi.com/images/K5hLbTi6d.jpg,"Tenacious, Keen, Energetic, Responsive, Alert, Intelligent",False,M,2011,Border Collie,9
+896,https://cdn2.thedogapi.com/images/B1IcfgqE7_1280.jpg,"Outgoing, Friendly, Cheerful, Sweet-Tempered, Tolerant, Active",False,M,2009,Harrier,11
+897,https://cdn2.thedogapi.com/images/-C5P1HCK4.jpg,"Trainable, Protective, Sweet-Tempered, Keen, Active",True,M,2018,Bull Terrier,2
+898,https://cdn2.thedogapi.com/images/Q72V090BS.jpg,"Aloof, Reserved, Intelligent, Quiet",False,F,2016,Saluki,4
+899,https://cdn2.thedogapi.com/images/satHCV8Ft.jpg,"Benevolent, Agile, Alert, Intelligent, Active, Territorial",False,F,2010,Kooikerhondje,10
+900,https://cdn2.thedogapi.com/images/jJIqSF3mP.jpg,"Charming, Fearless, Keen, Alert, Confident, Faithful",True,M,2012,Shiba Inu,8
+901,https://cdn2.thedogapi.com/images/HJyvFu2Sm_1280.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,M,2018,Phoebe,2
+902,https://cdn2.thedogapi.com/images/NCA5enafW.jpg,"Tenacious, Keen, Energetic, Responsive, Alert, Intelligent",True,M,2008,Border Collie,12
+903,https://cdn2.thedogapi.com/images/NAxX8uh73.jpg,"Aloof, Clownish, Dignified, Independent, Happy",True,F,2017,Prince,3
+904,https://cdn2.thedogapi.com/images/SJyBfg5NX_1280.jpg,"Alert, Loyal, Obedient, Curious, Confident, Intelligent, Watchful, Courageous",True,F,2013,German Shepherd Dog,7
