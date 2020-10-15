@@ -1,4 +1,4 @@
-id,image,details,hdb_approved,gender,age,name,date_of_birth
+id,image,details,hdb_approved,gender,date_of_birth,name,age
 1,https://cdn2.thedogapi.com/images/rkiByec47_1280.jpg,"Wild, Hardworking, Dutiful",False,M,2015,African Hunting Dog,5
 2,https://cdn2.thedogapi.com/images/SkFt1gc47_1280.jpg,"Strong Willed, Stubborn, Friendly, Clownish, Affectionate, Loyal, Obedient, Intelligent, Courageous",True,F,2016,American Bully,4
 3,https://cdn2.thedogapi.com/images/r1Ylge5Vm_1280.jpg,"Spirited, Alert, Loyal, Companionable, Even Tempered, Courageous",True,M,2014,Australian Terrier,6
