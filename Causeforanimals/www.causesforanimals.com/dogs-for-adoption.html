@@ -960,6 +960,61 @@ _W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":
 	</table>
 </div></div></div>
 
+<!-- FILTER FEATURE -->
+
+<div id="myBtnContainer">
+	<p1> Filters:  </p1>
+	<button class="btn active" onclick="filterSelection('all')"> Show all</button>
+	<button class="btn" onclick="filterSelection('cars')"> Dogs</button>
+	<button onclick="myFunction()" class="dropbtn">Gender</button>
+	<div id="myDropdown" class="dropdown-content">
+		<a href="#about">Male</a>
+		<a href="#base">Female</a>
+	  </div>
+	<button class="btn" onclick="filterSelection('fruits')"> Age</button>
+	<button class="btn" onclick="filterSelection('colors')"> Size</button>
+
+</div>
+
+<style>
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 410px;
+  background-color: #f6f6f6;
+  min-width: 0;
+  width: 5%;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+</style>
+
+<script>
+	/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+</script>
+<!-- end of FILTER FEATURE-->
+
 <div class="paragraph"><em><strong><font size="2">Key: V (vaccinated), C&nbsp;(microchipped), S (sterilised), &nbsp;H (HDB approved)</font><br /><br /><font color="#5040ae">CLICK ON IMAGE FOR MORE INFO</font><br /><br /><font size="4" color="#a82e2e">Please note dogs tagged&nbsp; "homestay" means they are unavailable as they are with a potential adopting family</font></strong></em></div>
 
 <div class="wsite-spacer" style="height:10px;"></div>
