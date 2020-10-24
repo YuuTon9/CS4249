@@ -12,7 +12,7 @@ function App() {
     const useStyles = makeStyles((theme) => ({
         container: {
             width: '70%',
-            maxWidth: '70% !important',
+            // maxWidth: '70% !important',
             margin: '0 auto',
             padding: '0 0.5rem'
         }
@@ -35,9 +35,12 @@ function App() {
     return (
     <div className={classes.container}>
     <Grid container spacing={3}>
-        <p>Adopt a Pet</p>
-        <Filter/>
-        <Filter1/>
+        <Grid item xs={12}><h2>Adopt a Pet</h2></Grid>
+        <Grid item xs={12}>
+            <h3>Filters:</h3>
+            <Filter/>
+            <Filter1/>
+        </Grid>
         <CardList dog_datas={values.dog_datas}/>
     </Grid>
 
