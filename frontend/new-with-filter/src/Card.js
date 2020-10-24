@@ -12,9 +12,14 @@ import { red } from '@material-ui/core/colors';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Home';
 import ButtonBase from '@material-ui/core/ButtonBase';
-import Backdrop from "@material-ui/core/Backdrop";
-import Fade from "@material-ui/core/Fade";
-import Modal from "@material-ui/core/Modal";
+import Dialog from '@material-ui/core/Dialog';
+import MuiDialogTitle from '@material-ui/core/DialogTitle';
+import MuiDialogContent from '@material-ui/core/DialogContent';
+import MuiDialogActions from '@material-ui/core/DialogActions';
+import IconButton from '@material-ui/core/IconButton';
+import CloseIcon from '@material-ui/icons/Close';
+import { withStyles } from '@material-ui/core/styles';
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -59,13 +64,11 @@ const useStyles = makeStyles((theme) => ({
 
     },
     modalCard: {
+        margin: 0,
+        padding: theme.spacing(2),
         width: 1000,
         height:700,
-        display: 'flex',
-        // maxWidth: '70% !important',
-        margin: '2 auto',
-        padding: '0 1rem'
-
+        display: 'flex'
     },
     controls: {
         display: 'flex',
@@ -75,6 +78,46 @@ const useStyles = makeStyles((theme) => ({
         paddingBottom: theme.spacing(1),
     },
 }));
+
+const styles = (theme) => ({
+    root: {
+        margin: 0,
+        padding: theme.spacing(2),
+    },
+    closeButton: {
+        position: 'absolute',
+        right: theme.spacing(1),
+        top: theme.spacing(1),
+        color: theme.palette.grey[500],
+    },
+});
+
+const DialogTitle = withStyles(styles)((props) => {
+    const { children, classes, onClose, ...other } = props;
+    return (
+        <MuiDialogTitle disableTypography className={classes.root} {...other}>
+            <Typography variant="h6">{children}</Typography>
+            {onClose ? (
+                <IconButton aria-label="close" className={classes.closeButton} onClick={onClose}>
+                    <CloseIcon />
+                </IconButton>
+            ) : null}
+        </MuiDialogTitle>
+    );
+});
+
+const DialogContent = withStyles((theme) => ({
+    root: {
+        padding: theme.spacing(2),
+    },
+}))(MuiDialogContent);
+
+const DialogActions = withStyles((theme) => ({
+    root: {
+        margin: 0,
+        padding: theme.spacing(1),
+    },
+}))(MuiDialogActions);
 
 export default function DogCard({dog_data}) {
     const classes = useStyles();
@@ -129,25 +172,14 @@ export default function DogCard({dog_data}) {
                     </CardActions>
                 </ButtonBase>
             </Card>
-            <Modal
-                aria-labelledby="transition-modal-title"
-                aria-describedby="transition-modal-description"
-                className={classes.modal}
-                open={open}
-                onClose={handleClose}
-                closeAfterTransition
-                BackdropComponent={Backdrop}
-                BackdropProps={{
-                    timeout: 500,
-                }}
-            >
-                <Fade in={open}>
+            <Dialog onClose={handleClose} aria-labelledby="customized-dialog-title" open={open}>
+                <DialogTitle id="customized-dialog-title" onClose={handleClose}>
+                    {dog_data.name} ({dog_data.gender})
+                </DialogTitle>
+                <DialogContent dividers>
                     <Card className={classes.modalCard}>
                         <Grid container spacing={3} justify="center">
                             <Grid item xs={6}>
-                                <Typography align="left" variant="h4">
-                                    {dog_data.name} ({dog_data.gender})
-                                </Typography>
                                 <CardMedia
                                     className={classes.media}
                                     image={dog_data.image}
@@ -167,8 +199,21 @@ export default function DogCard({dog_data}) {
                             </Grid>
                         </Grid>
                     </Card>
-                </Fade>
-            </Modal>
+                    {/*<Typography gutterBottom>*/}
+                    {/*    Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis*/}
+                    {/*    in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.*/}
+                    {/*</Typography>*/}
+                    {/*<Typography gutterBottom>*/}
+                    {/*    Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis*/}
+                    {/*    lacus vel augue laoreet rutrum faucibus dolor auctor.*/}
+                    {/*</Typography>*/}
+                    {/*<Typography gutterBottom>*/}
+                    {/*    Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel*/}
+                    {/*    scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus*/}
+                    {/*    auctor fringilla.*/}
+                    {/*</Typography>*/}
+                </DialogContent>
+            </Dialog>
         </div>
     );
 }
