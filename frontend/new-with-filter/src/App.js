@@ -12,7 +12,7 @@ function App() {
 
     useEffect(() => {
         console.log("brandon");
-        axios.get(`http://127.0.0.1:5000/api/get_dogs?limit=5`)
+        axios.get(`http://127.0.0.1:5000/api/get_dogs?limit=50`)
             .then((res) => {
                 const data = res.data;
                 console.log(data)
