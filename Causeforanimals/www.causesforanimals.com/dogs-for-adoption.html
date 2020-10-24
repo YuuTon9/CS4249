@@ -19,6 +19,14 @@
 <meta property="og:image" content="https://www.causesforanimals.com/uploads/1/0/8/3/10832582/published/primrosecrop-jpg_1.jpg?1559118078" />
 <meta property="og:url" content="https://www.causesforanimals.com/dogs-for-adoption.html" />
 
+<!-- bootstrap shit-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 <!-- Modal window -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -821,18 +829,6 @@ _W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":
 	</div>
 	
 	
-	<div class="container">
-		<table align="center"><tr>
-		   <td id="header">
-			<table><tr><td class="search"><span class="wsite-search">
-			<form id="wsite-header-search-form" action="https://www.causesforanimals.com/apps/search" method="get">
-				<input type="text" name="q" class="wsite-search-input" autocomplete="off" placeholder="Filter
-				"/><span class="wsite-search-button"><span class="wsite-search-button-inner"></span></span>
-			</form>
-			</span></td></tr></table>
-			</td>
-	   </tr></table>
-	</div>
 
 
 
@@ -965,24 +961,70 @@ _W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":
 <div id="myBtnContainer">
 	<p1> Filters:  </p1>
 	<button class="btn active" onclick="filterSelection('all')"> Show all</button>
-	<button class="btn" onclick="filterSelection('cars')"> Dogs</button>
-	<button onclick="myFunction()" class="dropbtn">Gender</button>
-	<div id="myDropdown" class="dropdown-content">
-		<a href="#about">Male</a>
-		<a href="#base">Female</a>
+	<div class="btn-group">
+		<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" >Gender</button>
+		<div class="dropdown-menu">
+			<li><p class="btn" onclick="filterSelection('male')">waht</p></li>
+			<li><p class="btn" onclick="filterSelection('female')">Female</p></li>
+		</div>
 	  </div>
-	<button class="btn" onclick="filterSelection('fruits')"> Age</button>
-	<button class="btn" onclick="filterSelection('colors')"> Size</button>
 
+	<div class="btn-group">
+		<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" >Age</button>
+		<div class="dropdown-menu" >
+			<li><p class="btn" onclick="filterSelection('male')"> Less than 4 years old </p></li>
+			<li><p class="btn" onclick="filterSelection('female')"> 4 - 8 years old </p></li>
+			<li><p class="btn" onclick="filterSelection('female')"> More than 8 old</p></li>
+		</div>
+	</div>
+
+	<div class="btn-group">
+		<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" >Status</button>
+		<div class="dropdown-menu" >
+			<li><p class="btn" onclick="filterSelection('male')"> HDB Aprroved </p></li>
+		</div>
+	</div>
+	<div class ="btn-group">
+		<button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">Size</button>
+		<div class="dropdown-menu" >
+			<li><p class="btn" onclick="filterSelection('male')"> idk </p></li>
+			<li><p class="btn" onclick="filterSelection('female')"> what </p></li>
+			<li><p class="btn" onclick="filterSelection('female')"> size</p></li>
+		</div>
+	</div>
 </div>
 
 <style>
 
+
+#inline
+{
+    display:inline;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
 /* Dropdown Content (Hidden by Default) */
-.dropdown-content {
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content2 {
   display: none;
   position: absolute;
-  left: 410px;
+  left: 510px;
+  background-color: #f6f6f6;
+  min-width: 0;
+  width: 5%;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content3 {
+  display: none;
+  position: absolute;
+  left: 610px;
   background-color: #f6f6f6;
   min-width: 0;
   width: 5%;
@@ -991,7 +1033,7 @@ _W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":
 }
 
 /* Links inside the dropdown */
-.dropdown-content a {
+.dropdown-content p {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -1020,6 +1062,11 @@ function myFunction() {
 <div class="wsite-spacer" style="height:10px;"></div>
 
 <!-- Really the first dog -->
+<?php
+echo "Hello World!";
+?> 
+
+
 
 <!--<img id="myImg" src="img_snow.jpg" alt="Snow" style="width:100%;max-width:300px"> -->
 <img {-ms-interpolation-mode:bicubic;} id="myImg" src="uploads/1/0/8/3/10832582/editor/khartik-01c118.jpg?1600932086" style="white-space:pre;" alt="KHATIK 
