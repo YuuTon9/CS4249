@@ -78,6 +78,9 @@ const useStyles = makeStyles((theme) => ({
         paddingLeft: theme.spacing(1),
         paddingBottom: theme.spacing(1),
     },
+    bolded: {
+        fontWeight: 900
+    }
 }));
 
 const styles = (theme) => ({
@@ -119,6 +122,10 @@ const DialogActions = withStyles((theme) => ({
         padding: theme.spacing(1),
     },
 }))(MuiDialogActions);
+
+const RequirementsMapping = {
+    1: "Dog selected: Age: <4, Gender: M, HDB approved: 1"
+}
 
 export default function DogCard({dog_data}) {
     const classes = useStyles();
@@ -204,7 +211,7 @@ export default function DogCard({dog_data}) {
                             <Grid item xs={6}>
                                 <FavoriteIcon />
                                 {isHdbApproved()}
-                                <Typography><b>Birth Date:</b> {dog_data.date_of_birth}</Typography>
+                                <Typography fontWeight={1100}>Birth Date: {dog_data.date_of_birth}</Typography>
                                 <Typography><b>Location:</b> Causes for Animals center</Typography>
                                 <Typography>Traits: {dog_data.details}</Typography>
                                 <Typography>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pellentesque ac urna eget posuere. Mauris a blandit massa. Nunc facilisis venenatis augue, vel consequat neque rutrum et. Curabitur faucibus dictum lacus, a tempor mauris vehicula ut. Suspendisse ac magna ac neque pretium accumsan eget vitae diam. Quisque lobortis dui id turpis feugiat, vitae dictum magna tincidunt. Mauris nisl lacus, aliquam eget lectus non, pharetra fringilla purus. Morbi cursus elit ut aliquam sollicitudin. Donec consequat non nulla vel ultrices. Vestibulum ut pharetra purus. Nam rutrum purus magna, nec dignissim metus cursus id.</Typography>

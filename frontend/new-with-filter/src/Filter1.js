@@ -38,23 +38,56 @@ export default function Filter1() {
     return (
         <div>
             <FormControl variant="outlined" className={classes.formControl}>
-                <InputLabel>Gender</InputLabel>
-                <Select
-                    native
-                    value={state.gender}
-                    onChange={handleChange}
-                    label="gender"
-                    inputProps={{
-                        name: 'gender',
-                        id: 'outlined-age-native-simple',
-                    }}
-                >
-                    <option aria-label="None" value=""/>
-                    <option value={'M'}>Male</option>
-                    <option value={'F'}>Female</option>
-                </Select>
-            </FormControl>
-
+            <InputLabel>Gender</InputLabel>
+            <Select
+                native
+                value={state.gender}
+                onChange={handleChange}
+                label="gender"
+                inputProps={{
+                    name: 'gender'
+                }}
+            >
+                <option aria-label="None" value=""/>
+                <option value={'M'}>Male</option>
+                <option value={'F'}>Female</option>
+            </Select>
+        </FormControl>
+        <FormControl variant="outlined" className={classes.formControl}>
+            <InputLabel>Age</InputLabel>
+            <Select
+                native
+                value={state.age}
+                onChange={handleChange}
+                label="age"
+                inputProps={{
+                    name: 'age'
+                }}
+            >
+                <option aria-label="None" value=""/>
+                <option value={'<4'}>Less than 4</option>
+                <option value={'4-8'}>4-8</option>
+                <option value={'>8'}>More than 8</option>
+            </Select>
+        </FormControl>
+        <FormControl variant="outlined" className={classes.formControl}>
+            <InputLabel>Status</InputLabel>
+            <Select
+                native
+                value={state.status}
+                onChange={handleChange}
+                label="status"
+                inputProps={{
+                    name: 'status'
+                }}
+            >
+                <option aria-label="None" value=""/>
+                <option value={'HDBApproved'}>HDB-Approved</option>
+                <option value={'Sterilized'}>Sterilized</option>
+                <option value={'Vaccinated'}>Vaccinated</option>
+                <option value={'Microchipped'}>Micro-chipped</option>
+            </Select>
+        </FormControl>
         </div>
     )
 }
