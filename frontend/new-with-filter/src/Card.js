@@ -24,6 +24,7 @@ import { withStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
     root: {
         maxWidth: 250,
+        minHeight: 320
     },
     modal: {
         display: 'flex',
@@ -142,6 +143,21 @@ export default function DogCard({dog_data}) {
         return dog_data.details
     }
 
+    function endExperiment() {
+        var date = new Date();
+        var timestamp = date.getTime();
+        console.log("Ended experiment at %s", timestamp)
+        console.log("Dog selected: Age: %s, Gender: %s, HDB approved: %s",
+            dog_data.age, dog_data.gender, dog_data.hdb_approved)
+    }
+
+    function isHdbApproved() {
+        if (dog_data.hdb_approved === 1) {
+            return <ShareIcon />
+        }
+        return <ShareIcon color="disabled"/>
+    }
+
     return (
         <div>
             <Card className={classes.root}>
@@ -168,7 +184,7 @@ export default function DogCard({dog_data}) {
                     </CardContent>
                     <CardActions>
                         <FavoriteIcon />
-                        <ShareIcon />
+                        {isHdbApproved()}
                     </CardActions>
                 </ButtonBase>
             </Card>
@@ -186,6 +202,8 @@ export default function DogCard({dog_data}) {
                                 />
                             </Grid>
                             <Grid item xs={6}>
+                                <FavoriteIcon />
+                                {isHdbApproved()}
                                 <Typography><b>Birth Date:</b> {dog_data.date_of_birth}</Typography>
                                 <Typography><b>Location:</b> Causes for Animals center</Typography>
                                 <Typography>Traits: {dog_data.details}</Typography>
@@ -193,7 +211,7 @@ export default function DogCard({dog_data}) {
                                 <Typography>Enquiry Contact: 97433902
                                     info@causesforanimals.com
                                 </Typography>
-                                <Button size="large" variant="contained" color="primary">
+                                <Button size="large" variant="contained" color="primary" onClick={endExperiment}>
                                     Adopt me!
                                 </Button>
                             </Grid>
