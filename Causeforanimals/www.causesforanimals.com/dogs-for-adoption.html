@@ -22,6 +22,8 @@
 <!-- Script for filter function-->
 <script src="dogData.js" type="text/javascript"></script> 
 
+<!-- Param func-->
+<script src="paramurl.js"></script> 
 
 <!-- bootstrap css-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -960,22 +962,10 @@ _W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":
 </div></div></div>
 
 <!-- FILTER FEATURE -->
-
-/**
-* Input data:
-* gender:
-*  - 0: no filter
-*  - 1: Male
-*  - 2: Female
-* ageRange:
-*  - 0: no filter
-*  - 1: less than 4
-*  - 2: 4-8
-*  - 3: more than 8
-* status:
-*  - 0: no filter
-*  - 1: hdb approved
-*/
+<script>
+	var listLength = ParseURLParameter();
+	var filteredList = document.getElementById(returnList(listLength)).value;
+</script>
 
 
 <div id="myBtnContainer">

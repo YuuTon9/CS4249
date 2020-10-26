@@ -19,6 +19,17 @@
  *  - 1: hdb approved
  */
 
+
+function returnList(n) {
+    if (n == 34) {
+        return Dog_Long_List;
+    } else if (n == 17) {
+        return Dog_Medium_List;
+    } else {
+        return Dog_Small_List;
+    }
+}
+
 const Dog_Long_List  = [
     {
         "age": 5,
