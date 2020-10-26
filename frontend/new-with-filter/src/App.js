@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './App.css';
 import CardList from "./CardList";
 import Filter1 from "./Filter1";

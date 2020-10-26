@@ -1,19 +1,15 @@
 import React, {useEffect} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import InputLabel from '@material-ui/core/InputLabel';
-import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
-import NativeSelect from '@material-ui/core/NativeSelect';
-import axios from "axios";
+import Divider from '@material-ui/core/Divider';
 import CardList from "./CardList";
-import Grid from "@material-ui/core/Grid";
-import CardActions from "@material-ui/core/CardActions";
+import MenuItem from '@material-ui/core/MenuItem';
 import { CgSmartphoneChip } from 'react-icons/cg';
 import { GiLoveInjection } from 'react-icons/gi';
 import { RiScissorsFill } from 'react-icons/ri';
 import { IoIosHome } from 'react-icons/io';
-import ShareIcon from "@material-ui/icons/Home";
 import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
@@ -28,19 +24,25 @@ const useStyles = makeStyles((theme) => ({
         display: "flex",
         alignItems: "center",
         padding: 6,
-
+        float: "right",
+        marginTop: 5,
+        marginBottom: 10
     },
     a: {
         flex: 1,
+    },
+    components: {
+        padding: 5,
+        marginBottom: 5
     }
 }));
 
 export default function Filter1({dog_datas, userId, questionId, listLength}) {
     const classes = useStyles();
     const [state, setState] = React.useState({
-        gender: '',
-        age: '',
-        status: '',
+        gender: 0,
+        age: 0,
+        status: 0,
         size: ''
     });
 
@@ -54,62 +56,74 @@ export default function Filter1({dog_datas, userId, questionId, listLength}) {
 
     return (
         <div>
-            <FormControl variant="outlined" className={classes.formControl}>
-            <InputLabel>Gender</InputLabel>
-            <Select
-                native
-                value={state.gender}
-                onChange={handleChange}
-                label="gender"
-                inputProps={{
-                    name: 'gender'
-                }}
-            >
-                <option aria-label="None" value="0"/>
-                <option value={'1'}>Male</option>
-                <option value={'2'}>Female</option>
-            </Select>
-        </FormControl>
-        <FormControl variant="outlined" className={classes.formControl}>
-            <InputLabel>Age</InputLabel>
-            <Select
-                native
-                value={state.age}
-                onChange={handleChange}
-                label="age"
-                inputProps={{
-                    name: 'age'
-                }}
-            >
-                <option aria-label="None" value="0"/>
-                <option value={'1'}>Less than 4</option>
-                <option value={'2'}>4-8</option>
-                <option value={'3'}>More than 8</option>
-            </Select>
-        </FormControl>
-        <FormControl variant="outlined" className={classes.formControl}>
-            <InputLabel>Status</InputLabel>
-            <Select
-                native
-                value={state.status}
-                onChange={handleChange}
-                label="status"
-                inputProps={{
-                    name: 'status'
-                }}
-            >
-                <option aria-label="None" value="0"/>
-                <option value={'1'}>HDB-Approved</option>
-                <option value={'2'}>Sterilized</option>
-                <option value={'3'}>Vaccinated</option>
-                <option value={'4'}>Micro-chipped</option>
-            </Select>
-        </FormControl>
-        <Typography variant={"subtitle1"} align={"right"} display="inline" className={classes.a}>
-            <div className={classes.icon}><GiLoveInjection fontSize={24} /> Vaccinated</div>
-            <div className={classes.icon}><IoIosHome fontSize={24}/> HDB Suitable</div>
-            <div className={classes.icon}><CgSmartphoneChip fontSize={24}/> Micro-Chipped</div>
+            <div className={classes.components}>
+                <FormControl variant="outlined" className={classes.formControl}>
+                    <InputLabel id="age">Age</InputLabel>
+                    <Select
+                        labelId="age-label"
+                        id="age1"
+                        value={state.age}
+                        onChange={handleChange}
+                        label="Age"
+                        inputProps={{
+                            name: 'age'
+                        }}
+                    >
+                        <MenuItem value={0}>
+                            Age
+                        </MenuItem>
+                        <MenuItem value={1}>Less than 4</MenuItem>
+                        <MenuItem value={2}>4-8</MenuItem>
+                        <MenuItem value={3}>More than 8</MenuItem>
+                    </Select>
+                </FormControl>
+                <FormControl variant="outlined" className={classes.formControl}>
+                    <InputLabel id="gender">Gender</InputLabel>
+                    <Select
+                        labelId="gender-label"
+                        id="gender1"
+                        value={state.gender}
+                        onChange={handleChange}
+                        label="Gender"
+                        inputProps={{
+                            name: 'gender'
+                        }}
+                    >
+                        <MenuItem value={0}>
+                            Gender
+                        </MenuItem>
+                        <MenuItem value={1}>Male</MenuItem>
+                        <MenuItem value={2}>Female</MenuItem>
+                    </Select>
+                </FormControl>
+                <FormControl variant="outlined" className={classes.formControl}>
+                    <InputLabel id="status">Status</InputLabel>
+                    <Select
+                        labelId="status-label"
+                        id="status1"
+                        value={state.status}
+                        onChange={handleChange}
+                        label="Status"
+                        inputProps={{
+                            name: 'status'
+                        }}
+                    >
+                        <MenuItem value={0}>
+                            Status
+                        </MenuItem>
+                        <MenuItem value={1}>HDB-Approved</MenuItem>
+                        <MenuItem value={0}>Sterilized</MenuItem>
+                        <MenuItem value={0}>Vaccinated</MenuItem>
+                        <MenuItem value={0}>Micro-chipped</MenuItem>
+                    </Select>
+                </FormControl>
+            </div>
+        <Divider/>
+        <Typography variant={"subtitle1"} align={"right"}>
             <div className={classes.icon}><RiScissorsFill fontSize={24}/> Sterilized</div>
+            <div className={classes.icon}><CgSmartphoneChip fontSize={24}/> Micro-Chipped</div>
+            <div className={classes.icon}><IoIosHome fontSize={24}/> HDB Suitable</div>
+            <div className={classes.icon}><GiLoveInjection fontSize={24} /> Vaccinated</div>
         </Typography>
         <CardList dog_datas={dog_datas} userId={userId} questionId={questionId} listLength={listLength}
                   gender={state.gender} age={state.age} status={state.status}/>
