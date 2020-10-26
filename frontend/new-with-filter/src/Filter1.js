@@ -7,6 +7,14 @@ import Select from '@material-ui/core/Select';
 import NativeSelect from '@material-ui/core/NativeSelect';
 import axios from "axios";
 import CardList from "./CardList";
+import Grid from "@material-ui/core/Grid";
+import CardActions from "@material-ui/core/CardActions";
+import { CgSmartphoneChip } from 'react-icons/cg';
+import { GiLoveInjection } from 'react-icons/gi';
+import { RiScissorsFill } from 'react-icons/ri';
+import { IoIosHome } from 'react-icons/io';
+import ShareIcon from "@material-ui/icons/Home";
+import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
     formControl: {
@@ -16,9 +24,18 @@ const useStyles = makeStyles((theme) => ({
     selectEmpty: {
         marginTop: theme.spacing(2),
     },
+    icon: {
+        display: "flex",
+        alignItems: "center",
+        padding: 6,
+
+    },
+    a: {
+        flex: 1,
+    }
 }));
 
-export default function Filter1() {
+export default function Filter1({dog_datas, userId, questionId, listLength}) {
     const classes = useStyles();
     const [state, setState] = React.useState({
         gender: '',
@@ -48,9 +65,9 @@ export default function Filter1() {
                     name: 'gender'
                 }}
             >
-                <option aria-label="None" value=""/>
-                <option value={'M'}>Male</option>
-                <option value={'F'}>Female</option>
+                <option aria-label="None" value="0"/>
+                <option value={'1'}>Male</option>
+                <option value={'2'}>Female</option>
             </Select>
         </FormControl>
         <FormControl variant="outlined" className={classes.formControl}>
@@ -64,10 +81,10 @@ export default function Filter1() {
                     name: 'age'
                 }}
             >
-                <option aria-label="None" value=""/>
-                <option value={'<4'}>Less than 4</option>
-                <option value={'4-8'}>4-8</option>
-                <option value={'>8'}>More than 8</option>
+                <option aria-label="None" value="0"/>
+                <option value={'1'}>Less than 4</option>
+                <option value={'2'}>4-8</option>
+                <option value={'3'}>More than 8</option>
             </Select>
         </FormControl>
         <FormControl variant="outlined" className={classes.formControl}>
@@ -81,13 +98,21 @@ export default function Filter1() {
                     name: 'status'
                 }}
             >
-                <option aria-label="None" value=""/>
-                <option value={'HDBApproved'}>HDB-Approved</option>
-                <option value={'Sterilized'}>Sterilized</option>
-                <option value={'Vaccinated'}>Vaccinated</option>
-                <option value={'Microchipped'}>Micro-chipped</option>
+                <option aria-label="None" value="0"/>
+                <option value={'1'}>HDB-Approved</option>
+                <option value={'2'}>Sterilized</option>
+                <option value={'3'}>Vaccinated</option>
+                <option value={'4'}>Micro-chipped</option>
             </Select>
         </FormControl>
+        <Typography variant={"subtitle1"} align={"right"} display="inline" className={classes.a}>
+            <div className={classes.icon}><GiLoveInjection fontSize={24} /> Vaccinated</div>
+            <div className={classes.icon}><IoIosHome fontSize={24}/> HDB Suitable</div>
+            <div className={classes.icon}><CgSmartphoneChip fontSize={24}/> Micro-Chipped</div>
+            <div className={classes.icon}><RiScissorsFill fontSize={24}/> Sterilized</div>
+        </Typography>
+        <CardList dog_datas={dog_datas} userId={userId} questionId={questionId} listLength={listLength}
+                  gender={state.gender} age={state.age} status={state.status}/>
         </div>
     )
 }

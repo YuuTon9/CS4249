@@ -9,7 +9,6 @@ import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import Typography from '@material-ui/core/Typography';
 import { red } from '@material-ui/core/colors';
-import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Home';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Dialog from '@material-ui/core/Dialog';
@@ -19,11 +18,15 @@ import MuiDialogActions from '@material-ui/core/DialogActions';
 import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
 import { withStyles } from '@material-ui/core/styles';
+import { CgSmartphoneChip } from 'react-icons/cg';
+import { GiLoveInjection } from 'react-icons/gi';
+import { RiScissorsFill } from 'react-icons/ri';
 
 
 const useStyles = makeStyles((theme) => ({
     root: {
         maxWidth: 250,
+        minWidth: 250,
         minHeight: 320
     },
     modal: {
@@ -80,11 +83,21 @@ const useStyles = makeStyles((theme) => ({
     },
     bolded: {
         fontWeight: 900
+    },
+    root1: {
+        margin: 0,
+        padding: theme.spacing(2),
+    },
+    closeButton: {
+        position: 'absolute',
+        right: theme.spacing(1),
+        top: theme.spacing(1),
+        color: theme.palette.grey[500],
     }
 }));
 
 const styles = (theme) => ({
-    root: {
+    root1: {
         margin: 0,
         padding: theme.spacing(2),
     },
@@ -99,7 +112,7 @@ const styles = (theme) => ({
 const DialogTitle = withStyles(styles)((props) => {
     const { children, classes, onClose, ...other } = props;
     return (
-        <MuiDialogTitle disableTypography className={classes.root} {...other}>
+        <MuiDialogTitle disableTypography className={classes.root1} {...other}>
             <Typography variant="h6">{children}</Typography>
             {onClose ? (
                 <IconButton aria-label="close" className={classes.closeButton} onClick={onClose}>
@@ -127,7 +140,7 @@ const RequirementsMapping = {
     1: "Dog selected: Age: <4, Gender: M, HDB approved: 1"
 }
 
-export default function DogCard({dog_data}) {
+export default function DogCard({dog_data, userId, questionId, listLength}) {
     const classes = useStyles();
     const [expanded, setExpanded] = React.useState(false);
     const [open, setOpen] = React.useState(false);
@@ -160,9 +173,9 @@ export default function DogCard({dog_data}) {
 
     function isHdbApproved() {
         if (dog_data.hdb_approved === 1) {
-            return <ShareIcon />
+            return <ShareIcon fontSize={'small'}/>
         }
-        return <ShareIcon color="disabled"/>
+        return <ShareIcon fontSize={'small'} color="disabled"/>
     }
 
     return (
@@ -178,7 +191,7 @@ export default function DogCard({dog_data}) {
                     />
                     <CardContent>
                         <div className={classes.controls}>
-                            <Typography align="left" variant="subtitle1">
+                            <Typography align="left" variant="h6">
                                 {dog_data.name}
                             </Typography>
                             <Typography align="right">
@@ -190,8 +203,10 @@ export default function DogCard({dog_data}) {
                         </Typography>
                     </CardContent>
                     <CardActions>
-                        <FavoriteIcon />
+                        <GiLoveInjection fontSize={16}/>
                         {isHdbApproved()}
+                        <CgSmartphoneChip fontSize={16}/>
+                        <RiScissorsFill fontSize={16}/>
                     </CardActions>
                 </ButtonBase>
             </Card>
@@ -209,8 +224,10 @@ export default function DogCard({dog_data}) {
                                 />
                             </Grid>
                             <Grid item xs={6}>
-                                <FavoriteIcon />
+                                <GiLoveInjection fontSize={16}/>
                                 {isHdbApproved()}
+                                <CgSmartphoneChip fontSize={16}/>
+                                <RiScissorsFill fontSize={16}/>
                                 <Typography fontWeight={1100}>Birth Date: {dog_data.date_of_birth}</Typography>
                                 <Typography><b>Location:</b> Causes for Animals center</Typography>
                                 <Typography>Traits: {dog_data.details}</Typography>
@@ -224,21 +241,9 @@ export default function DogCard({dog_data}) {
                             </Grid>
                         </Grid>
                     </Card>
-                    {/*<Typography gutterBottom>*/}
-                    {/*    Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis*/}
-                    {/*    in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.*/}
-                    {/*</Typography>*/}
-                    {/*<Typography gutterBottom>*/}
-                    {/*    Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis*/}
-                    {/*    lacus vel augue laoreet rutrum faucibus dolor auctor.*/}
-                    {/*</Typography>*/}
-                    {/*<Typography gutterBottom>*/}
-                    {/*    Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel*/}
-                    {/*    scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus*/}
-                    {/*    auctor fringilla.*/}
-                    {/*</Typography>*/}
                 </DialogContent>
             </Dialog>
         </div>
     );
 }
+// #008080
