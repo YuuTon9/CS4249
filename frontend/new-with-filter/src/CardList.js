@@ -4,7 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import {filterDogsLongList, filterDogsMediumList, filterDogsSmallList} from "./DogData";
 
-const CardList = ({dog_datas, userId, questionId, listLength, gender, age, status}) => {
+const CardList = ({dog_datas, userId, questionId, listLength, gender, age, status, startTime}) => {
 
     const [values, setValues] = React.useState({
         userId: userId,
@@ -16,6 +16,7 @@ const CardList = ({dog_datas, userId, questionId, listLength, gender, age, statu
         dog_datas: dog_datas,
         startTime: null
     })
+
 
     const useStyles = makeStyles((theme) => ({
         root: {
@@ -41,7 +42,7 @@ const CardList = ({dog_datas, userId, questionId, listLength, gender, age, statu
                 {getDogData().map((ddata) => {
                     return (
                         <Grid item xs={'auto'}>
-                            <DogCard dog_data={ddata} userId={userId} questionId={questionId} listLength={listLength}/>
+                            <DogCard dog_data={ddata} userId={userId} questionId={questionId} listLength={listLength} startTime={startTime}/>
                         </Grid>
                     )
                 })}

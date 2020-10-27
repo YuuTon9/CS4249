@@ -1,8 +1,8 @@
 /**
  *
  * Functions in this file:
- *  filterDogsShortList(gender, ageRange, status, dogList=Dog_Long_List)
- *  filterDogsMediumList(gender, ageRange, status, dogList=Dog_Long_List)
+ *  filterDogsShortList(gender, ageRange, status, dogList=Dog_Short_List)
+ *  filterDogsMediumList(gender, ageRange, status, dogList=Dog_Medium_List)
  *  filterDogsLongList(gender, ageRange, status, dogList=Dog_Long_List) {
      * Input data:
      * gender:

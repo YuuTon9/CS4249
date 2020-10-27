@@ -20,6 +20,14 @@ const useStyles = makeStyles((theme) => ({
     selectEmpty: {
         marginTop: theme.spacing(2),
     },
+    select: {
+        '&:before': {
+            borderColor: "#008080",
+        },
+        '&:after': {
+            borderColor: "#008080",
+        }
+    },
     icon: {
         display: "flex",
         alignItems: "center",
@@ -37,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-export default function Filter1({dog_datas, userId, questionId, listLength}) {
+export default function Filter1({dog_datas, userId, questionId, listLength, layoutId, startTime}) {
     const classes = useStyles();
     const [state, setState] = React.useState({
         gender: 0,
@@ -54,9 +62,9 @@ export default function Filter1({dog_datas, userId, questionId, listLength}) {
         });
     };
 
-    return (
-        <div>
-            <div className={classes.components}>
+    function hasFilter() {
+        if (layoutId == 2) {
+            return <div className={classes.components}>
                 <FormControl variant="outlined" className={classes.formControl}>
                     <InputLabel id="age">Age</InputLabel>
                     <Select
@@ -68,6 +76,7 @@ export default function Filter1({dog_datas, userId, questionId, listLength}) {
                         inputProps={{
                             name: 'age'
                         }}
+                        className={classes.select}
                     >
                         <MenuItem value={0}>
                             Age
@@ -118,7 +127,14 @@ export default function Filter1({dog_datas, userId, questionId, listLength}) {
                     </Select>
                 </FormControl>
             </div>
-        <Divider/>
+        }
+        return <div className={classes.components}></div>
+    }
+
+    return (
+        <div>
+            {hasFilter()}
+            <Divider/>
         <Typography variant={"subtitle1"} align={"right"}>
             <div className={classes.icon}><RiScissorsFill fontSize={24}/> Sterilized</div>
             <div className={classes.icon}><CgSmartphoneChip fontSize={24}/> Micro-Chipped</div>
@@ -126,7 +142,7 @@ export default function Filter1({dog_datas, userId, questionId, listLength}) {
             <div className={classes.icon}><GiLoveInjection fontSize={24} /> Vaccinated</div>
         </Typography>
         <CardList dog_datas={dog_datas} userId={userId} questionId={questionId} listLength={listLength}
-                  gender={state.gender} age={state.age} status={state.status}/>
+                  gender={state.gender} age={state.age} status={state.status} startTime={startTime}/>
         </div>
     )
 }

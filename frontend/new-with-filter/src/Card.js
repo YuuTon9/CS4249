@@ -3,7 +3,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from "@material-ui/core/Grid";
 import Card from '@material-ui/core/Card';
 import Button from '@material-ui/core/Button';
-import CardHeader from '@material-ui/core/CardHeader';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
@@ -21,7 +20,8 @@ import { CgSmartphoneChip } from 'react-icons/cg';
 import { GiLoveInjection } from 'react-icons/gi';
 import { RiScissorsFill } from 'react-icons/ri';
 import { IoIosHome } from 'react-icons/io';
-
+import {MuiThemeProvider} from "@material-ui/core";
+import {THEME} from "./Colours";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -106,6 +106,20 @@ const useStyles = makeStyles((theme) => ({
     icons: {
         padding: 6,
     },
+    normalText: {
+        fontSize: 18,
+        padding: 2
+    },
+    section: {
+        marginTop: 10,
+    },
+    sectionButton: {
+        marginTop: 10,
+        float: "right",
+        minWidth: 40,
+        minHeight: 10,
+        fontSize: 28
+    }
 }));
 
 const styles = (theme) => ({
@@ -153,10 +167,11 @@ const RequirementsMapping = {
     1: "Dog selected: Age: <4, Gender: M, HDB approved: 1"
 }
 
-export default function DogCard({dog_data, userId, questionId, listLength}) {
+export default function DogCard({dog_data, userId, questionId, listLength, startTime}) {
     const classes = useStyles();
     const [expanded, setExpanded] = React.useState(false);
     const [open, setOpen] = React.useState(false);
+    const [completed, setCompleted] = React.useState(false);
 
     const handleOpen = () => {
         setOpen(true);
@@ -180,8 +195,10 @@ export default function DogCard({dog_data, userId, questionId, listLength}) {
         var date = new Date();
         var timestamp = date.getTime();
         console.log("Ended experiment at %s", timestamp)
+        console.log("Time taken (in ms): %s", timestamp - startTime)
         console.log("Dog selected: Age: %s, Gender: %s, HDB approved: %s",
             dog_data.age, dog_data.gender, dog_data.hdb_approved)
+        setCompleted(true)
     }
 
     function isHdbApproved(iconSize, format) {
@@ -195,6 +212,49 @@ export default function DogCard({dog_data, userId, questionId, listLength}) {
             return <IoIosHome fontSize={iconSize} color="#D9D9D9" className={classes.icons}/>
         }
         return <IoIosHome fontSize={iconSize} color="#D9D9D9"/>
+    }
+
+    function isCompleted() {
+        if (completed) {
+            return <Grid container justify="center">
+                <Typography variant={"h5"}>You've completed the task, you may close this window and continue with the survey.</Typography>
+            </Grid>
+        }
+        return <Grid container justify="center">
+            <Grid item xs={6} alignItems={"center"}
+            >
+                <CardMedia
+                    className={classes.fullMedia}
+                    image={dog_data.image}
+                />
+            </Grid>
+            <Grid item xs={6}
+            >
+                <GiLoveInjection fontSize={24} className={classes.icons}/>
+                {isHdbApproved(24, true)}
+                <CgSmartphoneChip fontSize={24} className={classes.icons}/>
+                <RiScissorsFill fontSize={24}  className={classes.icons}/>
+                <div className={classes.normalText}><b>Birth Date:</b> {dog_data.date_of_birth}</div>
+                <div className={classes.normalText}><b>Age:</b> {dog_data.age}</div>
+                <div className={classes.normalText}><b>Location:</b> Causes for Animals center</div>
+                <div className={classes.section}>
+                    <div className={classes.normalText}><b>Traits</b></div>
+                    <div className={classes.normalText}>{dog_data.details}</div>
+                </div>
+                <div className={classes.section}>
+                    <div className={classes.normalText}><b>Description</b></div>
+                    <div className={classes.normalText}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pellentesque ac urna eget posuere. Mauris a blandit massa. Nunc facilisis venenatis augue, vel consequat neque rutrum et. Curabitur faucibus dictum lacus, a tempor mauris vehicula ut. Suspendisse ac magna ac neque pretium accumsan eget vitae diam. Quisque lobortis dui id turpis feugiat, vitae dictum magna tincidunt. Mauris nisl lacus, aliquam eget lectus non, pharetra fringilla purus.</div>
+                </div>
+                <div className={classes.section}>
+                    <div className={classes.normalText}><b>Enquiry Contact:</b></div>
+                    <div className={classes.normalText}>97433902</div>
+                    <div className={classes.normalText}>info@causesforanimals.com</div>
+                </div>
+                <Button className={classes.sectionButton} size="large" variant="contained" color="primary" onClick={endExperiment}>
+                    ADOPT ME!
+                </Button>
+            </Grid>
+        </Grid>
     }
 
     return (
@@ -234,32 +294,7 @@ export default function DogCard({dog_data, userId, questionId, listLength}) {
                     {dog_data.name} ({dog_data.gender})
                 </DialogTitle>
                 <DialogContent dividers>
-                        <Grid container justify="center">
-                            <Grid item xs={6} className={classes.modalGrid}
-                            >
-                                <CardMedia
-                                    className={classes.fullMedia}
-                                    image={dog_data.image}
-                                />
-                            </Grid>
-                            <Grid item xs={6}
-                            >
-                                <GiLoveInjection fontSize={24} className={classes.icons}/>
-                                {isHdbApproved(24, true)}
-                                <CgSmartphoneChip fontSize={24} className={classes.icons}/>
-                                <RiScissorsFill fontSize={24}  className={classes.icons}/>
-                                <div fontSize={48}>Birth Date: {dog_data.date_of_birth}</div>
-                                <Typography><b>Location:</b> Causes for Animals center</Typography>
-                                <Typography>Traits: {dog_data.details}</Typography>
-                                <Typography>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pellentesque ac urna eget posuere. Mauris a blandit massa. Nunc facilisis venenatis augue, vel consequat neque rutrum et. Curabitur faucibus dictum lacus, a tempor mauris vehicula ut. Suspendisse ac magna ac neque pretium accumsan eget vitae diam. Quisque lobortis dui id turpis feugiat, vitae dictum magna tincidunt. Mauris nisl lacus, aliquam eget lectus non, pharetra fringilla purus. Morbi cursus elit ut aliquam sollicitudin. Donec consequat non nulla vel ultrices. Vestibulum ut pharetra purus. Nam rutrum purus magna, nec dignissim metus cursus id.</Typography>
-                                <Typography>Enquiry Contact: 97433902
-                                    info@causesforanimals.com
-                                </Typography>
-                                <Button size="large" variant="contained" color="primary" onClick={endExperiment}>
-                                    Adopt me!
-                                </Button>
-                            </Grid>
-                        </Grid>
+                    {isCompleted()}
                 </DialogContent>
             </Dialog>
         </div>
