@@ -9,7 +9,7 @@ import {filterDogsLongList, filterDogsMediumList, filterDogsSmallList} from "./D
 import {MuiThemeProvider} from "@material-ui/core";
 import {THEME} from "./Colours";
 import Typography from "@material-ui/core/Typography";
-import {loggingjs} from "./Logging";
+import {loggingjs, sendCustomEvent} from "./Logging";
 
 function App() {
     const useStyles = makeStyles((theme) => ({
@@ -50,7 +50,15 @@ function App() {
         start: false
     })
     const classes = useStyles();
-
+    const layoutMapping = {
+        1: "Modal without filter",
+        2: "Modal with filter"
+    }
+    const questionIdMapping = {
+        1: "Male, Hdb-approved, < 4 years old",
+        2: "Male, Hdb-approved, 4-8 years old",
+        3: "Male, Hdb-approved, >8 years old"
+    }
     function getQueryVariable(variable) {
         var query = window.location.search.substring(1);
         var vars = query.split('&');
@@ -66,7 +74,7 @@ function App() {
     function startExperiment() {
         var date = new Date();
         var timestamp = date.getTime();
-        // loggingjs.logEvent(null, "StartButtonClicked", {}, values.layoutId, values.listLength)
+        sendCustomEvent("StartButtonClicked", "StartButtonClicked", {"layoutId": values.layoutId, "layout": layoutMapping[values.layoutId], "listLength": values.listLength, "questionId": values.questionId, "question": questionIdMapping[values.questionId] } )
         setValues({ ...values, dog_datas: chooseListSize() });
         setValues({ ...values, start: true })
         // setValues({ ...values, startTime: timestamp })
@@ -84,7 +92,7 @@ function App() {
         }
         return <div>
             <Typography variant={"h5"} className={classes.padding}>Click on the start button when you're ready.</Typography>
-            <Button className={classes.button} variant="contained" color="primary" onClick={startExperiment}>
+            <Button className={classes.button} variant="contained" color="primary" onClick={startExperiment} id={"START_BUTTON"}>
                 Start!
             </Button>
         </div>

@@ -23,11 +23,11 @@ const Dog_Long_List  = [
         {
             "age": 5,
             "date_of_birth": 2015,
-            "details": "Wild, Hardworking, Dutiful",
+            "details": "Wild, Hardworking, Dutiful, Good with people, dogs & cats",
             "gender": "M",
             "hdb_approved": 0,
             "id": 1,
-            "image": "https://cdn2.thedogapi.com/images/rkiByec47_1280.jpg",
+            "image": "https://www.causesforanimals.com/uploads/1/0/8/3/10832582/coco-01_orig.jpg",
             "name": "Max"
         },
         {
@@ -378,6 +378,9 @@ export function filterDogsLongList(gender, ageRange, status, dogList=Dog_Long_Li
      *  - 0: no filter
      *  - 1: hdb approved
      */
+    if (status > 1) {
+        status = 0
+    }
     if (gender === 0 && ageRange === 0 && status === 0) {
         return dogList
     }
@@ -709,6 +712,10 @@ export function filterDogsMediumList(gender, ageRange, status, dogList=Dog_Mediu
      *  - 0: no filter
      *  - 1: hdb approved
      */
+    if (status > 1) {
+        status = 0
+    }
+
     if (gender === 0 && ageRange === 0 && status === 0) {
         return dogList
     }
@@ -942,6 +949,9 @@ export function filterDogsSmallList(gender, ageRange, status, dogList=Dog_Small_
      *  - 0: no filter
      *  - 1: hdb approved
      */
+    if (status > 1) {
+        status = 0
+    }
     if (gender === 0 && ageRange === 0 && status === 0) {
         return dogList
     }

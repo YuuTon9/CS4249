@@ -11,6 +11,7 @@ import { GiLoveInjection } from 'react-icons/gi';
 import { RiScissorsFill } from 'react-icons/ri';
 import { IoIosHome } from 'react-icons/io';
 import Typography from '@material-ui/core/Typography';
+import {sendCustomEvent} from "./Logging";
 
 const useStyles = makeStyles((theme) => ({
     formControl: {
@@ -42,6 +43,10 @@ const useStyles = makeStyles((theme) => ({
     components: {
         padding: 5,
         marginBottom: 5
+    },
+    iconMargin: {
+        marginLeft: 3,
+        marginRight: 3
     }
 }));
 
@@ -60,11 +65,35 @@ export default function Filter1({dog_datas, userId, questionId, listLength, layo
             ...state,
             [name]: event.target.value,
         });
+        logUsedFilter(name, event.target.value)
     };
+
+    function logUsedFilter(filterType, info) {
+        sendCustomEvent("FilterClicked", filterType, info)
+    }
 
     function hasFilter() {
         if (layoutId == 2) {
             return <div className={classes.components}>
+                <FormControl variant="outlined" className={classes.formControl}>
+                    <InputLabel id="gender">Gender</InputLabel>
+                    <Select
+                        labelId="gender-label"
+                        id="gender1"
+                        value={state.gender}
+                        onChange={handleChange}
+                        label="Gender"
+                        inputProps={{
+                            name: 'gender'
+                        }}
+                    >
+                        <MenuItem value={0}>
+                            All
+                        </MenuItem>
+                        <MenuItem value={1}>Male</MenuItem>
+                        <MenuItem value={2}>Female</MenuItem>
+                    </Select>
+                </FormControl>
                 <FormControl variant="outlined" className={classes.formControl}>
                     <InputLabel id="age">Age</InputLabel>
                     <Select
@@ -79,30 +108,11 @@ export default function Filter1({dog_datas, userId, questionId, listLength, layo
                         className={classes.select}
                     >
                         <MenuItem value={0}>
-                            Age
+                            All
                         </MenuItem>
                         <MenuItem value={1}>Less than 4</MenuItem>
                         <MenuItem value={2}>4-8</MenuItem>
                         <MenuItem value={3}>More than 8</MenuItem>
-                    </Select>
-                </FormControl>
-                <FormControl variant="outlined" className={classes.formControl}>
-                    <InputLabel id="gender">Gender</InputLabel>
-                    <Select
-                        labelId="gender-label"
-                        id="gender1"
-                        value={state.gender}
-                        onChange={handleChange}
-                        label="Gender"
-                        inputProps={{
-                            name: 'gender'
-                        }}
-                    >
-                        <MenuItem value={0}>
-                            Gender
-                        </MenuItem>
-                        <MenuItem value={1}>Male</MenuItem>
-                        <MenuItem value={2}>Female</MenuItem>
                     </Select>
                 </FormControl>
                 <FormControl variant="outlined" className={classes.formControl}>
@@ -118,12 +128,12 @@ export default function Filter1({dog_datas, userId, questionId, listLength, layo
                         }}
                     >
                         <MenuItem value={0}>
-                            Status
+                            All
                         </MenuItem>
                         <MenuItem value={1}>HDB-Approved</MenuItem>
-                        <MenuItem value={0}>Sterilized</MenuItem>
-                        <MenuItem value={0}>Vaccinated</MenuItem>
-                        <MenuItem value={0}>Micro-chipped</MenuItem>
+                        <MenuItem value={2}>Sterilized</MenuItem>
+                        <MenuItem value={3}>Vaccinated</MenuItem>
+                        <MenuItem value={4}>Micro-chipped</MenuItem>
                     </Select>
                 </FormControl>
             </div>
@@ -136,10 +146,10 @@ export default function Filter1({dog_datas, userId, questionId, listLength, layo
             {hasFilter()}
             <Divider/>
         <Typography variant={"subtitle1"} align={"right"}>
-            <div className={classes.icon}><RiScissorsFill fontSize={24}/> Sterilized</div>
-            <div className={classes.icon}><CgSmartphoneChip fontSize={24}/> Micro-Chipped</div>
-            <div className={classes.icon}><IoIosHome fontSize={24}/> HDB Suitable</div>
-            <div className={classes.icon}><GiLoveInjection fontSize={24} /> Vaccinated</div>
+            <div className={classes.icon}><RiScissorsFill fontSize={24} className={classes.iconMargin}/> Sterilized</div>
+            <div className={classes.icon}><CgSmartphoneChip fontSize={24} className={classes.iconMargin}/> Micro-Chipped</div>
+            <div className={classes.icon}><IoIosHome fontSize={24} className={classes.iconMargin}/> HDB Suitable</div>
+            <div className={classes.icon}><GiLoveInjection fontSize={24} className={classes.iconMargin}/> Vaccinated</div>
         </Typography>
         <CardList dog_datas={dog_datas} userId={userId} questionId={questionId} listLength={listLength}
                   gender={state.gender} age={state.age} status={state.status} startTime={startTime}/>

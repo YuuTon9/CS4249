@@ -1,6 +1,6 @@
 {
   "name": "new-with-filter",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "homepage": "http://CS4249Team2.github.io/app1",
   "dependencies": {
@@ -27,7 +27,6 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
-  }
   },
   "eslintConfig": {
     "extends": "react-app"

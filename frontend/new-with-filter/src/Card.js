@@ -20,8 +20,7 @@ import { CgSmartphoneChip } from 'react-icons/cg';
 import { GiLoveInjection } from 'react-icons/gi';
 import { RiScissorsFill } from 'react-icons/ri';
 import { IoIosHome } from 'react-icons/io';
-import {MuiThemeProvider} from "@material-ui/core";
-import {THEME} from "./Colours";
+import {sendCustomEvent} from "./Logging";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -119,6 +118,9 @@ const useStyles = makeStyles((theme) => ({
         minWidth: 40,
         minHeight: 10,
         fontSize: 28
+    },
+    gridStyle: {
+        padding: 7
     }
 }));
 
@@ -163,10 +165,6 @@ const DialogActions = withStyles((theme) => ({
     },
 }))(MuiDialogActions);
 
-const RequirementsMapping = {
-    1: "Dog selected: Age: <4, Gender: M, HDB approved: 1"
-}
-
 export default function DogCard({dog_data, userId, questionId, listLength, startTime}) {
     const classes = useStyles();
     const [expanded, setExpanded] = React.useState(false);
@@ -194,6 +192,8 @@ export default function DogCard({dog_data, userId, questionId, listLength, start
     function endExperiment() {
         var date = new Date();
         var timestamp = date.getTime();
+        sendCustomEvent("EndExperiment", "dogSelected", {"age": dog_data.age, "gender": dog_data.gender, "hdbApproved": dog_data.hdb_approved} )
+
         console.log("Ended experiment at %s", timestamp)
         console.log("Time taken (in ms): %s", timestamp - startTime)
         console.log("Dog selected: Age: %s, Gender: %s, HDB approved: %s",
@@ -209,9 +209,9 @@ export default function DogCard({dog_data, userId, questionId, listLength, start
             return <IoIosHome fontSize={iconSize}/>
         }
         if (format) {
-            return <IoIosHome fontSize={iconSize} color="#D9D9D9" className={classes.icons}/>
+            return <IoIosHome fontSize={iconSize} color="#E4E4E4" className={classes.icons}/>
         }
-        return <IoIosHome fontSize={iconSize} color="#D9D9D9"/>
+        return <IoIosHome fontSize={iconSize} color="#E4E4E4"/>
     }
 
     function isCompleted() {
@@ -221,14 +221,14 @@ export default function DogCard({dog_data, userId, questionId, listLength, start
             </Grid>
         }
         return <Grid container justify="center">
-            <Grid item xs={6} alignItems={"center"}
+            <Grid item xs={6} alignItems={"center"} className={classes.gridStyle}
             >
                 <CardMedia
                     className={classes.fullMedia}
                     image={dog_data.image}
                 />
             </Grid>
-            <Grid item xs={6}
+            <Grid item xs={6} className={classes.gridStyle}
             >
                 <GiLoveInjection fontSize={24} className={classes.icons}/>
                 {isHdbApproved(24, true)}
@@ -243,7 +243,7 @@ export default function DogCard({dog_data, userId, questionId, listLength, start
                 </div>
                 <div className={classes.section}>
                     <div className={classes.normalText}><b>Description</b></div>
-                    <div className={classes.normalText}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pellentesque ac urna eget posuere. Mauris a blandit massa. Nunc facilisis venenatis augue, vel consequat neque rutrum et. Curabitur faucibus dictum lacus, a tempor mauris vehicula ut. Suspendisse ac magna ac neque pretium accumsan eget vitae diam. Quisque lobortis dui id turpis feugiat, vitae dictum magna tincidunt. Mauris nisl lacus, aliquam eget lectus non, pharetra fringilla purus.</div>
+                    <div className={classes.normalText}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pellentesque ac urna eget posuere. Mauris a blandit massa. Nunc facilisis venenatis augue, vel consequat neque rutrum et. Curabitur faucibus dictum lacus, a tempor mauris vehicula ut.</div>
                 </div>
                 <div className={classes.section}>
                     <div className={classes.normalText}><b>Enquiry Contact:</b></div>

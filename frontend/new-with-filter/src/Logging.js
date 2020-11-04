@@ -16,7 +16,7 @@
 
 var ENABLE_NETWORK_LOGGING = true; // Controls network logging.
 var ENABLE_CONSOLE_LOGGING = true; // Controls console logging.
-var log_version = '0.1';           // Labels every entry with version: "0.1".
+var log_version = '0.2';           // Labels every entry with version: "0.1".
 
 // These event types are intercepted for logging before jQuery handlers.
 var EVENT_TYPES_TO_LOG = {
@@ -24,10 +24,6 @@ var EVENT_TYPES_TO_LOG = {
     keydown: true
 };
 
-var techniqueMapping = {
-    1: "Modal without filter",
-    2: "Modal with filter"
-}
 
 // These event properties are copied to the log if present.
 var EVENT_PROPERTIES_TO_LOG = {
@@ -116,10 +112,17 @@ export var loggingjs = (function() { // Immediately-Invoked Function Expression 
     }
 
 // Log the given event.
-    function logEvent(event, customName, customInfo, technique, listlength) {
+    function logEvent(event, customName, customInfo) {
 
-        console.log('event', event, 'customName', customName, 'customInfo', customInfo, 'technique', technique, 'listlength', listlength);
-
+        // console.log('event', event, 'customName', customName, 'customInfo', customInfo, 'technique', technique, 'listlength', listlength);
+        // if (technique == null) {
+        //     technique = {}
+        // } else {
+        //     technique = JSON.stringify({"technique": techniqueMapping[technique]})
+        // }
+        // if (listlength == null) {
+        //     listlength = "unknown"
+        // }
         var time = (new Date).getTime();
         var eventName = customName || event.type;
         // By default, monitor some global state on every event.
@@ -141,10 +144,10 @@ export var loggingjs = (function() { // Immediately-Invoked Function Expression 
         var state = "";
 
         if (ENABLE_CONSOLE_LOGGING) {
-            console.log(uid, time, eventName, target, info, state, {"technique": techniqueMapping[technique]}, listlength, log_version);
+            console.log(uid, time, eventName, target, info, state, log_version);
         }
         if (ENABLE_NETWORK_LOGGING) {
-            sendNetworkLog(uid, time, eventName, target, info, state, {"technique": techniqueMapping[technique]}, listlength, log_version);
+            sendNetworkLog(uid, time, eventName, target, info, state, log_version);
         }
     }
 
@@ -160,6 +163,8 @@ export var loggingjs = (function() { // Immediately-Invoked Function Expression 
 
 }());
 
+// submits to the google form at this URL:
+// docs.google.com/forms/d/e/1FAIpQLSdpzwCDMDtojWMY9elk2xMsMufwLEeYG36Wt96lfQ2lXVebkA/viewform
 function sendNetworkLog(
     uid,
     time,
@@ -167,27 +172,31 @@ function sendNetworkLog(
     target,
     info,
     state,
-    technique,
-    listlength,
     log_version) {
-    var formid = "e/1FAIpQLSerEH8oceJFP36r7q0_1pGkTsoA_p30mlWJhzpQ1wpnr-TEyg";
+    var formid = "e/1FAIpQLSdpzwCDMDtojWMY9elk2xMsMufwLEeYG36Wt96lfQ2lXVebkA";
     var data = {
-        "entry.954010568": uid,
-        "entry.1785898090": time,
-        "entry.508709514": eventname,
-        "entry.2134378309": target,
-        "entry.450068785": info,
-        "entry.986681323": state,
-        "entry.638340315": technique,
-        "entry.723223567": listlength,
-        "entry.1819673068": log_version
+        "entry.1914522504": uid,
+        "entry.1304666188": time,
+        "entry.467882901": eventname,
+        "entry.1590762363": target,
+        "entry.2069806125": info,
+        "entry.628198977": state,
+        "entry.1491237547": log_version
     };
     var params = [];
-    let key;
+    var key;
     for (key in data) {
         params.push(key + "=" + encodeURIComponent(data[key]));
     }
-    // Submit the form using an image to avoid CORS warnings; warning may still happen, but log will be sent. Go check result
+    // Submit the form using an image to avoid CORS warnings; warning may still happen, but log will be sent. Go check result in Goog
     (new Image).src = "https://docs.google.com/forms/d/" + formid +
         "/formResponse?" + params.join("&");
+}
+
+
+export function sendCustomEvent(customName, eventName, info) {
+    loggingjs.logEvent(null, customName, {
+        eventName: eventName,
+        info: info
+    });
 }
