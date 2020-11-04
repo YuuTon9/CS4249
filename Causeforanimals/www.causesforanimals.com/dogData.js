@@ -937,6 +937,9 @@ const Dog_Small_List  = [
     }]
 
 function filterDogsSmallList(gender, ageRange, status, dogList=Dog_Small_List) {
+    gender = parseInt(gender);
+    ageRange = parseInt(ageRange);
+    status = parseInt(status);
     /**
      * Input data:
      * gender:
@@ -956,6 +959,7 @@ function filterDogsSmallList(gender, ageRange, status, dogList=Dog_Small_List) {
         return dogList
     }
     else if (gender === 1 && ageRange === 0 && status === 0) { // Male
+        console.log("yess");
         const newDogList = dogList.filter(function (dl) {
             return dl.gender === "M"
         });

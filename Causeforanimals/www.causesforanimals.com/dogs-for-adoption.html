@@ -19,11 +19,39 @@
 <meta property="og:image" content="https://www.causesforanimals.com/uploads/1/0/8/3/10832582/published/primrosecrop-jpg_1.jpg?1559118078" />
 <meta property="og:url" content="https://www.causesforanimals.com/dogs-for-adoption.html" />
 
-<!-- Script for filter function-->
-<script src="dogData.js" type="text/javascript"></script> 
+<!--jquery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 <!-- Param func-->
 <script src="paramurl.js"></script> 
+<script>
+startExperiment();
+//listLength = ParseURLParameter('listLength');
+listLength = getQueryVariable('listLength');
+</script>
+
+<!-- Script for filter function-->
+<script src="dogData.js" type="text/javascript"></script> 
+<script>
+	filteredlist = [];
+	//if (listLength == 'short') {
+	//	for (i = 0; i < Dog_Small_List.length; i++) {
+	//	filteredlist[i] = Dog_Small_List[i];
+	//	}
+	//} else if (listLength == 'medium') {
+	//	for (i = 0; i < Dog_Medium_List.length; i++) {
+	//		filteredlist[i] = Dog_Medium_List[i];
+	//	}
+	//} else {
+	//	for (i = 0; i < Dog_Long_List.length; i++) {
+	//		filteredlist[i] = Dog_Long_List[i];
+	//	}
+	//}
+	filteredlist = Dog_Small_List;
+	gender = '0';
+	status = '0';
+	age = '0';
+</script>
 
 <!-- bootstrap css-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -962,556 +990,796 @@ _W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":
 </div></div></div>
 
 <!-- FILTER FEATURE -->
+
 <script>
-	var listLength = ParseURLParameter();
-	var filteredList = document.getElementById(returnList(listLength)).value;
+
+	function filterSelection1(newgender){
+		gender = newgender;
+		filteredList = filterAct();
+	}
+	function filterSelection2(newage){
+		age = newage;
+		filteredList = filterAct();
+	}
+	function filterSelection3(newstatus){
+		status = newstatus;
+		filteredList = filterAct();
+	}
+	//filterSelection("all");
+	function filterAct() { //get correct dog list
+		if (listLength == 34) {
+        	return filterDogsLongList(gender, ageRange, status);
+    	} else if (listLength == 17) {
+        	return filterDogsMediumList(gender, ageRange, status);
+    	} else {
+        	return filterDogsShortList(gender, ageRange, status);
+    	}
+	}
+	filterSelection("all")
+	function myFunctionGender(n) {
+		console.log("gender activated");
+		//input = document.getElementById("gender");
+		//filter = input.value.toUpperCase();
+		console.log(n);
+		gender = n;
+		if (listLength == 'short') {
+			console.log("gender activated short");
+			console.log(gender);
+			console.log(age);
+			console.log(status);
+			filteredlist = filterDogsSmallList(gender,age,status);
+			console.log(filteredlist);
+		} else if (listLength == 'medium') {
+			filteredlist = filterDogsMediumList(gender,age,status);
+		} else {
+			filteredlist = filterDogsLongList(gender,age,status);
+		}
+		//table = document.getElementsByClassName("wsite-multicol-table");
+		//tr = table.getElementsByClassName("wsite-multicol-tr");
+		//for (i = 0; i < tr.length; i++) {
+			//td = tr[i].getElementsByClassName("wsite-multicol-col")[0];
+			//if (td) {
+
+			//	if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+			//		tr[i].style.display = "";
+			//	} else {
+			//		tr[i].style.display = "none";
+			//	}
+		//	}       
+		//}
+		console.log(filteredlist);
+		filterSelection('1');
+	}
+	function myFunctionAge(n) {
+		age = n
+		if (listLength == 'short') {
+			filteredlist = filterDogsSmallList(gender,age,status);
+		} else if (listLength == 'medium') {
+			filteredlist = filterDogsMediumList(gender,age,status);
+		} else {
+			filteredlist = filterDogsLongList(gender,age,status);
+		}
+		filterSelection('1');
+	}
+	function myFunctionStatus(n) {
+		status = n;
+		if (listLength == 'short') {
+			filteredlist = filterDogsSmallList(gender,age,status);
+		} else if (listLength == 'medium') {
+			filteredlist = filterDogsMediumList(gender,age,status);
+		} else {
+			filteredlist = filterDogsLongList(gender,age,status);
+		}
+		filterSelection('1');
+	}
+	$(document).ready(function() {
+		filterSelection();
+	});
+	function filterSelection(n) {
+		console.log("zzz");
+		var gender = 'M';
+		var innerHtmlnew = '';
+		if (n == '1') {
+			console.log('i');
+
+		
+			var count1 = 0; //calculates which index we are at 
+		//var count2 = 0;
+		innerHtmlnew += `
+		<div id="table" class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+		<table id="table1" class="wsite-multicol-table"> `;
+		for (i = 0; i < filteredlist.length/4; i++  ) {
+			//innerHtmlnew += `<tr class="wsite-multicol-tr">`;
+			innerHtmlnew = innerHtmlnew + `<tr class="wsite-multicol-tr">`;
+			for (j = 0; j < 4; j++) {
+				if (count1 >= filteredlist.length) {
+					break;
+				} else {;
+					innerHtmlnew += `<td class="wsite-multicol-col" style="width:40%; padding:0 5px;">
+					<div class="wsite-multicol">
+					<div class="wsite-multicol">
+					<div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+						<a href='lila.html' target='_blank'>
+							<img src=` + filteredlist[count1].image + ` alt="Picture" style="width:150;max-width:100%" />
+						</a>
+						<div style="display:block;font-size:90%">` + filteredlist[count1].name + `</div>
+					</div>
+					<div class="paragraph" style="text-align:center;">
+						<font size="2">
+							<em style="color:rgb(81, 81, 81)">
+								` + filteredlist[count1].date_of_birth + ` , ` + filteredlist[count1].gender +  `
+							<br />
+							V,C,S,H
+							</em>
+							<br />
+							<font style="color:rgb(81, 81, 81)">
+								` + filteredlist[count1].details + ` 
+							</font>
+						</font>
+					</div>
+				</div>`
+				count1 ++;
+				;}
+			}
+		}
+		//console.log(innerHtmlnew);
+		//document.getElementsByClassName("wsite-multicol-table-wrap").innerHTML = innerHTMLnew;
+		$("#table").html(innerHtmlnew);
+		;
+	}
+	}
+
 </script>
-
-
 <div id="myBtnContainer">
 	<p1> Filters:  </p1>
+	<button class="btn active" onclick="filterSelection('all')"> Show all</button>
 	<div class="btn-group d-inline-block">
 		<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-labelledby="dropdownMenu2">Gender</button>
 		<div class="dropdown-menu">
-			<li><p class="btn" onclick="filterSelection('male')">waht</p></li>
-			<li><p class="btn" onclick="filterSelection('female')">Female</p></li>
+			<li><p class="btn" id="gender" onclick="myFunctionGender('1')">Male</p></li>
+			<li><p class="btn" id="gender" onclick="myFunctionGender('2')">Female</p></li>
 		</div>
 	  </div>
 
 	<div class="btn-group d-inline-block">
 		<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" >Age</button>
 		<div class="dropdown-menu">
-			<li><p class="btn" onclick="filterSelection('male')"> Less than 4 years old </p></li>
-			<li><p class="btn" onclick="filterSelection('female')"> 4 - 8 years old </p></li>
-			<li><p class="btn" onclick="filterSelection('female')"> More than 8 old</p></li>
+			<li><p class="btn" id="age" onclick="myFunctionAge('1')"> Less than 4 years old </p></li>
+			<li><p class="btn" id="age" onclick="myFunctionAge('2')"> 4 - 8 years old </p></li>
+			<li><p class="btn" id="age" onclick="myFunctionAge('3')"> More than 8 old</p></li>
 		</div>
 	</div>
 
 	<div class="btn-group d-inline-block">
 		<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" >Status</button>
 		<div class="dropdown-menu" >
-			<li><p class="btn" onclick="filterSelection('male')"> HDB Aprroved </p></li>
+			<li><p class="btn" id="hdb" onclick="myFunctionStatus('1')"> HDB Aprroved </p></li>
 		</div>
 	</div>
+	<!--
 	<div class ="btn-group d-inline-block">
 		<button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">Size</button>
 		<div class="dropdown-menu" >
-			<li><p class="btn" onclick="filterSelection('male')"> idk </p></li>
-			<li><p class="btn" onclick="filterSelection('female')"> what </p></li>
-			<li><p class="btn" onclick="filterSelection('female')"> size</p></li>
+			<li><p class="btn" id="size" onclick="filterSelection4('male')"> idk </p></li>
+			<li><p class="btn" id="size" onclick="filterSelection4('female')"> what </p></li>
+			<li><p class="btn" id="size" onclick="filterSelection4('female')"> size</p></li>
 		</div>
 	</div>
+	-->
 </div>
 
 
-<script>
-	/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-</script>
 <!-- end of FILTER FEATURE-->
 
 <div class="paragraph"><em><strong><font size="2">Key: V (vaccinated), C&nbsp;(microchipped), S (sterilised), &nbsp;H (HDB approved)</font><br /><br /><font color="#5040ae">CLICK ON IMAGE FOR MORE INFO</font><br /><br /><font size="4" color="#a82e2e">Please note dogs tagged&nbsp; "homestay" means they are unavailable as they are with a potential adopting family</font></strong></em></div>
 
 <div class="wsite-spacer" style="height:10px;"></div>
 
-<!-- Really the first dog -->
-
-
-
-<!--<img id="myImg" src="img_snow.jpg" alt="Snow" style="width:100%;max-width:300px"> -->
-<img {-ms-interpolation-mode:bicubic;} id="myImg" src="uploads/1/0/8/3/10832582/editor/khartik-01c118.jpg?1600932086" style="white-space:pre;" alt="KHATIK 
- Affectionate, gentle, calm, confident, chill on lead" style="width:144;max-width:100%" />
-<!-- The Modal -->
-<div id="myModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img01">
-  <div id="caption"></div>
-</div>
-
 <script>
-// Get the modal
-var modal = document.getElementById("myModal");
+	function load() {
+	var innerHtmlnew = '';
+	var count1 = 0; //calculates which index we are at 
+		//var count2 = 0;
+	innerHtmlnew += `
+		<div id="table" class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+		<table id="table1" class="wsite-multicol-table"> `;
+		for (i = 0; i < filteredlist.length/4; i++  ) {
+			//innerHtmlnew += `<tr class="wsite-multicol-tr">`;
+			innerHtmlnew = innerHtmlnew + `<tr class="wsite-multicol-tr">`;
+			for (j = 0; j < 4; j++) {
+				if (count1 >= filteredlist.length) {
+					break;
+				} else {;
+					innerHtmlnew += `<td class="wsite-multicol-col" style="width:40%; padding:0 5px;">
+					<div class="wsite-multicol">
+					<div class="wsite-multicol">
+					<div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+						<a href='lila.html' target='_blank'>
+							<img src=` + filteredlist[count1].image + ` alt="Picture" style="width:150;max-width:100%" />
+						</a>
+						<div style="display:block;font-size:90%">` + filteredlist[count1].name + `</div>
+					</div>
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-  modal.style.display = "none";
-}
+					<div class="paragraph" style="text-align:center;">
+						<font size="2">
+							<em style="color:rgb(81, 81, 81)">
+								` + filteredlist[count1].date_of_birth + ` , ` + filteredlist[count1].gender +  `
+							<br />
+							V,C,S,H
+							</em>
+							<br />
+							<font style="color:rgb(81, 81, 81)">
+								` + filteredlist[count1].details + ` 
+							</font>
+						</font>
+					</div>
+				</div>`
+				count1 ++;
+				;}
+			}
+		}
+		//console.log(innerHtmlnew);
+		//document.getElementsByClassName("wsite-multicol-table-wrap").innerHTML = innerHTMLnew;
+		$("#table").html(innerHtmlnew);
+		;
+	}window.onload = load;
 </script>
 
-
-<!-- end of modal copy -->
-<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
-<a href='khartik.html' target='_blank'>
-<img src="uploads/1/0/8/3/10832582/editor/khartik-01c118.jpg?1600932086" alt="Picture" style="width:144;max-width:100%" />
-</a>
-<div style="display:block;font-size:90%">KHARTIK</div>
-</div></div>
-
-<div class="paragraph" style="text-align:center;"><font size="2"><em style="color:rgb(81, 81, 81)">DOB:2012, M<br />V,C,S,H</em><br /><font style="color:rgb(81, 81, 81)">Affectionate, gentle, calm<br />Confident, chill on lead</font></font></div>
-
-<div class="wsite-spacer" style="height:10px;"></div>
-
-<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
-	<table class="wsite-multicol-table">
-		<tbody class="wsite-multicol-tbody">
-			<tr class="wsite-multicol-tr">
-				<td class="wsite-multicol-col" style="width:74.070247933884%; padding:0 15px;">
-					
-						
-
-<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
-	<table class="wsite-multicol-table">
-		<tbody class="wsite-multicol-tbody">
-			<tr class="wsite-multicol-tr">
-				<td class="wsite-multicol-col" style="width:65.690376569038%; padding:0 15px;">
-					
-						
-
-<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
-	<table class="wsite-multicol-table">
-		<tbody class="wsite-multicol-tbody">
-			<tr class="wsite-multicol-tr">
-				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
-					
-						
-
-<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
-<a href='lila.html' target='_blank'>
-<img src="uploads/1/0/8/3/10832582/editor/lila-croppede78d.jpg?1585554374" alt="Picture" style="width:150;max-width:100%" />
-</a>
-<div style="display:block;font-size:90%">LILAA</div>
-</div></div>
-
-<div class="paragraph" style="text-align:center;"><font size="2"><em style="color:rgb(81, 81, 81)">DOB:2013, F<br />V,C,S,H</em><br /><font style="color:rgb(81, 81, 81)">Good with dogs &amp; indoor trained</font></font></div>
-
-
-					
-				</td>				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
-					
-						
-
-<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
-<a href='arthos.html' target='_blank'>
-<img src="uploads/1/0/8/3/10832582/editor/1_13.jpg" alt="Picture" style="width:150;max-width:100%" />
-</a>
-<div style="display:block;font-size:90%">ARTHOS</div>
-</div></div>
-
-<div class="paragraph" style="text-align:center;"><font size="2"><em style="color:rgb(81, 81, 81)">DOB:2016, M<br />V,C,S,H</em><br /><font style="color:rgb(81, 81, 81)">Energetic, healthy &amp; fit</font></font></div>
-
-
-					
-				</td>			</tr>
-		</tbody>
-	</table>
-</div></div></div>
-
-
-					
-				</td>				<td class="wsite-multicol-col" style="width:34.309623430962%; padding:0 15px;">
-					
-						
-
-<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
-<a href='mei-mei.html'>
-<img src="uploads/1/0/8/3/10832582/editor/meimeic_15828.jpg?1540431536" alt="Picture" style="width:157;max-width:100%" />
-</a>
-<div style="display:block;font-size:90%">MEI MEI </div>
-</div></div>
-
-<div class="paragraph" style="text-align:center;"><font size="2"><em style="color:rgb(81, 81, 81)">DOB: 2010, F<br />V,C,S,H</em><br /><em><span style="color:rgb(81, 81, 81)">Good with all people &amp; dogs</span></em></font></div>
-
-
-					
-				</td>			</tr>
-		</tbody>
-	</table>
-</div></div></div>
-
-
-					
-				</td>				<td class="wsite-multicol-col" style="width:25.929752066116%; padding:0 15px;">
-					
-						
-
-<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
-<a href='primrose.html' target='_blank'>
-<img src="uploads/1/0/8/3/10832582/published/primrosecrop-jpg_1f903.jpg?1559118078" alt="Picture" style="width:154;max-width:100%" />
-</a>
-<div style="display:block;font-size:90%">PRIMROSE</div>
-</div></div>
-
-<div class="paragraph" style="text-align:center;"><font size="2"><em>DOB: 2013, &nbsp;F<br />V,C,S</em><br /><em><span style="color:rgb(81, 81, 81)">Primrose love gentle cuddles</span></em></font></div>
-
-
-					
-				</td>			</tr>
-		</tbody>
-	</table>
-</div></div></div>
-
-<div class="wsite-spacer" style="height:10px;"></div>
-
-<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
-	<table class="wsite-multicol-table">
-		<tbody class="wsite-multicol-tbody">
-			<tr class="wsite-multicol-tr">
-				<td class="wsite-multicol-col" style="width:49.896694214876%; padding:0 15px;">
-					
-						
-
-<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
-	<table class="wsite-multicol-table">
-		<tbody class="wsite-multicol-tbody">
-			<tr class="wsite-multicol-tr">
-				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
-					
-						
-
-<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
-<a href='harry.html' target='_blank'>
-<img src="uploads/1/0/8/3/10832582/editor/harryc5f97.jpg?1559118085" alt="Picture" style="width:158;max-width:100%" />
-</a>
-<div style="display:block;font-size:90%">HARRY</div>
-</div></div>
-
-<div class="paragraph" style="text-align:center;"><font size="2">DOB: Jan 2015, M<br /><em>V,C,S<br />Energetic</em></font></div>
-
-
-					
-				</td>				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
-					
-						
-
-<div><div class="wsite-image wsite-image-border-none " style="padding-top:0px;padding-bottom:10px;margin-left:0px;margin-right:10px;text-align:center">
-<a href='wiseman.html'>
-<img src="uploads/1/0/8/3/10832582/published/wiseman11c0fdb.jpg?1562134134" alt="Picture" style="width:auto;max-width:100%" />
-</a>
-<div style="display:block;font-size:90%">WISEMAN</div>
-</div></div>
-
-<div class="paragraph" style="text-align:center;"><font size="2"><em>DOB: 2012, &nbsp;M<br />V,C,S&nbsp;<br />&#8203;</em><span style="color:rgb(81, 81, 81)">&#8203;Grew up in an Army camp but was rescued before pest control came</span></font></div>
-
-
-					
-				</td>			</tr>
-		</tbody>
-	</table>
-</div></div></div>
-
-
-					
-				</td>				<td class="wsite-multicol-col" style="width:50.103305785124%; padding:0 15px;">
-					
-						
-
-<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
-	<table class="wsite-multicol-table">
-		<tbody class="wsite-multicol-tbody">
-			<tr class="wsite-multicol-tr">
-				<td class="wsite-multicol-col" style="width:50.103092783505%; padding:0 15px;">
-					
-						
-
-<div><div class="wsite-image wsite-image-border-none " style="padding-top:0px;padding-bottom:10px;margin-left:0px;margin-right:10px;text-align:center">
-<a href='ah-leng.html'>
-<img src="uploads/1/0/8/3/10832582/published/_25789515785.jpg?1562134137" alt="Picture" style="width:143;max-width:100%" />
-</a>
-<div style="display:block;font-size:90%">AH LENG - HDB approved</div>
-</div></div>
-
-<div class="paragraph" style="text-align:center;"><font size="2"><em style="">DOB: 2008, F<br />V,C,S,H&nbsp;</em><br /><span style="color: rgb(81, 81, 81);">Ah Leng came in for medical treatment.&nbsp;</span><span style="color: rgb(81, 81, 81);">She is now so sweet we couldn't release her back</span></font></div>
-
-
-					
-				</td>				<td class="wsite-multicol-col" style="width:49.896907216495%; padding:0 15px;">
-					
-						
-
-<div><div class="wsite-image wsite-image-border-thin " style="padding-top:0px;padding-bottom:0px;margin-left:0px;margin-right:0px;text-align:center">
-<a href='courtney.html'>
-<img src="uploads/1/0/8/3/10832582/editor/counrtney11cdb27.jpg?1562134139" alt="Picture" style="width:auto;max-width:100%" />
-</a>
-<div style="display:block;font-size:90%">COURTNEY  - HDB approved</div>
-</div></div>
-
-<div class="paragraph" style="text-align:center;"><font size="2"><em style="">DOB: 2014, F<br />V,C,S.H<br />&#8203;</em><span style="color: rgb(81, 81, 81);">Courtney would be perfect in a household with kids</span></font></div>
-
-
-					
-				</td>			</tr>
-		</tbody>
-	</table>
-</div></div></div>
-
-
-					
-				</td>			</tr>
-		</tbody>
-	</table>
-</div></div></div>
-
-<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -0px;">
-	<table class="wsite-multicol-table">
-		<tbody class="wsite-multicol-tbody">
-			<tr class="wsite-multicol-tr">
-				<td class="wsite-multicol-col" style="width:74.840085287846%; padding:0 0px;">
-					
-						
-
-<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
-	<table class="wsite-multicol-table">
-		<tbody class="wsite-multicol-tbody">
-			<tr class="wsite-multicol-tr">
-				<td class="wsite-multicol-col" style="width:65.902140672783%; padding:0 15px;">
-					
-						
-
-<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
-	<table class="wsite-multicol-table">
-		<tbody class="wsite-multicol-tbody">
-			<tr class="wsite-multicol-tr">
-				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
-					
-						
-
-<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
-<a href='dash.html'>
-<img src="uploads/1/0/8/3/10832582/editor/dashcb6bf.jpg?1581239901" alt="Picture" style="width:auto;max-width:100%" />
-</a>
-<div style="display:block;font-size:90%">DASH</div>
-</div></div>
-
-<div class="paragraph" style="text-align:center;"><font size="2"><em style="color: rgb(81, 81, 81);">DOB: 2015, M<br />V,C,S<br /></em><span style="color: rgb(81, 81, 81);">Dash is affectionate and energetic</span></font><em style="color:rgb(81, 81, 81)"></em></div>
-
-
-					
-				</td>				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
-					
-						
-
-<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:10px;text-align:center">
-<a href='sandy.html'>
-<img src="uploads/1/0/8/3/10832582/editor/_9475081243a.jpg?1562134152" alt="Picture" style="width:159;max-width:100%" />
-</a>
-<div style="display:block;font-size:90%">SANDY - HBD Approved</div>
-</div></div>
-
-<div class="paragraph" style="text-align:center;"><font size="2"><em>DOB: 2013, M<br />V,C,S,H<br />&#8203;</em><span style="color:rgb(81, 81, 81)">Sandy is gentle, calm &amp; would be perfect in a household with kids &amp; other pets</span><a href="sandy.html">.</a></font><em></em></div>
-
-
-					
-				</td>			</tr>
-		</tbody>
-	</table>
-</div></div></div>
-
-
-					
-				</td>				<td class="wsite-multicol-col" style="width:34.097859327217%; padding:0 15px;">
-					
-						
-
-<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:10px;text-align:center">
-<a href='sammy.html'>
-<img src="uploads/1/0/8/3/10832582/editor/sammy2020f6.jpg?1589605616" alt="Picture" style="width:131;max-width:100%" />
-</a>
-<div style="display:block;font-size:90%">SAMMY</div>
-</div></div>
-
-<div class="paragraph" style="text-align:center;"><font size="2"><em>DOB: 2008, M<br />V,C,S<br />&#8203;</em><span style="color:rgb(81, 81, 81)">Meet Sam (Sammy), our big lovable bear.</span></font></div>
-
-
-					
-				</td>			</tr>
-		</tbody>
-	</table>
-</div></div></div>
-
-
-					
-				</td>				<td class="wsite-multicol-col" style="width:25.159914712154%; padding:0 0px;">
-					
-						
-
-<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
-<a href='jewel.html' target='_blank'>
-<img src="uploads/1/0/8/3/10832582/published/jewelc_239ec.jpg?1562134336" alt="Picture" style="width:125;max-width:100%" />
-</a>
-<div style="display:block;font-size:90%">JEWEL - HDB Approved</div>
-</div></div>
-
-<div class="paragraph" style="text-align:center;"><font size="2"><em>DOB: 2013, F<br />V,C,S<br />&#8203;</em><span style="color:rgb(81, 81, 81)">Jewel was picked up off the <br />&#8203;streets. She loves her walks.</span></font></div>
-
-
-					
-				</td>			</tr>
-		</tbody>
-	</table>
-</div></div></div>
-
-<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
-	<table class="wsite-multicol-table">
-		<tbody class="wsite-multicol-tbody">
-			<tr class="wsite-multicol-tr">
-				<td class="wsite-multicol-col" style="width:49.89248340965%; padding:0 15px;">
-					
-						
-
-<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
-	<table class="wsite-multicol-table">
-		<tbody class="wsite-multicol-tbody">
-			<tr class="wsite-multicol-tr">
-				<td class="wsite-multicol-col" style="width:42.443064182195%; padding:0 15px;">
-					
-						
-
-<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
-<a href='nina.html'>
-<img src="uploads/1/0/8/3/10832582/editor/_59066751e83.jpg?1562134162" alt="Picture" style="width:153;max-width:100%" />
-</a>
-<div style="display:block;font-size:90%">NINA - HDB approved</div>
-</div></div>
-
-<div class="paragraph" style="text-align:center;"><font size="2"><em>DOB: 2010, F<br />V,C,S,H<br />&#8203;</em><span style="color:rgb(81, 81, 81)">Nina loves playing with the boys, she needs time with people though</span></font></div>
-
-
-					
-				</td>				<td class="wsite-multicol-col" style="width:57.556935817805%; padding:0 15px;">
-					
-						
-
-<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
-<a href='elizabeth.html'>
-<img src="uploads/1/0/8/3/10832582/published/23898364c5d.jpg?1540431911" alt="Picture" style="width:auto;max-width:100%" />
-</a>
-<div style="display:block;font-size:90%">ELIZABETH</div>
-</div></div>
-
-<div class="paragraph" style="text-align:center;"><font size="2"><em>DOB: 2007, F<br />V,C,S&nbsp;<br />&#8203;</em><span style="color:rgb(81, 81, 81)">Elizabeth called a farm her home for several years</span></font></div>
-
-
-					
-				</td>			</tr>
-		</tbody>
-	</table>
-</div></div></div>
-
-
-					
-				</td>				<td class="wsite-multicol-col" style="width:24.17151370157%; padding:0 15px;">
-					
-						
-
-<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
-<a href='bullet.html' target='_blank'>
-<img src="uploads/1/0/8/3/10832582/editor/7440127e699.jpg?1540431930" alt="Picture" style="width:141;max-width:100%" />
-</a>
-<div style="display:block;font-size:90%">BULLET</div>
-</div></div>
-
-<div class="paragraph" style="text-align:center;"><font size="2"><em>DOB: 2012, F<br />V,C,S<br />&#8203;</em><span style="color:rgb(81, 81, 81)">Rescued from the streets, Bullet &nbsp;is skittish in thunderstorms</span></font></div>
-
-
-					
-				</td>				<td class="wsite-multicol-col" style="width:25.93600288878%; padding:0 15px;">
-					
-						
-
-<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
-<a href='mel.html'>
-<img src="uploads/1/0/8/3/10832582/published/_643343881a9.jpg?1562134175" alt="Picture" style="width:153;max-width:100%" />
-</a>
-<div style="display:block;font-size:90%">MEL - HDB Approved</div>
-</div></div>
-
-<div class="paragraph" style="text-align:center;"><font size="2"><em style="">DOB: 2014, F<br />V,C,S,H</em><br /><span style="color: rgb(81, 81, 81);">Mel is wary and shy. She is excellent with all dogs but not comfortable with human touch.&nbsp;</span>&#8203;</font></div>
-
-
-					
-				</td>			</tr>
-		</tbody>
-	</table>
-</div></div></div>
-
-<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
-	<table class="wsite-multicol-table">
-		<tbody class="wsite-multicol-tbody">
-			<tr class="wsite-multicol-tr">
-				<td class="wsite-multicol-col" style="width:22.113001366288%; padding:0 15px;">
-					
-						
-
-<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
-<a href='elvis.html'>
-<img src="uploads/1/0/8/3/10832582/editor/_45649972042.jpg?1540432004" alt="Picture" style="width:157;max-width:100%" />
-</a>
-<div style="display:block;font-size:90%">ELVIS</div>
-</div></div>
-
-<div class="paragraph" style="text-align:center;"><span style="color:rgb(81, 81, 81)">DOB: 2010, M</span><br /><em style="color:rgb(81, 81, 81)">V,C,S&nbsp;<br />&#8203;Elvis is a lovable big guy who loves treats.</em></div>
-
-
-					
-				</td>				<td class="wsite-multicol-col" style="width:26.136806646441%; padding:0 15px;">
-					
-						
-
-<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
-<a href='fokker.html' target='_blank'>
-<img src="uploads/1/0/8/3/10832582/published/_74920796d1b.jpg?1562135331" alt="Picture" style="width:146;max-width:100%" />
-</a>
-<div style="display:block;font-size:90%">FOKKER  - HDB apprpoved
+<!-- Really the first dog -->
+<!-- 
+<div id="tableshit" class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+	<a href='khartik.html' target='_blank'>
+		<img src="uploads/1/0/8/3/10832582/editor/khartik-01c118.jpg?1600932086" alt="Picture" style="width:144;max-width:100%" />
+	</a>
+	<div style="display:block;font-size:90%">KHARTIK</div>
 </div>
-</div></div>
+<div class="paragraph" style="text-align:center;">
+	<font size="2">
+		<em style="color:rgb(81, 81, 81)">
+			DOB:2012, M
+			<br />
+			V,C,S,H
+		</em>
+		<br />
+		<font style="color:rgb(81, 81, 81)">
+			Affectionate, gentle, calm
+			<br />
+			Confident, chill on lead
+		</font>
+	</font>
+</div>
+-->
 
-<div class="paragraph" style="text-align:center;"><font size="2">DOB: Jan 2015, M<br /><em>V,C,S,H&nbsp;<br />&#8203;</em><font style="color:rgb(81, 81, 81)">Fokker was caught at the Seletar air base</font><span style="color:rgb(81, 81, 81)">.</span></font></div>
+<!--other dogs -->
+<div class="wsite-spacer" style="height:10px;"></div> <!-- space between dogs-->
 
 
+	<div id="table" class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+		<table id="table1" class="wsite-multicol-table">
+			<tr class="wsite-multicol-tr">
+				<!-- 1st dog-->
+				<td class="wsite-multicol-col" style="width:50%; padding:0 5px;">
+					<div class="wsite-multicol">
+						<div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+							<a href='lila.html' target='_blank'>
+								<img src="uploads/1/0/8/3/10832582/editor/lila-croppede78d.jpg?1585554374" alt="Picture" style="width:150;max-width:100%" />
+							</a>
+							<div style="display:block;font-size:90%">LILAA</div>
+						</div>
+
+						<div class="paragraph" style="text-align:center;">
+							<font size="2">
+								<em style="color:rgb(81, 81, 81)">
+								DOB:2013, F
+								<br />
+								V,C,S,H
+								</em>
+								<br />
+								<font style="color:rgb(81, 81, 81)">
+									Good with dogs &amp; indoor trained
+								</font>
+							</font>
+						</div>
+					</div>
+				</td>	
+				<!-- 2ns dog-->			
+				<td class="wsite-multicol-col" style="width:50%; padding:0 5px;">
+					<div class="wsite-multicol">
+						<div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+							<a href='arthos.html' target='_blank'>
+								<img src="uploads/1/0/8/3/10832582/editor/1_13.jpg" alt="Picture" style="width:150;max-width:100%" />
+							</a>
+							<div style="display:block;font-size:90%">ARTHOS</div>
+						</div>
+						<div class="paragraph" style="text-align:center;">
+							<font size="2">
+								<em style="color:rgb(81, 81, 81)">
+									DOB:2016, M
+									<br />
+									V,C,S,H
+								</em>
+								<br />
+								<font style="color:rgb(81, 81, 81)">
+									Energetic, healthy &amp; fit
+								</font>
+							</font>
+						</div>
+					</div
+				</td>	
+				<!-- 3rd dog-->		
+				<td class="wsite-multicol-col" style="width:34.309623430962%; padding:0 15px;">
+					<div class="wsite-multicol">
+						<div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+							<a href='mei-mei.html'>
+							<img src="uploads/1/0/8/3/10832582/editor/meimeic_15828.jpg?1540431536" alt="Picture" style="width:157;max-width:100%" />
+							</a>
+							<div style="display:block;font-size:90%">MEI MEI </div>
+						</div>
+						<div class="paragraph" style="text-align:center;">
+							<font size="2">
+								<em style="color:rgb(81, 81, 81)">
+									DOB: 2010, F
+									<br />
+									V,C,S,H
+								</em>
+								<br />
+								<em>
+									<span style="color:rgb(81, 81, 81)">
+										Good with all people &amp; dogs
+									</span>
+								</em>
+							</font>
+						</div>
+					</div>
+				</td>			
+				<!-- 4th dog-->
+				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+					<div class="wsite-multicol">
+						<div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+							<a href='primrose.html' target='_blank'>
+							<img src="uploads/1/0/8/3/10832582/published/primrosecrop-jpg_1f903.jpg?1559118078" alt="Picture" style="width:154;max-width:100%" />
+							</a>
+							<div style="display:block;font-size:90%">PRIMROSE</div>
+						</div>
+							
+						<div class="paragraph" style="text-align:center;">
+							<font size="2">
+								<em>
+									DOB: 2013, &nbsp;F
+									<br />
+									V,C,S
+								</em>
+								<br />
+								<em>
+									<span style="color:rgb(81, 81, 81)">
+										Primrose love gentle cuddles
+									</span>
+								</em>
+							</font>
+						</div>
+							
+					</div>
+				</td>
+			<!--new Row-->				
+
+			<div class="wsite-spacer" style="height:10px;"></div>
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+					<div class="wsite-multicol">
+						<div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+							<a href='harry.html' target='_blank'>
+							<img src="uploads/1/0/8/3/10832582/editor/harryc5f97.jpg?1559118085" alt="Picture" style="width:158;max-width:100%" />
+							</a>
+							<div style="display:block;font-size:90%">HARRY</div>
+						</div>
+							
+						<div class="paragraph" style="text-align:center;"
+						><font size="2">
+							DOB: Jan 2015, M<
+								br />
+								<em>
+									V,C,S
+									<br />
+									Energetic
+								</em>
+							</font>
+						</div>
+					</div>
+				</td>
+				
+				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">				
+					<div class="wsite-multicol">
+						<div class="wsite-image wsite-image-border-none " style="padding-top:0px;padding-bottom:10px;margin-left:0px;margin-right:10px;text-align:center">
+							<a href='wiseman.html'>
+							<img src="uploads/1/0/8/3/10832582/published/wiseman11c0fdb.jpg?1562134134" alt="Picture" style="width:auto;max-width:100%" />
+							</a>
+							<div style="display:block;font-size:90%">WISEMAN</div>	
+						</div>
 					
-				</td>				<td class="wsite-multicol-col" style="width:26.906942362094%; padding:0 15px;">
-					
-						
-
-<div><div class="wsite-image wsite-image-border-thin " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
-<a href='bindy.html'>
-<img src="uploads/1/0/8/3/10832582/published/_9771082a73.jpg?1540432036" alt="Picture" style="width:147;max-width:100%" />
-</a>
-<div style="display:block;font-size:90%">BINDY</div>
-</div></div>
-
-<div class="paragraph" style="text-align:center;"><font size="2"><em>DOB: 2013, &nbsp;F<br />V,C,S<br />&#8203;</em><span style="color:rgb(81, 81, 81)">Bindy appeared one day all alone in a wretched condition</span></font></div>
-
-
-					
-				</td>				<td class="wsite-multicol-col" style="width:24.843249625177%; padding:0 15px;">
-					
-						
-
-<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
-<a href='gimmy.html' target='_blank'>
-<img src="uploads/1/0/8/3/10832582/published/jimmysq4a2b.jpg?1540432054" alt="Picture" style="width:159;max-width:100%" />
-</a>
-<div style="display:block;font-size:90%">GIMMY - HDB approved </div>
-</div></div>
-
-<div class="paragraph" style="text-align:center;"><font size="2"><em>DOB: July 2016, F<br />V,C,S.H&nbsp;<br />&#8203;</em><span style="color:rgb(81, 81, 81)">Gimmy's home had been cleared&nbsp;</span></font></div>
+						<div class="paragraph" style="text-align:center;">
+							<font size="2">
+								<em>
+									DOB: 2012, &nbsp;M
+									<br />
+									V,C,S&nbsp;
+									<br />
+									&#8203;
+								</em>
+								<span style="color:rgb(81, 81, 81)">
+									&#8203;
+									Grew up in an Army camp but was rescued before pest control came
+								</span>
+							</font>
+						</div>
+					</div>
+				</td>
+				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+					<div class="wsite-multicol">
+						<div class="wsite-image wsite-image-border-none " style="padding-top:0px;padding-bottom:10px;margin-left:0px;margin-right:10px;text-align:center">
+							<a href='ah-leng.html'>
+							<img src="uploads/1/0/8/3/10832582/published/_25789515785.jpg?1562134137" alt="Picture" style="width:143;max-width:100%" />
+							</a>
+							<div style="display:block;font-size:90%">AH LENG - HDB approved</div>
+						</div>
+							
+						<div class="paragraph" style="text-align:center;">
+							<font size="2">
+								<em style="">
+									DOB: 2008, F
+									<br />
+									V,C,S,H&nbsp;
+								</em>
+								<br />
+								<span style="color: rgb(81, 81, 81);">
+									Ah Leng came in for medical treatment.&nbsp;
+								</span>
+								<span style="color: rgb(81, 81, 81);">
+									She is now so sweet we couldn't release her back
+								</span>
+							</font>
+						</div>
+					</div>
+				</td>	
+				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+					<div class="wsite-multicol">
+						<div class="wsite-image wsite-image-border-thin " style="padding-top:0px;padding-bottom:0px;margin-left:0px;margin-right:0px;text-align:center">
+							<a href='courtney.html'>
+							<img src="uploads/1/0/8/3/10832582/editor/counrtney11cdb27.jpg?1562134139" alt="Picture" style="width:auto;max-width:100%" />
+							</a>
+							<div style="display:block;font-size:90%">COURTNEY  - HDB approved</div>
+						</div>
+							
+						<div class="paragraph" style="text-align:center;">
+							<font size="2">
+								<em style="">
+									DOB: 2014, F
+									<br />
+									V,C,S.H
+									<br />
+									&#8203;
+								</em>
+								<span style="color: rgb(81, 81, 81);">
+									Courtney would be perfect in a household with kids
+								</span>
+							</font>
+						</div>		
+					</div>
+				</td>
+			</tr>		
+			<div class="wsite-spacer" style="height:10px;"></div>
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+					<div class="wsite-multicol">
+						<div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+							<a href='dash.html'>
+							<img src="uploads/1/0/8/3/10832582/editor/dashcb6bf.jpg?1581239901" alt="Picture" style="width:auto;max-width:100%" />
+							</a>
+							<div style="display:block;font-size:90%">DASH</div>
+						</div>
+							
+						<div class="paragraph" style="text-align:center;">
+							<font size="2">
+								<em style="color: rgb(81, 81, 81);">
+									DOB: 2015, M
+									<br />
+									V,C,S
+									<br />
+								</em>
+								<span style="color: rgb(81, 81, 81);">
+									Dash is affectionate and energetic
+								</span>
+							</font>
+							<em style="color:rgb(81, 81, 81)">
+							</em>
+						</div>	
+					</div>
+				</td>
+				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+					<div class="wsite-multicol">
+						<div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:10px;text-align:center">
+							<a href='sandy.html'>
+							<img src="uploads/1/0/8/3/10832582/editor/_9475081243a.jpg?1562134152" alt="Picture" style="width:159;max-width:100%" />
+							</a>
+							<div style="display:block;font-size:90%">SANDY - HBD Approved</div>
+						</div>
+							
+						<div class="paragraph" style="text-align:center;">
+							<font size="2">
+								<em>
+									DOB: 2013, M
+									<br />
+									V,C,S,H
+									<br />
+									&#8203;
+								</em>
+								<span style="color:rgb(81, 81, 81)">
+									Sandy is gentle, calm &amp; would be perfect in a household with kids &amp; other pets
+								</span>
+								<a href="sandy.html">
+									.
+								</a>
+							</font>
+							<em></em>
+						</div>	
+					</div>
+				</td>
+				<td class="wsite-multicol-col" style="width:34.097859327217%; padding:0 15px;">
+					<div class="wsite-multicol">
+						<div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:10px;text-align:center">
+							<a href='sammy.html'>
+							<img src="uploads/1/0/8/3/10832582/editor/sammy2020f6.jpg?1589605616" alt="Picture" style="width:131;max-width:100%" />
+							</a>
+							<div style="display:block;font-size:90%">SAMMY</div>
+						</div>
+							
+						<div class="paragraph" style="text-align:center;">
+							<font size="2">
+								<em>
+									DOB: 2008, M
+									<br />
+									V,C,S
+									<br />
+									&#8203;
+								</em>
+								<span style="color:rgb(81, 81, 81)">
+									Meet Sam (Sammy), our big lovable bear.
+								</span>
+							</font>
+						</div>
+					</div>
+				</td>		
+				<td class="wsite-multicol-col" style="width:25.159914712154%; padding:0 0px;">
+					<div class="wsite-multicol">
+						<div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+							<a href='jewel.html' target='_blank'>
+							<img src="uploads/1/0/8/3/10832582/published/jewelc_239ec.jpg?1562134336" alt="Picture" style="width:125;max-width:100%" />
+							</a>
+							<div style="display:block;font-size:90%">JEWEL - HDB Approved</div>
+						</div>
+							
+						<div class="paragraph" style="text-align:center;">
+							<font size="2">
+								<em>
+									DOB: 2013, F
+									<br />
+									V,C,S
+									<br />
+									&#8203;
+								</em>
+								<span style="color:rgb(81, 81, 81)">
+									Jewel was picked up off the 
+									<br />
+									&#8203;streets. She loves her walks.
+								</span>
+							</font>
+						</div>
+							
+					</div>
+				</td>			
+			</tr>
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:25.159914712154%; padding:0 0px;">
+					<div class="wsite-multicol">
+						<div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+							<a href='nina.html'>
+							<img src="uploads/1/0/8/3/10832582/editor/_59066751e83.jpg?1562134162" alt="Picture" style="width:153;max-width:100%" />
+							</a>
+							<div style="display:block;font-size:90%">NINA - HDB approved</div>
+						</div>
+							
+						<div class="paragraph" style="text-align:center;">
+							<font size="2">
+								<em>
+									DOB: 2010, F
+									<br />
+									V,C,S,H
+									<br />
+									&#8203;
+								</em>
+								<span style="color:rgb(81, 81, 81)">
+									Nina loves playing with the boys, she needs time with people though
+								</span>
+							</font>
+						</div>
+					</div>
+				</td>
+				<td class="wsite-multicol-col" style="width:25.159914712154%; padding:0 0px;">
+					<div class="wsite-multicol">
+						<div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+							<a href='elizabeth.html'>
+							<img src="uploads/1/0/8/3/10832582/published/23898364c5d.jpg?1540431911" alt="Picture" style="width:auto;max-width:100%" />
+							</a>
+							<div style="display:block;font-size:90%">ELIZABETH</div>
+						</div>
+							
+						<div class="paragraph" style="text-align:center;">
+							<font size="2">
+								<em>
+									DOB: 2007, F
+									<br />
+									V,C,S&nbsp;
+									<br />
+									&#8203;
+								</em>
+								<span style="color:rgb(81, 81, 81)">
+									Elizabeth called a farm her home for several years
+								</span>
+							</font>
+						</div>
+					</div>
+				</td>
+				<td class="wsite-multicol-col" style="width:25.159914712154%; padding:0 0px;">
+					<div class="wsite-multicol">
+						<div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+							<a href='bullet.html' target='_blank'>
+							<img src="uploads/1/0/8/3/10832582/editor/7440127e699.jpg?1540431930" alt="Picture" style="width:141;max-width:100%" />
+							</a>
+							<div style="display:block;font-size:90%">BULLET</div>
+						</div>
+							
+						<div class="paragraph" style="text-align:center;">
+							<font size="2">
+								<em>
+									DOB: 2012, F
+									<br />
+									V,C,S
+									<br />
+									&#8203;
+								</em>
+								<span style="color:rgb(81, 81, 81)">
+									Rescued from the streets, Bullet &nbsp;is skittish in thunderstorms
+								</span>
+							</font>
+						</div>			
+					</div>
+				</td>
+				<td class="wsite-multicol-col" style="width:25.159914712154%; padding:0 0px;">
+					<div class="wsite-multicol">
+						<div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+							<a href='mel.html'>
+							<img src="uploads/1/0/8/3/10832582/published/_643343881a9.jpg?1562134175" alt="Picture" style="width:153;max-width:100%" />
+							</a>
+							<div style="display:block;font-size:90%">MEL - HDB Approved</div>
+						</div>
+							
+						<div class="paragraph" style="text-align:center;">
+							<font size="2">
+								<em style="">
+									DOB: 2014, F
+									<br />
+									V,C,S,H
+								</em>
+								<br />
+								<span style="color: rgb(81, 81, 81);">
+									Mel is wary and shy. She is excellent with all dogs but not comfortable with human touch.&nbsp;
+								</span>&#8203;
+							</font>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<div class="wsite-spacer" style="height:10px;"></div>
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:25.159914712154%; padding:0 0px;">
+					<div class="wsite-multicol">
+						<div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+							<a href='elvis.html'>
+							<img src="uploads/1/0/8/3/10832582/editor/_45649972042.jpg?1540432004" alt="Picture" style="width:157;max-width:100%" />
+							</a>
+							<div style="display:block;font-size:90%">ELVIS</div>
+						</div>
+						<div class="paragraph" style="text-align:center;">
+							<span style="color:rgb(81, 81, 81)">
+								DOB: 2010, M
+							</span>
+							<br />
+							<em style="color:rgb(81, 81, 81)">
+								V,C,S&nbsp;
+								<br />
+								&#8203;Elvis is a lovable big guy who loves treats.
+							</em>
+						</div>				
+					</div>
+				</td>
+				<td class="wsite-multicol-col" style="width:25.159914712154%; padding:0 0px;">
+					<div class="wsite-multicol">
+						<div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+							<a href='fokker.html' target='_blank'>
+								<img src="uploads/1/0/8/3/10832582/published/_74920796d1b.jpg?1562135331" alt="Picture" style="width:146;max-width:100%" />
+							</a>
+							<div style="display:block;font-size:90%">FOKKER  - HDB apprpoved
+							</div>
+						</div>
+							
+						<div class="paragraph" style="text-align:center;">
+							<font size="2">
+								DOB: Jan 2015, M
+							<br />
+							<em style="color:rgb(81, 81, 81)">
+								V,C,S,H&nbsp;
+								<br />
+								&#8203;
+							</em>
+							<font style="color:rgb(81, 81, 81)">
+								Fokker was caught at the Seletar air base
+							</font>
+								<span style="color:rgb(81, 81, 81)">.</span>
+							</font>
+						</div>
+					</div>
+				</td>
+				<td class="wsite-multicol-col" style="width:25.159914712154%; padding:0 0px;">
+					<div class="wsite-multicol">
+						<div class="wsite-image wsite-image-border-thin " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+							<a href='bindy.html'>
+							<img src="uploads/1/0/8/3/10832582/published/_9771082a73.jpg?1540432036" alt="Picture" style="width:147;max-width:100%" />
+							</a>
+							<div style="display:block;font-size:90%">BINDY</div>
+							</div>
+							
+						<div class="paragraph" style="text-align:center;">
+							<font size="2">
+								<em>
+									DOB: 2013, &nbsp;F
+									<br />
+									V,C,S
+									<br />
+									&#8203;
+								</em>
+								<span style="color:rgb(81, 81, 81)">
+									Bindy appeared one day all alone in a wretched condition
+								</span>
+							</font>
+						</div>
+					</div>
+				</td>
+				<td class="wsite-multicol-col" style="width:25.159914712154%; padding:0 0px;">
+					<div class="wsite-multicol">
+						<div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+							<a href='gimmy.html' target='_blank'>
+							<img src="uploads/1/0/8/3/10832582/published/jimmysq4a2b.jpg?1540432054" alt="Picture" style="width:159;max-width:100%" />
+							</a>
+							<div style="display:block;font-size:90%">GIMMY - HDB approved </div>
+							</div>
+							
+						<div class="paragraph" style="text-align:center;">
+							<font size="2">
+								<em>DOB: July 2016, F
+									<br />
+									V,C,S.H&nbsp;
+									<br />
+									&#8203;
+								</em>
+								<span style="color:rgb(81, 81, 81)">
+									Gimmy's home had been cleared&nbsp;
+								</span>
+							</font>
+						</div>
+					</div>			
+				</td>
+			</tr>
+		</table>
+	</div>
 
 <div class="wsite-spacer" style="height:50px;"></div>
 
