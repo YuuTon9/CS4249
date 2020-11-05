@@ -206,3 +206,12 @@ function sendNetworkLog(
     (new Image).src = "https://docs.google.com/forms/d/" + formid +
         "/formResponse?" + params.join("&");
 }
+// Call this function on certain events
+function sendCustomEvent(eventType, eventName, info) {
+  // info can be in dictionary
+  loggingjs.logEvent(null, eventType, {
+      eventName: eventName,
+      info: info
+  });
+}
+
