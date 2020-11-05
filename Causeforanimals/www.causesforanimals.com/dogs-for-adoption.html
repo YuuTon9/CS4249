@@ -30,10 +30,10 @@
 <script>
 startExperiment();
 //listLength = ParseURLParameter('listLength');
-userId = getQueryVariable('userId');
-questionId = getQueryVariable('questionId');
-listLength = getQueryVariable('listLength');
-layoutId = getQueryVariable('layoutId');
+userId = getQueryVariable('userId').slice(1,getQueryVariable('userId').length-1);
+questionId = getQueryVariable('questionId').slice(1,getQueryVariable('questionId').length-1);
+listLength = getQueryVariable('listLength').slice(1,getQueryVariable('listLength').length-1);
+layoutId = getQueryVariable('layoutId').slice(1,getQueryVariable('layoutId').length-1);
 console.log(listLength);
 </script>
 

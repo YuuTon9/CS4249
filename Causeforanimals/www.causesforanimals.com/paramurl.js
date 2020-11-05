@@ -10,13 +10,13 @@ function getQueryVariable(variable) {
     }
     console.log('Query variable %s not found', variable);
 }
-console.log('User Id is %s', values.userId)
-console.log('Question Id is %s', values.questionId)
-console.log('List length is %s', values.listLength)
-console.log('List length is %s', values.layoutId)
-console.log(values.dog_datas.length)
+
 function startExperiment() {
     var date = new Date();
     var timestamp = date.getTime();
     console.log("Started experiment at %s", timestamp)
+}
+
+function testing() {
+    console.log("testing");
 }
