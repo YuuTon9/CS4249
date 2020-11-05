@@ -71,6 +71,15 @@ function randomiseDogs(dogList, requirements) {
     return shuffledDogList
 }
 
+function chooseListSize(listLength) {
+    if (listLength === "short") {
+        return filterDogsSmallList(0,0,0, Dog_Small_List)
+    } else if (listLength === "medium") {
+        return filterDogsMediumList(0,0,0, Dog_Medium_List)
+    } else {
+        return filterDogsLongList(0,0,0, Dog_Long_List)
+    }
+}
 function containsData(i, requirements) {
     if (requirements === 1) {
         if (i["age"] < 4) {

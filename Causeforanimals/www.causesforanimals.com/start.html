@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Logging</title>
+    <script src="logging.js"></script>
+    <script src="paramurl.js" type="text/javascript"></script> 
+    <script>
+    //startExperiment();
+    //listLength = ParseURLParameter('listLength');
+    userId = getQueryVariable('userId');
+    questionId = getQueryVariable('questionId');
+    listLength = getQueryVariable('listLength');
+    layoutId = getQueryVariable('layoutId');
+    console.log(listLength);
+    </script>
+</head>
+<body>
+
+<h1>Press the start button once you are ready </h1>
+
+<button id ='start' onclick="location.href='dogs-for-adoption.html?' + 'userId={userId}&questionId={questionId}&listLength={listLength}&layoutId={layoutId}'" type="button">
+    Start</button>
+
+<input id="btn" value="Send Custom Event" type="button" onclick="sendCustomEvent()"/>
+<script>
+    function sendCustomEvent() {
+        console.log('sendCustomEvent');
+        document.dispatchEvent(new CustomEvent('myevent', { detail: {
+            eventName: 'myeventName',
+            info: {'key1': 'val1', 'key2': 'val2'}
+        }}));
+    }
+    document.addEventListener('myevent', loggingjs.logEvent, true);
+
+    console.log('startclick');
+    start.dispatchEvent(new CustomEvent('startclick', { detail: {
+        eventName: 'StartButtonClicked',
+        info: {'layoutId': layoutId, 'listLength': listLength}
+    }}));
+    document.getElementById("start").addEventListener("click start", loggingjs.logEvent, true);
+</script>
+
+
+
+</body>
+</html>
+

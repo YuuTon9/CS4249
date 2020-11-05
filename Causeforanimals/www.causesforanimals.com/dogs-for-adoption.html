@@ -30,27 +30,30 @@
 <script>
 startExperiment();
 //listLength = ParseURLParameter('listLength');
+userId = getQueryVariable('userId');
+questionId = getQueryVariable('questionId');
 listLength = getQueryVariable('listLength');
+layoutId = getQueryVariable('layoutId');
 console.log(listLength);
 </script>
 
 <!-- Script for filter function-->
 <script src="dogData.js" type="text/javascript"></script> 
 <script>
-	filteredlist = [];
-	if (listLength == 'short') {
-		for (i = 0; i < Dog_Small_List.length; i++) {
-		filteredlist[i] = Dog_Small_List[i];
-		}
-	} else if (listLength == 'medium') {
-		for (i = 0; i < Dog_Medium_List.length; i++) {
-			filteredlist[i] = Dog_Medium_List[i];
-		}
-	} else {
-		for (i = 0; i < Dog_Long_List.length; i++) {
-			filteredlist[i] = Dog_Long_List[i];
-		}
-	}
+	filteredlist = randomiseDogs(chooseListSize(listLength), questionId);
+	//if (listLength == 'short') {
+	//	for (i = 0; i < Dog_Small_List.length; i++) {
+	//	filteredlist[i] = Dog_Small_List[i];
+	//	}
+	//} else if (listLength == 'medium') {
+	//	for (i = 0; i < Dog_Medium_List.length; i++) {
+	//		filteredlist[i] = Dog_Medium_List[i];
+	//	}
+	//} else {
+	//	for (i = 0; i < Dog_Long_List.length; i++) {
+	//		filteredlist[i] = Dog_Long_List[i];
+	//	}
+	//}
 	//filteredlist = Dog_Small_List;
 	gender = '0';
 	status = '0';
