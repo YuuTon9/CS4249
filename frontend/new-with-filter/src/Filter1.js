@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import InputLabel from '@material-ui/core/InputLabel';
 import FormControl from '@material-ui/core/FormControl';
@@ -73,7 +73,7 @@ export default function Filter1({dog_datas, userId, questionId, listLength, layo
     }
 
     function hasFilter() {
-        if (layoutId == 2) {
+        if (layoutId === 2) {
             return <div className={classes.components}>
                 <FormControl variant="outlined" className={classes.formControl}>
                     <InputLabel id="gender">Gender</InputLabel>

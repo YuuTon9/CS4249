@@ -16,7 +16,7 @@
 
 var ENABLE_NETWORK_LOGGING = true; // Controls network logging.
 var ENABLE_CONSOLE_LOGGING = true; // Controls console logging.
-var log_version = '0.2';           // Labels every entry with version: "0.1".
+var log_version = '0.3';           // Labels every entry with version: "0.1".
 
 // These event types are intercepted for logging before jQuery handlers.
 var EVENT_TYPES_TO_LOG = {
@@ -114,15 +114,6 @@ export var loggingjs = (function() { // Immediately-Invoked Function Expression 
 // Log the given event.
     function logEvent(event, customName, customInfo) {
 
-        // console.log('event', event, 'customName', customName, 'customInfo', customInfo, 'technique', technique, 'listlength', listlength);
-        // if (technique == null) {
-        //     technique = {}
-        // } else {
-        //     technique = JSON.stringify({"technique": techniqueMapping[technique]})
-        // }
-        // if (listlength == null) {
-        //     listlength = "unknown"
-        // }
         var time = (new Date).getTime();
         var eventName = customName || event.type;
         // By default, monitor some global state on every event.

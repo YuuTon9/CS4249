@@ -6,33 +6,14 @@ import {filterDogsLongList, filterDogsMediumList, filterDogsSmallList} from "./D
 
 const CardList = ({dog_datas, userId, questionId, listLength, gender, age, status, startTime}) => {
 
-    const [values, setValues] = React.useState({
-        userId: userId,
-        questionId: questionId,
-        listLength: listLength,
-        gender: gender,
-        age: age,
-        status: status,
-        dog_datas: dog_datas,
-        startTime: null
-    })
-
-
-    const useStyles = makeStyles((theme) => ({
-        root: {
-            flexGrow: 1,
-        },
-    }));
-
-    const classes = useStyles();
-
     function getDogData() {
+        console.log(dog_datas)
         if (listLength === "short") {
-            return filterDogsSmallList(gender, age, status)
+            return filterDogsSmallList(gender, age, status, dog_datas)
         } else if (listLength === "medium") {
-            return filterDogsMediumList(gender, age, status)
+            return filterDogsMediumList(gender, age, status, dog_datas)
         } else {
-            return filterDogsLongList(gender, age, status)
+            return filterDogsLongList(gender, age, status, dog_datas)
         }
     }
 

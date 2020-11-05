@@ -19,7 +19,75 @@
      *  - 1: hdb approved
  */
 
-const Dog_Long_List  = [
+export function randomiseDogs(dogList, requirements) {
+    var shuffledDogList = shuffle(dogList)
+    var i
+    for (i of shuffledDogList) {
+        i["age"] = Math.ceil(Math.random() * 12)
+    }
+    for (i of shuffledDogList) {
+        if (containsData(i, requirements)) {
+            return shuffledDogList
+        }
+    }
+
+    if (requirements === 1) {
+        for (i of shuffledDogList) {
+                if (i['gender'] === 'M' && i['hdb_approved'] === 1) {
+                    i['age'] = 2
+                    break
+                }
+        }
+    } else if (requirements === 2) {
+        for (i of shuffledDogList) {
+            if (i['gender'] === 'M' && i['hdb_approved'] === 1) {
+                i['age'] = 5
+                break
+            }
+        }
+    } else if (requirements === 3) {
+        for (i of shuffledDogList) {
+            if (i['gender'] === 'M' && i['hdb_approved'] === 1) {
+                i['age'] = 10
+                break
+            }
+        }
+    }
+    return shuffledDogList
+}
+
+function containsData(i, requirements) {
+    if (requirements === 1) {
+        if (i["age"] < 4) {
+            return true
+        }
+        return false
+    } else if (requirements === 2) {
+        if (i["age"] >=4 && i["age"] <= 8) {
+            return true
+        }
+        return false
+    } else if (requirements === 3) {
+        if (i["age"] > 8) {
+            return true
+        }
+        return false
+    }
+    return false
+}
+
+function shuffle(a) {
+    var j, x, i;
+    for (i = a.length - 1; i > 0; i--) {
+        j = Math.floor(Math.random() * (i + 1));
+        x = a[i];
+        a[i] = a[j];
+        a[j] = x;
+    }
+    return a;
+}
+
+export const Dog_Long_List  = [
         {
             "age": 5,
             "date_of_birth": 2015,
@@ -524,7 +592,7 @@ export function filterDogsLongList(gender, ageRange, status, dogList=Dog_Long_Li
     }
     return dogList
 }
-const Dog_Medium_List  = [
+export const Dog_Medium_List  = [
     {
         "age": 4,
         "date_of_birth": 2016,
@@ -860,7 +928,7 @@ export function filterDogsMediumList(gender, ageRange, status, dogList=Dog_Mediu
     return dogList
 }
 
-const Dog_Small_List  = [
+export const Dog_Small_List  = [
     {
         "age": 4,
         "date_of_birth": 2016,
@@ -933,7 +1001,7 @@ const Dog_Small_List  = [
     }]
 
 
-export function filterDogsSmallList(gender, ageRange, status, dogList=Dog_Small_List) {
+export function filterDogsSmallList(gender, ageRange, status, dogList) {
     /**
      * Input data:
      * gender:

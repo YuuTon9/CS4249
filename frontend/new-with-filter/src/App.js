@@ -1,15 +1,14 @@
 import React from 'react';
 import './App.css';
-import CardList from "./CardList";
 import Filter1 from "./Filter1";
 import Grid from "@material-ui/core/Grid";
 import {makeStyles} from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
-import {filterDogsLongList, filterDogsMediumList, filterDogsSmallList} from "./DogData";
+import {filterDogsLongList, filterDogsMediumList, filterDogsSmallList, randomiseDogs, Dog_Small_List, Dog_Medium_List, Dog_Long_List} from "./DogData";
 import {MuiThemeProvider} from "@material-ui/core";
 import {THEME} from "./Colours";
 import Typography from "@material-ui/core/Typography";
-import {loggingjs, sendCustomEvent} from "./Logging";
+import {sendCustomEvent} from "./Logging";
 
 function App() {
     const useStyles = makeStyles((theme) => ({
@@ -32,11 +31,11 @@ function App() {
 
     function chooseListSize() {
         if (values.listLength === "short") {
-            return filterDogsSmallList(0,0,0)
+            return filterDogsSmallList(0,0,0, Dog_Small_List)
         } else if (values.listLength === "medium") {
-            return filterDogsMediumList(0,0,0)
+            return filterDogsMediumList(0,0,0, Dog_Medium_List)
         } else {
-            return filterDogsLongList(0,0,0)
+            return filterDogsLongList(0,0,0, Dog_Long_List)
         }
     }
 
@@ -49,6 +48,7 @@ function App() {
         startTime: 0,
         start: false
     })
+
     const classes = useStyles();
     const layoutMapping = {
         1: "Modal without filter",
@@ -72,13 +72,8 @@ function App() {
     }
 
     function startExperiment() {
-        var date = new Date();
-        var timestamp = date.getTime();
         sendCustomEvent("StartButtonClicked", "StartButtonClicked", {"layoutId": values.layoutId, "layout": layoutMapping[values.layoutId], "listLength": values.listLength, "questionId": values.questionId, "question": questionIdMapping[values.questionId] } )
-        setValues({ ...values, dog_datas: chooseListSize() });
-        setValues({ ...values, start: true })
-        // setValues({ ...values, startTime: timestamp })
-
+        setValues({ ...values, dog_datas: randomiseDogs(chooseListSize(), values.questionId), start: true});
     }
 
     function isStarted() {
@@ -92,7 +87,7 @@ function App() {
         }
         return <div>
             <Typography variant={"h5"} className={classes.padding}>Click on the start button when you're ready.</Typography>
-            <Button className={classes.button} variant="contained" color="primary" onClick={startExperiment} id={"START_BUTTON"}>
+            <Button className={classes.button} variant="contained" color="primary" onClick={() => startExperiment()} id={"START_BUTTON"}>
                 Start!
             </Button>
         </div>
