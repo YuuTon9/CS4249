@@ -20,6 +20,88 @@
  */
 
 
+/**
+ * randomiseDog function takes in a dog list, randomises the order of the data and age of the data.
+ * requirements possible values (refers to question user have to find):
+ * - 1: find dog 'M', hdb approved and less than 4 y/o
+ * - 2: find dog 'M', hdb approved and 4 - 8 y/o
+ * - 3: find dog 'M', hdb approved and more than 8 y/o
+
+ How I used this: randomiseDogs(chooseListSize(), values.questionId) to get dog data.
+ chooseListSize() returns either Dog_Long_List/Dog_Medium_List/Dog_Short_List based on query paramters.
+
+ * @param dogList
+ * @param requirements
+ * @returns {*}
+ */
+function randomiseDogs(dogList, requirements) {
+    var shuffledDogList = shuffle(dogList)
+    var i
+    for (i of shuffledDogList) {
+        i["age"] = Math.ceil(Math.random() * 12)
+    }
+    for (i of shuffledDogList) {
+        if (containsData(i, requirements)) {
+            return shuffledDogList
+        }
+    }
+
+    if (requirements === 1) {
+        for (i of shuffledDogList) {
+            if (i['gender'] === 'M' && i['hdb_approved'] === 1) {
+                i['age'] = 2
+                break
+            }
+        }
+    } else if (requirements === 2) {
+        for (i of shuffledDogList) {
+            if (i['gender'] === 'M' && i['hdb_approved'] === 1) {
+                i['age'] = 5
+                break
+            }
+        }
+    } else if (requirements === 3) {
+        for (i of shuffledDogList) {
+            if (i['gender'] === 'M' && i['hdb_approved'] === 1) {
+                i['age'] = 10
+                break
+            }
+        }
+    }
+    return shuffledDogList
+}
+
+function containsData(i, requirements) {
+    if (requirements === 1) {
+        if (i["age"] < 4) {
+            return true
+        }
+        return false
+    } else if (requirements === 2) {
+        if (i["age"] >=4 && i["age"] <= 8) {
+            return true
+        }
+        return false
+    } else if (requirements === 3) {
+        if (i["age"] > 8) {
+            return true
+        }
+        return false
+    }
+    return false
+}
+
+function shuffle(a) {
+    var j, x, i;
+    for (i = a.length - 1; i > 0; i--) {
+        j = Math.floor(Math.random() * (i + 1));
+        x = a[i];
+        a[i] = a[j];
+        a[j] = x;
+    }
+    return a;
+}
+
 function returnList(n) {
     if (n == 34) {
         return Dog_Long_List;
@@ -373,7 +455,7 @@ const Dog_Long_List  = [
         "name": "Prince"
     }]
 
-function filterDogsLongList(gender, ageRange, status, dogList=Dog_Long_List) {
+function filterDogsLongList(gender, ageRange, status, dogList) {
     /**
      * Input data:
      * gender:
@@ -704,7 +786,7 @@ const Dog_Medium_List  = [
         "name": "Bo"
     }]
 
-function filterDogsMediumList(gender, ageRange, status, dogList=Dog_Medium_List) {
+function filterDogsMediumList(gender, ageRange, status, dogList) {
     /**
      * Input data:
      * gender:
@@ -936,7 +1018,7 @@ const Dog_Small_List  = [
         "name": "Siberie"
     }]
 
-function filterDogsSmallList(gender, ageRange, status, dogList=Dog_Small_List) {
+function filterDogsSmallList(gender, ageRange, status, dogList) {
     gender = parseInt(gender);
     ageRange = parseInt(ageRange);
     status = parseInt(status);
