@@ -19,35 +19,39 @@
 <meta property="og:image" content="https://www.causesforanimals.com/uploads/1/0/8/3/10832582/published/primrosecrop-jpg_1.jpg?1559118078" />
 <meta property="og:url" content="https://www.causesforanimals.com/dogs-for-adoption.html" />
 
+<!--logging -->
+<script src="logging.js" type="text/javascript"></script> 
+
 <!--jquery-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 <!-- Param func-->
-<script src="paramurl.js"></script> 
+<script src="paramurl.js" type="text/javascript"></script> 
 <script>
 startExperiment();
 //listLength = ParseURLParameter('listLength');
 listLength = getQueryVariable('listLength');
+console.log(listLength);
 </script>
 
 <!-- Script for filter function-->
 <script src="dogData.js" type="text/javascript"></script> 
 <script>
 	filteredlist = [];
-	//if (listLength == 'short') {
-	//	for (i = 0; i < Dog_Small_List.length; i++) {
-	//	filteredlist[i] = Dog_Small_List[i];
-	//	}
-	//} else if (listLength == 'medium') {
-	//	for (i = 0; i < Dog_Medium_List.length; i++) {
-	//		filteredlist[i] = Dog_Medium_List[i];
-	//	}
-	//} else {
-	//	for (i = 0; i < Dog_Long_List.length; i++) {
-	//		filteredlist[i] = Dog_Long_List[i];
-	//	}
-	//}
-	filteredlist = Dog_Small_List;
+	if (listLength == 'short') {
+		for (i = 0; i < Dog_Small_List.length; i++) {
+		filteredlist[i] = Dog_Small_List[i];
+		}
+	} else if (listLength == 'medium') {
+		for (i = 0; i < Dog_Medium_List.length; i++) {
+			filteredlist[i] = Dog_Medium_List[i];
+		}
+	} else {
+		for (i = 0; i < Dog_Long_List.length; i++) {
+			filteredlist[i] = Dog_Long_List[i];
+		}
+	}
+	//filteredlist = Dog_Small_List;
 	gender = '0';
 	status = '0';
 	age = '0';
@@ -993,6 +997,9 @@ _W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":
 
 <script>
 
+	document.addEventListener('myevent', loggingjs.sendCustomEvent, true);
+
+
 	function filterSelection1(newgender){
 		gender = newgender;
 		filteredList = filterAct();
@@ -1016,17 +1023,16 @@ _W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":
     	}
 	}
 	filterSelection("all")
+
+	//start here 
 	function myFunctionGender(n) {
-		console.log("gender activated");
-		//input = document.getElementById("gender");
-		//filter = input.value.toUpperCase();
-		console.log(n);
+		console.log('myFunctionGender');
+		document.dispatchEvent(new CustomEvent('myevent', { detail: {
+			eventName: 'myeventName',
+			info: {'key1': 'val1', 'key2': 'val2'}
+		}}));
 		gender = n;
 		if (listLength == 'short') {
-			console.log("gender activated short");
-			console.log(gender);
-			console.log(age);
-			console.log(status);
 			filteredlist = filterDogsSmallList(gender,age,status);
 			console.log(filteredlist);
 		} else if (listLength == 'medium') {
@@ -1051,6 +1057,11 @@ _W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":
 		filterSelection('1');
 	}
 	function myFunctionAge(n) {
+		console.log('myFunctionAge');
+		document.dispatchEvent(new CustomEvent('myevent', { detail: {
+			eventName: 'myeventName',
+			info: {'key1': 'val1', 'key2': 'val2'}
+		}}));
 		age = n
 		if (listLength == 'short') {
 			filteredlist = filterDogsSmallList(gender,age,status);
@@ -1062,6 +1073,11 @@ _W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":
 		filterSelection('1');
 	}
 	function myFunctionStatus(n) {
+		console.log('myFunctionStatus');
+		document.dispatchEvent(new CustomEvent('myevent', { detail: {
+			eventName: 'myeventName',
+			info: {'key1': 'val1', 'key2': 'val2'}
+		}}));
 		status = n;
 		if (listLength == 'short') {
 			filteredlist = filterDogsSmallList(gender,age,status);

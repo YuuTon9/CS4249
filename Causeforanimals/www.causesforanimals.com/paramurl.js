@@ -10,7 +10,7 @@ window.onload = function() {
         }
     }
 }
-window.onload = function() {
+
 function getQueryVariable(variable) {
     var query = window.location.search.substring(1);
     var vars = query.split('&');
@@ -31,5 +31,4 @@ function startExperiment() {
     var date = new Date();
     var timestamp = date.getTime();
     console.log("Started experiment at %s", timestamp)
-}
 }

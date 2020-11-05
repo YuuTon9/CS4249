@@ -374,6 +374,9 @@ const Dog_Long_List  = [
     }]
 
 function filterDogsLongList(gender, ageRange, status, dogList=Dog_Long_List) {
+    gender = parseInt(gender);
+    ageRange = parseInt(ageRange);
+    status = parseInt(status);
     /**
      * Input data:
      * gender:
@@ -705,6 +708,9 @@ const Dog_Medium_List  = [
     }]
 
 function filterDogsMediumList(gender, ageRange, status, dogList=Dog_Medium_List) {
+    gender = parseInt(gender);
+    ageRange = parseInt(ageRange);
+    status = parseInt(status);
     /**
      * Input data:
      * gender:
