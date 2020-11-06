@@ -39,6 +39,7 @@ function randomiseDogs(dogList, requirements) {
     var i
     for (i of shuffledDogList) {
         i["age"] = Math.ceil(Math.random() * 12)
+        i["date_of_birth"] = 2020 - i["age"]
     }
     for (i of shuffledDogList) {
         if (containsData(i, requirements)) {
@@ -50,6 +51,7 @@ function randomiseDogs(dogList, requirements) {
         for (i of shuffledDogList) {
             if (i['gender'] === 'M' && i['hdb_approved'] === 1) {
                 i['age'] = 2
+                i["date_of_birth"] = 2020 - i["age"]
                 break
             }
         }
@@ -57,6 +59,7 @@ function randomiseDogs(dogList, requirements) {
         for (i of shuffledDogList) {
             if (i['gender'] === 'M' && i['hdb_approved'] === 1) {
                 i['age'] = 5
+                i["date_of_birth"] = 2020 - i["age"]
                 break
             }
         }
@@ -64,6 +67,7 @@ function randomiseDogs(dogList, requirements) {
         for (i of shuffledDogList) {
             if (i['gender'] === 'M' && i['hdb_approved'] === 1) {
                 i['age'] = 10
+                i["date_of_birth"] = 2020 - i["age"]
                 break
             }
         }
