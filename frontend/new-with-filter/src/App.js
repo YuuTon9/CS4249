@@ -5,6 +5,8 @@ import Grid from "@material-ui/core/Grid";
 import {makeStyles} from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 import {filterDogsLongList, filterDogsMediumList, filterDogsSmallList, randomiseDogs, Dog_Small_List, Dog_Medium_List, Dog_Long_List} from "./DogData";
+import SiteLayout from "./SiteLayout";
+import Footer from "./Footer";
 import {MuiThemeProvider} from "@material-ui/core";
 import {THEME} from "./Colours";
 import Typography from "@material-ui/core/Typography";
@@ -13,10 +15,9 @@ import {sendCustomEvent} from "./Logging";
 function App() {
     const useStyles = makeStyles((theme) => ({
         container: {
-            width: '70%',
+            width: '100%',
             // maxWidth: '70% !important',
             margin: '0 auto',
-            padding: '0 0.5rem'
         },
         button: {
             padding: 30,
@@ -78,14 +79,19 @@ function App() {
 
     function isStarted() {
         if (values.start) {
-            return <Grid container spacing={3}>
-                <Grid item xs={12}><h2>Adopt a Pet</h2></Grid>
-                <Grid item xs={12}>
-                    <Filter1 dog_datas={values.dog_datas} userId={values.userId} questionId={values.questionId} listLength={values.listLength} layoutId={values.layoutId} startTime={values.startTime}/>
-                </Grid>
-            </Grid>
+            return <div>
+                <SiteLayout/>
+                <div style= {{width: "70%", margin: "auto"}}>
+                    <Grid container spacing={3}>
+                        <Grid item xs={12}>
+                            <Filter1 dog_datas={values.dog_datas} userId={values.userId} questionId={values.questionId} listLength={values.listLength} layoutId={values.layoutId} startTime={values.startTime}/>
+                        </Grid>
+                    </Grid>
+                </div>
+                <Footer/>
+            </div>
         }
-        return <div>
+        return <div style= {{width: "70%", margin: "auto"}}>
             <Typography variant={"h5"} className={classes.padding}>Click on the start button when you're ready.</Typography>
             <Button className={classes.button} variant="contained" color="primary" onClick={() => startExperiment()} id={"START_BUTTON"}>
                 Start!
